@@ -22,7 +22,7 @@ This build creates the quality system needed before publication. It does not cer
 
 The interactive HTML edition is published with GitHub Pages.
 
-Live site:
+Live site URL:
 
 https://vprasath1902.github.io/Understanding-America/
 
