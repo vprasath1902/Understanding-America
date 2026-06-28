@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Source Register · Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a>
+  <div class="controls">
+    <button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button>
+    <button class="secondary" onclick="openReaderPanel()">Reader</button>
+    <a class="control-link" href="release-status.html">Status</a>
+    <a class="control-link" href="editorial-qa.html">Editorial QA</a>
+    <a class="control-link" href="fact-check-matrix.html">Fact Check</a>
+    <button onclick="printBook()">Print</button>
+  </div>
+</div></header>
+<div class="reader-panel" id="readerPanel"><h3>Reader Settings</h3><div class="panel-grid"><button class="secondary" onclick="setTheme('light')">Light</button><button class="secondary" onclick="setTheme('dark')">Dark</button><button class="secondary" onclick="setTheme('sepia')">Sepia</button><button class="secondary" onclick="toggleLargeText()">Large Text</button><button class="secondary" onclick="toggleReaderMode()">Reading Mode</button><button onclick="printBook()">Print PDF</button></div></div>
+<div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+
+<section class="page"><div class="section-heading"><p class="eyebrow">Source register</p><h1>Official sources and citation plan</h1><p class="subtitle">Milestone 4 centralizes the sources that should support the final book. The HTML currently stores this as a review register; final publishing should convert it into footnotes, endnotes, or linked citations.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Topic</th><th>Primary source family</th><th>Use for</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Naturalization</td><td>USCIS</td><td>N-400, eligibility, civics test, interview, oath</td><td>Always verify current rules and forms.</td></tr>
+<tr><td>Constitution</td><td>National Archives, Congress</td><td>Original text, amendments, ratification</td><td>Use official text for final appendix.</td></tr>
+<tr><td>Congress</td><td>House.gov, Senate.gov, Congress.gov</td><td>Terms, leadership, legislative process</td><td>Officeholders may change.</td></tr>
+<tr><td>Supreme Court</td><td>SupremeCourt.gov, Oyez, Cornell LII</td><td>Cases, court structure, judicial review</td><td>Case summaries need careful wording.</td></tr>
+<tr><td>Presidents</td><td>WhiteHouse.gov, National Archives, presidential libraries</td><td>Presidential timeline and biographies</td><td>Keep neutral and historical.</td></tr>
+<tr><td>Pennsylvania</td><td>PA.gov, PA General Assembly, Chester County, township sources</td><td>State/local guide and representatives</td><td>Verify before publication.</td></tr>
+<tr><td>History</td><td>Library of Congress, Smithsonian, National Park Service</td><td>Historical narratives, maps, timelines</td><td>Use multiple sources for nuanced topics.</td></tr>
+</tbody></table></div></section>
+<section class="page"><h2>Final Citation Policy</h2><ul class="checklist"><li>Use official government sources for current procedural facts.</li><li>Use reputable historical institutions for history and civic education.</li><li>Mark changing facts with an update badge in the HTML edition.</li><li>Avoid unsupported claims, rankings, or partisan interpretations.</li><li>Separate educational content from legal or immigration advice.</li></ul></section>
+
+<footer class="footer">Understanding America · Milestone 4.0 · Professional Editing & Fact Verification</footer>
+</main></div><script src="js/navigation.js"></script></body></html>

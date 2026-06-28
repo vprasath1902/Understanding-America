@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EPUB Readiness · Understanding America</title><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/print.css"></head><body><div class="progress"></div><header class="app-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a><div class="controls"><button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button><button class="secondary" onclick="openReaderPanel()">Reader</button><a class="control-link" href="government-explorer.html">Explorer</a><a class="control-link" href="timeline.html">Timeline</a><a class="control-link" href="quiz.html">Quiz</a><button onclick="printBook()">Print</button></div></div></header><div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, tools, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+<section class="page">
+  <p class="eyebrow">Publication tools</p>
+  <h1>EPUB Readiness</h1>
+  <p class="subtitle">This page documents how the HTML project is structured for eventual EPUB conversion. It does not generate an EPUB by itself, but it gives the book a clean packaging target.</p>
+  <div class="epub-flow">
+    <div class="epub-step"><h3>HTML Source</h3><p>Chapters and appendices remain semantic HTML files.</p></div>
+    <div class="epub-step"><h3>Shared Assets</h3><p>CSS, JavaScript, SVG, and images are kept in stable folders.</p></div>
+    <div class="epub-step"><h3>Manifest</h3><p>book.json identifies title, author, version, and navigation.</p></div>
+    <div class="epub-step"><h3>Export</h3><p>Use a future build script or publishing tool to package EPUB.</p></div>
+  </div>
+</section>
+<section class="page">
+  <h2>EPUB Packaging Notes</h2>
+  <div class="source-note"><strong>Recommended:</strong> keep chapter content free of browser-only dependencies so it can be reused in EPUB and PDF outputs.</div>
+  <div class="source-note"><strong>Images:</strong> SVG diagrams are ideal for HTML and PDF. EPUB readers vary, so provide PNG fallbacks later for the most important diagrams.</div>
+  <div class="source-note"><strong>Navigation:</strong> the existing BOOK_NAV array can become the EPUB table of contents during a future build step.</div>
+</section>
+</main></div><script src="js/navigation.js"></script></body></html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Naturalization timeline">
+<defs><style>.t{font-family:Arial,sans-serif}.h{font-weight:800;fill:#0b3c6d}.s{fill:#667085}.circle{fill:#fff;stroke:#2e8b57;stroke-width:4}.line{stroke:#2e8b57;stroke-width:5;fill:none}</style></defs>
+<rect width="900" height="360" rx="24" fill="#f8f8f6"/><text class="t h" x="450" y="48" text-anchor="middle" font-size="28">Naturalization Journey</text>
+<path class="line" d="M100 170 H800"/>
+<g class="t" font-size="14">
+<g transform="translate(100 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">1</text><text text-anchor="middle" y="70" class="h">Green Card</text></g>
+<g transform="translate(240 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">2</text><text text-anchor="middle" y="70" class="h">N-400</text></g>
+<g transform="translate(380 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">3</text><text text-anchor="middle" y="70" class="h">Biometrics</text></g>
+<g transform="translate(520 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">4</text><text text-anchor="middle" y="70" class="h">Interview</text></g>
+<g transform="translate(660 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">5</text><text text-anchor="middle" y="70" class="h">Oath</text></g>
+<g transform="translate(800 170)"><circle class="circle" r="35"/><text text-anchor="middle" y="5" class="h">6</text><text text-anchor="middle" y="70" class="h">Citizen</text></g>
+</g><text class="t s" x="450" y="310" text-anchor="middle" font-size="16">Verify current requirements and forms with USCIS before applying.</text></svg>

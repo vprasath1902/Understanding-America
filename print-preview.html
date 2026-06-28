@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Print Preview and PDF Prep · Understanding America</title><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/print.css"></head><body><div class="progress"></div><header class="app-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a><div class="controls"><button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button><button class="secondary" onclick="openReaderPanel()">Reader</button><a class="control-link" href="government-explorer.html">Explorer</a><a class="control-link" href="timeline.html">Timeline</a><a class="control-link" href="quiz.html">Quiz</a><button onclick="printBook()">Print</button></div></div></header><div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, tools, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+<section class="page">
+  <p class="eyebrow">Version 9.0 publication readiness</p>
+  <h1>Print Preview and PDF Preparation</h1>
+  <p class="subtitle">Use this page to inspect print styling, page breaks, and the final readiness checklist before exporting the book as a PDF.</p>
+  <div class="pub-actions"><button onclick="printBook()">Open Print Dialog</button><button class="secondary" onclick="exportReadingData()">Export Reading Data</button><button class="secondary" onclick="resetReadingProgress()">Reset Local Progress</button></div>
+  <div class="release-strip">
+    <div class="release-pill"><strong>Letter</strong><span>Print layout target</span></div>
+    <div class="release-pill"><strong>28 + 7</strong><span>Chapters and appendices</span></div>
+    <div class="release-pill"><strong>SVG</strong><span>Scalable diagrams</span></div>
+    <div class="release-pill"><strong>v9.0</strong><span>Publication checkpoint</span></div>
+  </div>
+</section>
+<section class="page">
+  <h2>Page Spread Preview</h2>
+  <div class="print-spread">
+    <div class="print-page-preview"><h3>Chapter Opening</h3><div class="fake-lines"><span></span><span></span><span></span><span></span><span></span></div><small>Hero title, subtitle, objectives, and intro.</small></div>
+    <div class="print-page-preview"><h3>Learning Content</h3><div class="fake-lines"><span></span><span></span><span></span><span></span><span></span><span></span></div><small>Text, diagrams, callouts, and tables.</small></div>
+    <div class="print-page-preview"><h3>Reference Page</h3><div class="fake-lines"><span></span><span></span><span></span><span></span></div><small>Glossary, agency lists, or quick facts.</small></div>
+  </div>
+</section>
+<section class="page">
+  <h2>Release Checklist</h2>
+  <p class="subtitle">These items are stored locally in your browser.</p>
+  <div id="publicationChecklist" class="print-checklist"></div>
+</section>
+</main></div><script src="js/navigation.js"></script></body></html>

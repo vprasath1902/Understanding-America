@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Style Guide · Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a>
+  <div class="controls">
+    <button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button>
+    <button class="secondary" onclick="openReaderPanel()">Reader</button>
+    <a class="control-link" href="release-status.html">Status</a>
+    <a class="control-link" href="editorial-qa.html">Editorial QA</a>
+    <a class="control-link" href="fact-check-matrix.html">Fact Check</a>
+    <button onclick="printBook()">Print</button>
+  </div>
+</div></header>
+<div class="reader-panel" id="readerPanel"><h3>Reader Settings</h3><div class="panel-grid"><button class="secondary" onclick="setTheme('light')">Light</button><button class="secondary" onclick="setTheme('dark')">Dark</button><button class="secondary" onclick="setTheme('sepia')">Sepia</button><button class="secondary" onclick="toggleLargeText()">Large Text</button><button class="secondary" onclick="toggleReaderMode()">Reading Mode</button><button onclick="printBook()">Print PDF</button></div></div>
+<div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+
+<section class="page"><div class="section-heading"><p class="eyebrow">Editorial style guide</p><h1>Consistency rules for the final manuscript</h1><p class="subtitle">Use these conventions to keep the book readable, neutral, and publication-ready.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Area</th><th>Rule</th><th>Example</th></tr></thead><tbody>
+<tr><td>Tone</td><td>Plain English, respectful, nonpartisan, educational.</td><td>"The Senate represents states" instead of partisan framing.</td></tr>
+<tr><td>Legal topics</td><td>Use careful language and avoid advice.</td><td>"Generally" and "consult official sources" where appropriate.</td></tr>
+<tr><td>Current facts</td><td>Mark as verify-before-publication.</td><td>Current President, USCIS fees, representatives.</td></tr>
+<tr><td>Terminology</td><td>Use official names consistently.</td><td>House of Representatives, not House Reps in formal text.</td></tr>
+<tr><td>Citizenship</td><td>Use USCIS terminology.</td><td>Naturalization, Oath of Allegiance, Form N-400.</td></tr>
+<tr><td>Review sections</td><td>End chapters with summary, key terms, and questions.</td><td>Consistent learning pattern.</td></tr>
+</tbody></table></div></section>
+<section class="page"><h2>Preferred recurring phrases</h2><div class="component-showcase"><div class="system-card blue"><h3>Branches</h3><p>Legislative makes laws. Executive enforces laws. Judicial interprets laws.</p></div><div class="system-card gold"><h3>Constitution</h3><p>The Constitution is the supreme law of the land.</p></div><div class="system-card green"><h3>Citizenship</h3><p>Citizenship is both a right and a responsibility.</p></div><div class="system-card red"><h3>Federalism</h3><p>Power is shared between federal, state, and local governments.</p></div></div></section>
+
+<footer class="footer">Understanding America · Milestone 4.0 · Professional Editing & Fact Verification</footer>
+</main></div><script src="js/navigation.js"></script></body></html>

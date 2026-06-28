@@ -1,0 +1,32 @@
+{
+  "title": "Understanding America",
+  "subtitle": "A Complete Guide to American History, Government, the Constitution, Rights, Responsibilities, and Citizenship",
+  "author": "Venkata Prasath",
+  "version": "Milestone 4.0",
+  "format": "Interactive HTML Book",
+  "release": "Release Candidate",
+  "new_pages": [
+    "milestone-3.html",
+    "illustration-library.html",
+    "maps-timelines.html"
+  ],
+  "stage": "Publication Polish",
+  "tools": [
+    "print-preview.html",
+    "epub-ready.html",
+    "agency-directory.html",
+    "source-notes.html"
+  ],
+  "chapter_count": 28,
+  "appendix_count": 7,
+  "status": "editorial QA build",
+  "milestone": "Professional Editing & Fact Verification",
+  "updated": "2026-06-28",
+  "quality_gates": [
+    "Editorial consistency",
+    "Fact verification",
+    "Source tracking",
+    "Accessibility review",
+    "Print and EPUB readiness"
+  ]
+}

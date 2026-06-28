@@ -1,0 +1,21 @@
+@media print {
+  body { background: white; color: black; font-size: 11pt; }
+  .app-header, .sidebar, .chapter-nav, .progress, .controls { display: none !important; }
+  .layout { display: block; max-width: none; padding: 0; }
+  .cover, .page, .chapter-card { box-shadow: none; border: none; border-radius: 0; page-break-after: always; }
+  h1, h2, h3 { color: #0b3c6d; }
+  a { color: black; text-decoration: none; }
+  .callout, .objectives, .summary, .review, .terms { break-inside: avoid; }
+  @page { size: Letter; margin: 0.65in; }
+}
+
+
+/* Version 9.0 print production rules */
+@page { size: Letter; margin: 0.7in; }
+@media print {
+  h1, h2, h3 { break-after: avoid; }
+  table, figure, img, svg { break-inside: avoid; }
+  .page, .cover { page-break-after: always; }
+  .chapter-card { page-break-inside: avoid; }
+  .toc-card, .pathway-card, .visual-card, .agency-card, .case-card, .president-card { break-inside: avoid; }
+}

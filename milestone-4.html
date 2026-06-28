@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Milestone 4 · Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a>
+  <div class="controls">
+    <button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button>
+    <button class="secondary" onclick="openReaderPanel()">Reader</button>
+    <a class="control-link" href="release-status.html">Status</a>
+    <a class="control-link" href="editorial-qa.html">Editorial QA</a>
+    <a class="control-link" href="fact-check-matrix.html">Fact Check</a>
+    <button onclick="printBook()">Print</button>
+  </div>
+</div></header>
+<div class="reader-panel" id="readerPanel"><h3>Reader Settings</h3><div class="panel-grid"><button class="secondary" onclick="setTheme('light')">Light</button><button class="secondary" onclick="setTheme('dark')">Dark</button><button class="secondary" onclick="setTheme('sepia')">Sepia</button><button class="secondary" onclick="toggleLargeText()">Large Text</button><button class="secondary" onclick="toggleReaderMode()">Reading Mode</button><button onclick="printBook()">Print PDF</button></div></div>
+<div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+
+<section class="page m4-hero">
+  <span class="m3-ribbon">Milestone 4 · Professional Editing & Fact Verification</span>
+  <div class="section-heading"><p class="eyebrow">Quality gate</p><h1>From draft publication to reviewed civic reference.</h1><p class="subtitle">Milestone 4 adds the editorial controls needed before this project can be considered publication-ready: fact checks, source tracking, consistency review, accessibility review, and update governance.</p></div>
+  <div class="m4-scoreboard">
+    <div class="m4-score"><strong>28</strong><span>Chapters to review</span></div>
+    <div class="m4-score"><strong>7</strong><span>Appendices to verify</span></div>
+    <div class="m4-score"><strong>5</strong><span>Quality gates</span></div>
+    <div class="m4-score"><strong>0</strong><span>Claims marked final without review</span></div>
+  </div>
+</section>
+<section class="page">
+  <div class="section-heading compact"><p class="eyebrow">Milestone 4 tools</p><h1>Editorial command center</h1></div>
+  <div class="v8-tool-grid">
+    <a class="v8-tool-card" href="editorial-qa.html"><h3>✍️ Editorial QA</h3><p>Chapter-by-chapter consistency, readability, structure, and duplication review.</p></a>
+    <a class="v8-tool-card" href="fact-check-matrix.html"><h3>🔎 Fact Check Matrix</h3><p>Track factual claims, source status, and update-sensitive items.</p></a>
+    <a class="v8-tool-card" href="source-register.html"><h3>📚 Source Register</h3><p>Central list of official sources to verify USCIS, government, history, and Pennsylvania content.</p></a>
+    <a class="v8-tool-card" href="accessibility-audit.html"><h3>♿ Accessibility Audit</h3><p>Review readability, contrast, keyboard navigation, alt text, and print accessibility.</p></a>
+    <a class="v8-tool-card" href="style-guide.html"><h3>🎨 Editorial Style Guide</h3><p>Standardize voice, terminology, headings, facts, callouts, and recurring explanations.</p></a>
+    <a class="v8-tool-card" href="publication-qa.html"><h3>✅ Publication QA</h3><p>Final checklist before PDF, EPUB, website, classroom, and public release.</p></a>
+  </div>
+</section>
+<section class="page">
+  <div class="section-heading compact"><p class="eyebrow">Quality gate sequence</p><h1>Milestone 4 workflow</h1></div>
+  <div class="process-rail"><div><b>1</b><span>Editorial pass</span></div><div><b>2</b><span>Fact check</span></div><div><b>3</b><span>Source attach</span></div><div><b>4</b><span>Accessibility pass</span></div><div><b>5</b><span>Publication QA</span></div></div>
+  <div class="system-card gold"><h3>Important</h3><p>This milestone does not claim that every fact is final. It creates the review system and marks current-officeholder, USCIS, fee, election, and law-related items as update-sensitive before publication.</p></div>
+</section>
+
+<footer class="footer">Understanding America · Milestone 4.0 · Professional Editing & Fact Verification</footer>
+</main></div><script src="js/navigation.js"></script></body></html>

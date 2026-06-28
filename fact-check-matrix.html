@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fact Check Matrix · Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a>
+  <div class="controls">
+    <button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button>
+    <button class="secondary" onclick="openReaderPanel()">Reader</button>
+    <a class="control-link" href="release-status.html">Status</a>
+    <a class="control-link" href="editorial-qa.html">Editorial QA</a>
+    <a class="control-link" href="fact-check-matrix.html">Fact Check</a>
+    <button onclick="printBook()">Print</button>
+  </div>
+</div></header>
+<div class="reader-panel" id="readerPanel"><h3>Reader Settings</h3><div class="panel-grid"><button class="secondary" onclick="setTheme('light')">Light</button><button class="secondary" onclick="setTheme('dark')">Dark</button><button class="secondary" onclick="setTheme('sepia')">Sepia</button><button class="secondary" onclick="toggleLargeText()">Large Text</button><button class="secondary" onclick="toggleReaderMode()">Reading Mode</button><button onclick="printBook()">Print PDF</button></div></div>
+<div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+
+<section class="page"><div class="section-heading"><p class="eyebrow">Fact verification</p><h1>Fact Check Matrix</h1><p class="subtitle">Track every high-risk or update-sensitive claim before publication. Items below are examples of the required verification categories.</p></div>
+<div class="system-card red"><h3>Rule for publication</h3><p>No current official, USCIS fee, test rule, court membership, election date, address-based representative, or legal process detail should be marked final without checking an official source close to publication date.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Claim type</th><th>Example</th><th>Preferred source</th><th>Status</th><th>Update cadence</th></tr></thead><tbody>
+<tr><td>USCIS test format</td><td>Number of questions asked and passing score</td><td>USCIS official study/test pages</td><td><span class="status-pill warn">Verify</span></td><td>Before every release</td></tr>
+<tr><td>USCIS forms and fees</td><td>N-400 rules and fee amounts</td><td>USCIS Form N-400 and fee calculator</td><td><span class="status-pill warn">Verify</span></td><td>Before every release</td></tr>
+<tr><td>Current officials</td><td>President, Vice President, PA Governor, Senators</td><td>Official federal/state websites</td><td><span class="status-pill warn">Verify</span></td><td>Before interview/publication</td></tr>
+<tr><td>Address-based representatives</td><td>State senator, state representative, congressional district</td><td>Official legislator lookup tools</td><td><span class="status-pill warn">Verify</span></td><td>Before publication</td></tr>
+<tr><td>Constitutional facts</td><td>Amendments, branches, terms, qualifications</td><td>Constitution text, Congress, National Archives</td><td><span class="status-pill ok">Stable but cite</span></td><td>Annual</td></tr>
+<tr><td>Historical events</td><td>Declaration, Revolutionary War, Civil War</td><td>Library of Congress, National Archives, Smithsonian</td><td><span class="status-pill ok">Stable but cite</span></td><td>Annual</td></tr>
+<tr><td>Legal case summaries</td><td>Marbury, Brown, Miranda, Nixon</td><td>Oyez, Supreme Court, Cornell LII</td><td><span class="status-pill warn">Verify wording</span></td><td>Before release</td></tr>
+</tbody></table></div></section>
+<section class="page"><h2>Claim Labels</h2><div class="component-showcase"><div class="system-card green"><h3>Stable</h3><p>Unlikely to change, but still needs citation in final edition.</p></div><div class="system-card gold"><h3>Update-sensitive</h3><p>Can change with elections, policy, fees, or agency rules.</p></div><div class="system-card red"><h3>Legal-sensitive</h3><p>Must be written as education, not legal advice.</p></div><div class="system-card blue"><h3>Local-sensitive</h3><p>Must be verified with address-specific official lookup tools.</p></div></div></section>
+
+<footer class="footer">Understanding America · Milestone 4.0 · Professional Editing & Fact Verification</footer>
+</main></div><script src="js/navigation.js"></script></body></html>

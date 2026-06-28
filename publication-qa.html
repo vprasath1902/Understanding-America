@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Publication QA · Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a>
+  <div class="controls">
+    <button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button>
+    <button class="secondary" onclick="openReaderPanel()">Reader</button>
+    <a class="control-link" href="release-status.html">Status</a>
+    <a class="control-link" href="editorial-qa.html">Editorial QA</a>
+    <a class="control-link" href="fact-check-matrix.html">Fact Check</a>
+    <button onclick="printBook()">Print</button>
+  </div>
+</div></header>
+<div class="reader-panel" id="readerPanel"><h3>Reader Settings</h3><div class="panel-grid"><button class="secondary" onclick="setTheme('light')">Light</button><button class="secondary" onclick="setTheme('dark')">Dark</button><button class="secondary" onclick="setTheme('sepia')">Sepia</button><button class="secondary" onclick="toggleLargeText()">Large Text</button><button class="secondary" onclick="toggleReaderMode()">Reading Mode</button><button onclick="printBook()">Print PDF</button></div></div>
+<div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main>
+
+<section class="page"><div class="section-heading"><p class="eyebrow">Publication QA</p><h1>Release readiness checklist</h1><p class="subtitle">This is the final gate before public PDF, EPUB, or website release.</p></div>
+<div class="table-wrap"><table><thead><tr><th>Area</th><th>Requirement</th><th>Status</th></tr></thead><tbody>
+<tr><td>Manuscript</td><td>All chapters edited and standardized.</td><td><span class="status-pill warn">In progress</span></td></tr>
+<tr><td>Fact check</td><td>All update-sensitive claims verified and sourced.</td><td><span class="status-pill warn">Pending</span></td></tr>
+<tr><td>Sources</td><td>Endnotes or citations attached.</td><td><span class="status-pill warn">Pending</span></td></tr>
+<tr><td>Visuals</td><td>Placeholder art replaced or clearly marked.</td><td><span class="status-pill warn">Pending</span></td></tr>
+<tr><td>Accessibility</td><td>Keyboard, contrast, alt text, reading modes tested.</td><td><span class="status-pill warn">Pending</span></td></tr>
+<tr><td>Print</td><td>Headers, footers, page breaks, tables, diagrams checked.</td><td><span class="status-pill warn">Pending</span></td></tr>
+<tr><td>EPUB</td><td>Metadata, navigation, spine, and assets validated.</td><td><span class="status-pill warn">Pending</span></td></tr>
+</tbody></table></div></section>
+<section class="page"><h2>Milestone 4 outcome</h2><p>Milestone 4 moves the project from a content-rich prototype into an editorially governed publication candidate. It does not complete all verification, but it creates the structure needed to complete verification responsibly.</p></section>
+
+<footer class="footer">Understanding America · Milestone 4.0 · Professional Editing & Fact Verification</footer>
+</main></div><script src="js/navigation.js"></script></body></html>

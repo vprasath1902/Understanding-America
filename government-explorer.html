@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Government Explorer - Understanding America</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="app-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">★</span>Understanding America</a><div class="controls"><button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button><button class="secondary" onclick="openReaderPanel()">Reader</button><a class="control-link" href="index.html#dashboard">Dashboard</a><a class="control-link" href="timeline.html">Timeline</a><a class="control-link" href="quiz.html">Quiz</a><button onclick="printBook()">Print</button></div></div></header>
+<div class="layout">
+  <aside class="sidebar"><h3>Contents</h3><input id="search" class="search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside>
+  <main>
+    <article class="chapter-card premium-hero">
+      <div class="chapter-hero"><div class="chapter-number">Interactive Hub</div><h1>Government Explorer</h1><p class="subtitle">A premium visual guide to how the Constitution, branches of government, federalism, lawmaking, and citizenship fit together.</p><div class="quote">The American system is easiest to understand when you see it as a connected design, not isolated facts.</div></div>
+      <section id="branches" class="explorer-section">
+        <h2>Explore the Three Branches</h2>
+        <p>Click a branch to open the related chapter and learn how each part of government works.</p>
+        <div class="explorer-matrix">
+          <a class="branch-card" href="chapters/chapter-09-09-congress.html"><img src="svg/capitol-icon.svg" alt="Congress"><h3>Legislative Branch</h3><p><strong>Congress</strong> makes federal laws and represents the people and states.</p><ul><li>House of Representatives</li><li>Senate</li><li>Committees</li></ul></a>
+          <a class="branch-card" href="chapters/chapter-13-13-president.html"><img src="svg/white-house-icon.svg" alt="President"><h3>Executive Branch</h3><p><strong>The President</strong> leads the federal executive branch and enforces laws.</p><ul><li>President</li><li>Vice President</li><li>Cabinet</li></ul></a>
+          <a class="branch-card" href="chapters/chapter-15-15-judicial-branch.html"><img src="svg/supreme-court-icon.svg" alt="Supreme Court"><h3>Judicial Branch</h3><p><strong>The courts</strong> interpret laws and protect the Constitution.</p><ul><li>Supreme Court</li><li>Appeals Courts</li><li>District Courts</li></ul></a>
+        </div>
+        <div class="diagram premium-diagram"><img src="svg/three-branches.svg" alt="Three branches of government diagram"></div>
+      </section>
+      <section id="checks" class="explorer-section">
+        <h2>Checks and Balances</h2>
+        <p>The branches do not report to one another. Each branch has independent constitutional powers and ways to limit the others.</p>
+        <div class="diagram premium-diagram"><img src="svg/checks-balances.svg" alt="Checks and balances diagram"></div>
+        <div class="component-showcase">
+          <div class="system-card blue"><h3>Congress Checks</h3><p>Overrides vetoes, confirms appointments, controls spending, and can impeach.</p></div>
+          <div class="system-card green"><h3>President Checks</h3><p>Vetoes bills, appoints judges, and executes laws.</p></div>
+          <div class="system-card gold"><h3>Courts Check</h3><p>Review laws and executive actions for constitutionality.</p></div>
+        </div>
+      </section>
+      <section id="lawmaking" class="explorer-section">
+        <h2>How a Law Is Made</h2>
+        <p>An idea must pass through Congress, the President, and sometimes the courts before becoming durable national policy.</p>
+        <div class="diagram premium-diagram"><img src="svg/law-process.svg" alt="How a bill becomes law"></div>
+      </section>
+      <section id="federalism" class="explorer-section">
+        <h2>Federalism</h2>
+        <p>American government is shared across federal, state, county, and local levels. This is why you have both a President and a Governor.</p>
+        <div class="diagram premium-diagram"><img src="svg/federal-state-local.svg" alt="Federal state local government"></div>
+      </section>
+      <section id="citizenship" class="explorer-section">
+        <h2>Citizenship Pathway</h2>
+        <p>The naturalization process moves from green card eligibility to N-400, interview, oath, passport, and voting.</p>
+        <div class="diagram premium-diagram"><img src="svg/naturalization.svg" alt="Naturalization pathway"></div>
+      </section>
+      <nav class="chapter-nav"><a class="button secondary" href="index.html#dashboard">Dashboard</a><a class="button" href="chapters/chapter-09-09-congress.html">Study Congress</a></nav>
+    </article>
+  </main>
+</div>
+<script src="js/navigation.js"></script>
+</body>
+</html>

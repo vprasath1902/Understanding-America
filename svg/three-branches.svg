@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-label="Three branches of United States government">
+  <defs><style>.t{font-family:Arial,sans-serif}.h{font-weight:800;fill:#0b3c6d}.s{fill:#667085}.box{fill:#fff;stroke:#d8dee8;stroke-width:2;rx:18}.navy{fill:#0b3c6d}.red{fill:#b22234}.gold{fill:#c9a227}.green{fill:#2e8b57}.line{stroke:#0b3c6d;stroke-width:4;fill:none;stroke-linecap:round}</style></defs>
+  <rect width="920" height="520" fill="#f8f8f6" rx="24"/>
+  <text class="t h" x="460" y="54" text-anchor="middle" font-size="30">United States Government</text>
+  <rect class="box" x="290" y="86" width="340" height="78"/>
+  <text class="t h" x="460" y="120" text-anchor="middle" font-size="22">U.S. Constitution</text>
+  <text class="t s" x="460" y="145" text-anchor="middle" font-size="15">Supreme law of the land</text>
+  <path class="line" d="M460 164 v64 M460 228 H160 M460 228 H760 M160 228 v54 M460 228 v54 M760 228 v54"/>
+  <rect class="box" x="60" y="282" width="220" height="150"/>
+  <circle class="navy" cx="170" cy="322" r="26"/><text class="t" x="170" y="331" text-anchor="middle" font-size="24" fill="#fff">🏛</text>
+  <text class="t h" x="170" y="370" text-anchor="middle" font-size="21">Legislative</text>
+  <text class="t s" x="170" y="398" text-anchor="middle" font-size="16">Congress</text>
+  <text class="t s" x="170" y="422" text-anchor="middle" font-size="16">Makes laws</text>
+  <rect class="box" x="350" y="282" width="220" height="150"/>
+  <circle class="red" cx="460" cy="322" r="26"/><text class="t" x="460" y="331" text-anchor="middle" font-size="24" fill="#fff">★</text>
+  <text class="t h" x="460" y="370" text-anchor="middle" font-size="21">Executive</text>
+  <text class="t s" x="460" y="398" text-anchor="middle" font-size="16">President</text>
+  <text class="t s" x="460" y="422" text-anchor="middle" font-size="16">Enforces laws</text>
+  <rect class="box" x="640" y="282" width="220" height="150"/>
+  <circle class="gold" cx="750" cy="322" r="26"/><text class="t" x="750" y="331" text-anchor="middle" font-size="24" fill="#fff">⚖</text>
+  <text class="t h" x="750" y="370" text-anchor="middle" font-size="21">Judicial</text>
+  <text class="t s" x="750" y="398" text-anchor="middle" font-size="16">Courts</text>
+  <text class="t s" x="750" y="422" text-anchor="middle" font-size="16">Interprets laws</text>
+</svg>

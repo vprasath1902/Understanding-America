@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+<title id="title">Federal State and Local Government</title><desc id="desc">A layered view from the people to local, state, and federal government.</desc>
+<defs><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-opacity=".16"/></filter></defs>
+<rect width="980" height="520" rx="34" fill="#F8F8F6"/>
+<text x="490" y="56" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#0B3C6D" font-weight="700">Government Around You</text>
+<text x="490" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#64748b">Different levels serve different responsibilities.</text>
+<g filter="url(#shadow)"><rect x="112" y="126" width="756" height="72" rx="22" fill="#0B3C6D"/><text x="490" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#fff" font-weight="800">Federal Government</text><text x="490" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#dbeafe">Immigration · Passports · Military · Currency · Foreign policy</text></g>
+<g filter="url(#shadow)"><rect x="162" y="224" width="656" height="72" rx="22" fill="#B22234"/><text x="490" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#fff" font-weight="800">Pennsylvania Government</text><text x="490" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#ffe4e6">Driver licenses · State roads · State taxes · State police</text></g>
+<g filter="url(#shadow)"><rect x="222" y="322" width="536" height="72" rx="22" fill="#2E8B57"/><text x="490" y="366" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#fff" font-weight="800">County, Township, School District</text><text x="490" y="386" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#dcfce7">Local roads · Schools · Zoning · Elections · Parks</text></g>
+<g filter="url(#shadow)"><rect x="342" y="420" width="296" height="58" rx="24" fill="#C9A227"/><text x="490" y="457" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#fff" font-weight="900">YOU</text></g>
+<path d="M490 198 L490 224" stroke="#94a3b8" stroke-width="5"/><path d="M490 296 L490 322" stroke="#94a3b8" stroke-width="5"/><path d="M490 394 L490 420" stroke="#94a3b8" stroke-width="5"/>
+</svg>

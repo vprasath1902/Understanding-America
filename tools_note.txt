@@ -1,0 +1,1 @@
+Open index.html in a browser. Milestone 4 adds editorial QA, fact-checking, accessibility, and publication QA tools.
