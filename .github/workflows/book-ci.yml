@@ -1,0 +1,84 @@
+name: Book CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-package:
+    name: Validate and package book
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check HTML and Markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude-mail
+            --accept 200,204,206,301,302,403,429
+            './**/*.html'
+            './**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install accessibility checker
+        run: npm install -g pa11y-ci
+
+      - name: Start local static server
+        run: |
+          npx http-server . -p 8080 > server.log 2>&1 &
+          sleep 3
+
+      - name: Run basic accessibility check
+        run: |
+          cat > .pa11yci.json <<'EOF'
+          {
+            "defaults": {
+              "standard": "WCAG2AA",
+              "timeout": 30000,
+              "chromeLaunchConfig": {
+                "args": ["--no-sandbox"]
+              }
+            },
+            "urls": [
+              "http://127.0.0.1:8080/",
+              "http://127.0.0.1:8080/government-explorer.html",
+              "http://127.0.0.1:8080/quiz.html",
+              "http://127.0.0.1:8080/glossary.html",
+              "http://127.0.0.1:8080/timeline.html"
+            ]
+          }
+          EOF
+          pa11y-ci --config .pa11yci.json
+
+      - name: Create distribution package
+        run: |
+          mkdir -p dist
+          zip -r dist/Understanding-America-site.zip . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "dist/*" \
+            -x "node_modules/*" \
+            -x "server.log"
+
+      - name: Upload site ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Understanding-America-site
+          path: dist/Understanding-America-site.zip
