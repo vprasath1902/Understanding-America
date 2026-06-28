@@ -1,21 +1,116 @@
-@media print {
-  body { background: white; color: black; font-size: 11pt; }
-  .app-header, .sidebar, .chapter-nav, .progress, .controls { display: none !important; }
-  .layout { display: block; max-width: none; padding: 0; }
-  .cover, .page, .chapter-card { box-shadow: none; border: none; border-radius: 0; page-break-after: always; }
-  h1, h2, h3 { color: #0b3c6d; }
-  a { color: black; text-decoration: none; }
-  .callout, .objectives, .summary, .review, .terms { break-inside: avoid; }
-  @page { size: Letter; margin: 0.65in; }
-}
+/* Understanding America - Print Stylesheet
+   Version: Publication Milestone
+*/
 
-
-/* Version 9.0 print production rules */
-@page { size: Letter; margin: 0.7in; }
 @media print {
-  h1, h2, h3 { break-after: avoid; }
-  table, figure, img, svg { break-inside: avoid; }
-  .page, .cover { page-break-after: always; }
-  .chapter-card { page-break-inside: avoid; }
-  .toc-card, .pathway-card, .visual-card, .agency-card, .case-card, .president-card { break-inside: avoid; }
+
+  @page {
+    size: Letter;
+    margin: 0.75in;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  nav,
+  header,
+  footer,
+  aside,
+  .sidebar,
+  .site-nav,
+  .reader-tools,
+  .dashboard,
+  .toolbar,
+  .search-panel,
+  .bookmark-panel,
+  .floating-action,
+  .no-print {
+    display: none !important;
+  }
+
+  main,
+  article,
+  section,
+  .page,
+  .chapter,
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  .cover,
+  .title-page {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .chapter {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #000 !important;
+  }
+
+  p, li, blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  table,
+  figure,
+  img,
+  svg,
+  .card,
+  .callout,
+  .timeline,
+  .diagram {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: none;
+  }
+
+  a[href^='http']::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+  }
+
+  code,
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #ccc;
+    padding: 4pt;
+    font-size: 9pt;
+  }
+
+  .page-number::after {
+    content: counter(page);
+  }
 }
