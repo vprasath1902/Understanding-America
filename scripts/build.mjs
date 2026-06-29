@@ -144,6 +144,7 @@ function main() {
   const manifest = loadManifest();
   const byOutput = Object.fromEntries(manifest.map((c) => [c.output, c]));
   copySite();
+  fs.mkdirSync(path.join(BUILD, "chapters"), { recursive: true });
 
   const migrated = [];
   for (const ch of manifest) {
