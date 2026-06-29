@@ -1,6 +1,9 @@
 ---
 title: "The Bill of Rights"
 subtitle: "The first ten amendments protect individual liberties by limiting government power."
+hero:
+  src: "assets/visuals/heroes/07-bill-of-rights.svg"
+  alt: "A parchment showing the number ten beside a balanced scale of justice"
 diagram:
   src: "svg/constitution-explorer.svg"
   alt: "Visual diagram for The Bill of Rights"

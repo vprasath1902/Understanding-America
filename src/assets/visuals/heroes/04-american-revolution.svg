@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h04-title h04-desc">
+  <title id="h04-title">Chapter 4 hero — The American Revolution</title>
+  <desc id="h04-desc">A flat geometric banner: a navy title panel beside an early American flag with red and white stripes and a star-filled blue canton on a flagpole.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">The American</text>
+  <text class="title" x="80" y="306" font-size="46">Revolution</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 4</text>
+
+  <!-- flagpole -->
+  <rect x="820" y="80" width="10" height="330" rx="4" fill="#667085"/>
+  <circle cx="825" cy="80" r="12" fill="#c9a227"/>
+  <!-- flag: stripes -->
+  <g>
+    <rect x="830" y="120" width="270" height="170" fill="#ffffff" stroke="#0b3c6d" stroke-width="2"/>
+    <g fill="#b22234">
+      <rect x="830" y="120" width="270" height="24"/>
+      <rect x="830" y="168" width="270" height="24"/>
+      <rect x="830" y="216" width="270" height="24"/>
+      <rect x="830" y="264" width="270" height="26"/>
+    </g>
+    <!-- canton -->
+    <rect x="830" y="120" width="120" height="98" fill="#0b3c6d"/>
+    <g fill="#ffffff">
+      <circle cx="860" cy="150" r="5"/><circle cx="890" cy="150" r="5"/><circle cx="920" cy="150" r="5"/>
+      <circle cx="875" cy="172" r="5"/><circle cx="905" cy="172" r="5"/>
+      <circle cx="860" cy="194" r="5"/><circle cx="890" cy="194" r="5"/><circle cx="920" cy="194" r="5"/>
+    </g>
+  </g>
+  <!-- ground star accent -->
+  <polygon fill="#c9a227" points="1060,330 1072,366 1110,366 1080,389 1091,425 1060,402 1029,425 1040,389 1010,366 1048,366"/>
+</svg>

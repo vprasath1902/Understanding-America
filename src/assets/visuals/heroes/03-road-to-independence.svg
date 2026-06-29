@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h03-title h03-desc">
+  <title id="h03-title">Chapter 3 hero — The Road to Independence</title>
+  <desc id="h03-desc">A flat geometric banner: a navy title panel beside a parchment document with a quill pen and a gold liberty bell, evoking the protests and arguments that led toward independence.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">The Road to</text>
+  <text class="title" x="80" y="306" font-size="46">Independence</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 3</text>
+
+  <!-- parchment -->
+  <g transform="rotate(-5 870 240)">
+    <rect x="740" y="120" width="260" height="240" rx="8" fill="#f4ecd8" stroke="#c9a227" stroke-width="3"/>
+    <g stroke="#667085" stroke-width="3" opacity="0.6">
+      <line x1="770" y1="170" x2="970" y2="170"/><line x1="770" y1="205" x2="970" y2="205"/>
+      <line x1="770" y1="240" x2="970" y2="240"/><line x1="770" y1="275" x2="940" y2="275"/>
+    </g>
+  </g>
+  <!-- quill -->
+  <path d="M1030 150 L960 320 L980 326 L1050 156 Z" fill="#ffffff" stroke="#0b3c6d" stroke-width="3"/>
+  <path d="M1030 150 q24 30 14 64" fill="none" stroke="#b22234" stroke-width="4"/>
+  <!-- liberty bell -->
+  <g transform="translate(1080 330)">
+    <path d="M-44 60 q4 -84 44 -84 q40 0 44 84 Z" fill="#c9a227" stroke="#0b3c6d" stroke-width="3"/>
+    <rect x="-52" y="58" width="104" height="14" rx="4" fill="#c9a227" stroke="#0b3c6d" stroke-width="3"/>
+    <line x1="0" y1="20" x2="-10" y2="58" stroke="#0b3c6d" stroke-width="3"/>
+  </g>
+</svg>

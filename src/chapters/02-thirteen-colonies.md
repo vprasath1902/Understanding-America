@@ -1,6 +1,9 @@
 ---
 title: "The Thirteen Colonies"
 subtitle: "The thirteen British colonies developed different economies, cultures, and political traditions before becoming one nation."
+hero:
+  src: "assets/visuals/heroes/02-thirteen-colonies.svg"
+  alt: "Stylized Atlantic coastline with thirteen markers for the thirteen colonies"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The Thirteen Colonies"

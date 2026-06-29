@@ -1,6 +1,9 @@
 ---
 title: The United States Constitution
 subtitle: The Constitution is the blueprint for American government and the supreme law of the land.
+hero:
+  src: "assets/visuals/heroes/06-constitution.svg"
+  alt: "A 'We the People' parchment flanked by two classical columns"
 diagram:
   src: svg/constitution-explorer.svg
   alt: Visual diagram for The United States Constitution

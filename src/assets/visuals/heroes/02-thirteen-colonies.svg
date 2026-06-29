@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h02-title h02-desc">
+  <title id="h02-title">Chapter 2 hero — The Thirteen Colonies</title>
+  <desc id="h02-desc">A flat geometric banner: a navy title panel beside a stylized Atlantic coastline with thirteen gold markers representing the thirteen colonies along the eastern seaboard.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#dbeafe"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">The Thirteen</text>
+  <text class="title" x="80" y="306" font-size="46">Colonies</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 2</text>
+
+  <!-- landmass -->
+  <path d="M1200 30 H1010 q-26 60 -6 120 q-34 54 -2 116 q-30 58 -16 174 H1200 Z" fill="#2e8b57" stroke="#0b3c6d" stroke-width="3"/>
+  <!-- thirteen colony markers down the coast -->
+  <g fill="#c9a227" stroke="#0b3c6d" stroke-width="2">
+    <circle cx="1000" cy="70" r="8"/><circle cx="990" cy="100" r="8"/><circle cx="998" cy="130" r="8"/>
+    <circle cx="986" cy="160" r="8"/><circle cx="996" cy="190" r="8"/><circle cx="982" cy="220" r="8"/>
+    <circle cx="992" cy="250" r="8"/><circle cx="980" cy="280" r="8"/><circle cx="990" cy="310" r="8"/>
+    <circle cx="978" cy="340" r="8"/><circle cx="988" cy="370" r="8"/><circle cx="976" cy="400" r="8"/>
+    <circle cx="986" cy="428" r="8"/>
+  </g>
+</svg>

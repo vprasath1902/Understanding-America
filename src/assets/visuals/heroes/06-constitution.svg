@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h06-title h06-desc">
+  <title id="h06-title">Chapter 6 hero — The United States Constitution</title>
+  <desc id="h06-desc">A flat geometric banner: a navy title panel beside a parchment reading "We the People" flanked by two classical columns, representing the Constitution and the government it frames.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .wtp{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">The United States</text>
+  <text class="title" x="80" y="306" font-size="44">Constitution</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 6</text>
+
+  <!-- columns -->
+  <g fill="#ffffff" stroke="#d8dee8" stroke-width="2">
+    <rect x="740" y="120" width="70" height="20"/><rect x="748" y="140" width="54" height="200"/><rect x="734" y="340" width="82" height="20"/>
+    <rect x="1030" y="120" width="70" height="20"/><rect x="1038" y="140" width="54" height="200"/><rect x="1024" y="340" width="82" height="20"/>
+  </g>
+  <!-- parchment -->
+  <rect x="838" y="150" width="164" height="200" rx="8" fill="#f4ecd8" stroke="#c9a227" stroke-width="3"/>
+  <text class="wtp" x="920" y="210" text-anchor="middle" font-size="22">We the</text>
+  <text class="wtp" x="920" y="240" text-anchor="middle" font-size="22">People</text>
+  <g stroke="#667085" stroke-width="3" opacity="0.6">
+    <line x1="862" y1="268" x2="978" y2="268"/><line x1="862" y1="294" x2="978" y2="294"/><line x1="862" y1="320" x2="950" y2="320"/>
+  </g>
+</svg>

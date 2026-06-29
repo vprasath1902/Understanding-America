@@ -1,6 +1,9 @@
 ---
 title: "The American Revolution"
 subtitle: "The Revolutionary War tested whether the Declaration of Independence could become reality."
+hero:
+  src: "assets/visuals/heroes/04-american-revolution.svg"
+  alt: "An early American flag with red and white stripes and a star-filled blue canton"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The American Revolution"
