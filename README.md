@@ -2,7 +2,20 @@
 
 Milestone 4.0 build: Professional Editing & Fact Verification.
 
-Open `index.html` to launch the digital handbook.
+## Building and viewing
+
+The book is generated from Markdown source (`src/`) and static pages
+(`index.html` at the root, tools/QA pages in `html/`) into a complete site in
+`build/`:
+
+```
+npm install      # one-time
+npm run build    # generate build/
+npm run serve    # serve at http://localhost:8080
+```
+
+Then open <http://localhost:8080>. See `docs/MILESTONE-6.md` for the
+architecture and contributor workflow.
 
 ## New in Milestone 4
 
@@ -28,22 +41,20 @@ https://vprasath1902.github.io/Understanding-America/
 
 ## GitHub Pages Deployment
 
-This project is deployed using GitHub Pages from the `main` branch.
+The live site is built and published by GitHub Actions
+(`.github/workflows/deploy-pages.yml`), which runs `npm run build` and deploys
+the generated `build/` directory to GitHub Pages.
 
 Deployment settings:
 
-- Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/root`
+- Source: GitHub Actions
+- Published directory: `build/` (generated; not committed)
 
 To update the live site:
 
-1. Commit changes to the repository.
-2. Push changes to the `main` branch.
-3. GitHub Pages will automatically publish the latest version.
-4. Wait a few minutes, then refresh the live site.
+1. Commit and push changes to the `main` branch (typically via a merged PR).
+2. The "Deploy to GitHub Pages" workflow builds and publishes automatically.
+3. Wait a few minutes, then refresh the live site.
 
-Main entry point:
-
-```text
-index.html
+Main entry point: `index.html` (at the repo root; copied to `build/` root by the
+build).

@@ -19,29 +19,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Check HTML and Markdown links
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Check links in generated site
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --verbose
             --no-progress
             --accept 200,204,206,301,302,403,429
-            './**/*.html'
-            './**/*.md'
+            './build/**/*.html'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: '22'
 
       - name: Install accessibility checker
         run: npm install -g pa11y-ci
 
       - name: Start local static server
         run: |
-          npx http-server . -p 8080 > server.log 2>&1 &
+          npx --yes http-server build -p 8080 > server.log 2>&1 &
           sleep 3
 
       - name: Run basic accessibility check
@@ -69,12 +74,7 @@ jobs:
       - name: Create distribution package
         run: |
           mkdir -p dist
-          zip -r dist/Understanding-America-site.zip . \
-            -x ".git/*" \
-            -x ".github/*" \
-            -x "dist/*" \
-            -x "node_modules/*" \
-            -x "server.log"
+          cd build && zip -r ../dist/Understanding-America-site.zip . && cd ..
 
       - name: Upload site ZIP artifact
         uses: actions/upload-artifact@v7
