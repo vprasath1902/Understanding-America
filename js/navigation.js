@@ -99,101 +99,108 @@ const BOOK_NAV = [
   },
   {
     "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The Judicial Branch",
-    "href": "chapters/chapter-15-15-judicial-branch.html",
+    "title": "The Cabinet and Executive Departments",
+    "href": "chapters/chapter-15-15-cabinet-executive-departments.html",
     "kind": "chapter",
     "number": 15
   },
   {
-    "section": "Part III \u2014 Government in Daily Life",
-    "title": "Federal Government vs. State Government",
-    "href": "chapters/chapter-16-16-federalism.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "The Judicial Branch",
+    "href": "chapters/chapter-16-16-judicial-branch.html",
     "kind": "chapter",
     "number": 16
   },
   {
     "section": "Part III \u2014 Government in Daily Life",
-    "title": "Government Around Me",
-    "href": "chapters/chapter-17-17-government-around-me.html",
+    "title": "Federal Government vs. State Government",
+    "href": "chapters/chapter-17-17-federalism.html",
     "kind": "chapter",
     "number": 17
   },
   {
     "section": "Part III \u2014 Government in Daily Life",
-    "title": "A Day in the Life of an American Citizen",
-    "href": "chapters/chapter-18-18-day-in-life.html",
+    "title": "Government Around Me",
+    "href": "chapters/chapter-18-18-government-around-me.html",
     "kind": "chapter",
     "number": 18
   },
   {
     "section": "Part III \u2014 Government in Daily Life",
-    "title": "Elections and Voting",
-    "href": "chapters/chapter-19-19-elections.html",
+    "title": "A Day in the Life of an American Citizen",
+    "href": "chapters/chapter-19-19-day-in-life.html",
     "kind": "chapter",
     "number": 19
   },
   {
-    "section": "Part IV \u2014 Becoming a Citizen",
-    "title": "Becoming an American Citizen",
-    "href": "chapters/chapter-20-20-citizenship.html",
+    "section": "Part III \u2014 Government in Daily Life",
+    "title": "Elections and Voting",
+    "href": "chapters/chapter-20-20-elections.html",
     "kind": "chapter",
     "number": 20
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Principles of Democracy",
-    "href": "chapters/chapter-21-21-uscis-part-1.html",
+    "section": "Part IV \u2014 Becoming a Citizen",
+    "title": "Becoming an American Citizen",
+    "href": "chapters/chapter-21-21-citizenship.html",
     "kind": "chapter",
     "number": 21
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: System of Government",
-    "href": "chapters/chapter-22-22-uscis-part-2.html",
+    "title": "USCIS Questions Explained: Principles of Democracy",
+    "href": "chapters/chapter-22-22-uscis-part-1.html",
     "kind": "chapter",
     "number": 22
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: American History",
-    "href": "chapters/chapter-23-23-uscis-part-3.html",
+    "title": "USCIS Questions Explained: System of Government",
+    "href": "chapters/chapter-23-23-uscis-part-2.html",
     "kind": "chapter",
     "number": 23
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Modern America and Symbols",
-    "href": "chapters/chapter-24-24-uscis-part-4.html",
+    "title": "USCIS Questions Explained: American History",
+    "href": "chapters/chapter-24-24-uscis-part-3.html",
     "kind": "chapter",
     "number": 24
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "The Complete Naturalization Interview",
-    "href": "chapters/chapter-25-25-interview.html",
+    "title": "USCIS Questions Explained: Modern America and Symbols",
+    "href": "chapters/chapter-25-25-uscis-part-4.html",
     "kind": "chapter",
     "number": 25
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "Your First 30 Days as a U.S. Citizen",
-    "href": "chapters/chapter-26-26-first-30-days.html",
+    "title": "The Complete Naturalization Interview",
+    "href": "chapters/chapter-26-26-interview.html",
     "kind": "chapter",
     "number": 26
   },
   {
-    "section": "Part VI \u2014 Reference",
-    "title": "American Government Quick Reference Guide",
-    "href": "chapters/chapter-27-27-quick-reference.html",
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "Your First 30 Days as a U.S. Citizen",
+    "href": "chapters/chapter-27-27-first-30-days.html",
     "kind": "chapter",
     "number": 27
   },
   {
     "section": "Part VI \u2014 Reference",
-    "title": "An American Citizen\u2019s Life Journey",
-    "href": "chapters/chapter-28-28-life-journey.html",
+    "title": "American Government Quick Reference Guide",
+    "href": "chapters/chapter-28-28-quick-reference.html",
     "kind": "chapter",
     "number": 28
+  },
+  {
+    "section": "Part VI \u2014 Reference",
+    "title": "An American Citizen\u2019s Life Journey",
+    "href": "chapters/chapter-29-29-life-journey.html",
+    "kind": "chapter",
+    "number": 29
   },
   {
     "section": "Appendices",
@@ -334,8 +341,7 @@ const BOOK_NAV = [
     "href": "publication-qa.html",
     "kind": "reference",
     "number": null
-  },
-
+  }
 ];
 
 (function () {

@@ -122,7 +122,11 @@ Proof-of-concept chapters migrated to Markdown:
 - `06-constitution` — also demonstrates the new References / Related sections.
 - `21-uscis-part-1` — verified byte-identical to the original page.
 
-All 28 chapters are migrated to Markdown.
+All chapters are migrated to Markdown (the legacy `chapters/*.html` has been
+retired — the build generates every chapter from `src/chapters/`). The book now
+has **29 chapters**: "The Cabinet and Executive Departments" was inserted as
+Chapter 15 (after The Executive Branch), and chapters 15–28 were renumbered to
+16–29.
 
 ## Central reference: current officials & fees
 
