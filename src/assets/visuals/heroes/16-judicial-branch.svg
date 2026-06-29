@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h16-title h16-desc">
+  <title id="h16-title">Chapter 16 hero — The Judicial Branch</title>
+  <desc id="h16-desc">A flat geometric banner: a navy title panel beside a stylized courthouse with columns and a pediment, and a gold gavel, representing the federal courts.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">The Judicial</text>
+  <text class="title" x="80" y="306" font-size="46">Branch</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 16</text>
+
+  <!-- courthouse -->
+  <g transform="translate(900 250)">
+    <polygon points="-150,-40 150,-40 110,-90 -110,-90" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/>
+    <g fill="#ffffff" stroke="#d8dee8" stroke-width="2">
+      <rect x="-130" y="-40" width="20" height="140"/><rect x="-86" y="-40" width="20" height="140"/>
+      <rect x="-42" y="-40" width="20" height="140"/><rect x="2" y="-40" width="20" height="140"/>
+      <rect x="46" y="-40" width="20" height="140"/><rect x="90" y="-40" width="20" height="140"/>
+    </g>
+    <rect x="-160" y="100" width="320" height="22" rx="4" fill="#0b3c6d"/>
+  </g>
+  <!-- gavel -->
+  <g transform="translate(1070 360) rotate(-35)" fill="#c9a227" stroke="#0b3c6d" stroke-width="3">
+    <rect x="-18" y="-22" width="84" height="40" rx="8"/>
+    <rect x="62" y="-8" width="70" height="12" rx="6"/>
+  </g>
+  <rect x="1006" y="372" width="96" height="12" rx="6" fill="#0b3c6d"/>
+</svg>

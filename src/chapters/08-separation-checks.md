@@ -1,6 +1,9 @@
 ---
 title: "Separation of Powers and Checks & Balances"
 subtitle: "The Constitution divides power so no branch can dominate the others."
+hero:
+  src: "assets/visuals/heroes/08-separation-checks.svg"
+  alt: "Three branches linked in a cycle by gold arrows, showing checks and balances"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for Separation of Powers and Checks & Balances"

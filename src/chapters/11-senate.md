@@ -1,6 +1,9 @@
 ---
 title: "The United States Senate"
 subtitle: "The Senate gives every state an equal voice in Congress."
+hero:
+  src: "assets/visuals/heroes/11-senate.svg"
+  alt: "The number 100 with paired seats, representing two senators per state"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The United States Senate"

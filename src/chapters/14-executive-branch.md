@@ -1,6 +1,9 @@
 ---
 title: "The Executive Branch"
 subtitle: "The Executive Branch turns laws into action through departments, agencies, and federal employees."
+hero:
+  src: "assets/visuals/heroes/14-executive-branch.svg"
+  alt: "Two interlocking gears, representing the executive departments that carry out the laws"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The Executive Branch"

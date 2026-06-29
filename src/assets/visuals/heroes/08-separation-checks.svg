@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h08-title h08-desc">
+  <title id="h08-title">Chapter 8 hero — Separation of Powers and Checks and Balances</title>
+  <desc id="h08-desc">A flat geometric banner: a navy title panel beside three circles — legislative, executive, and judicial — linked by gold arrows in a cycle, showing how each branch checks the others.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .lbl{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="248" font-size="40">Separation of Powers</text>
+  <text class="title" x="80" y="298" font-size="30">and Checks &amp; Balances</text>
+  <text class="sub" x="84" y="350" font-size="22">Chapter 8</text>
+
+  <!-- cycle of three branches -->
+  <g fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round">
+    <path d="M935 150 A150 150 0 0 1 1045 330"/>
+    <path d="M1010 360 A150 150 0 0 1 800 360"/>
+    <path d="M765 330 A150 150 0 0 1 875 150"/>
+  </g>
+  <g fill="#c9a227">
+    <polygon points="1045,330 1056,300 1024,308"/>
+    <polygon points="800,360 770,350 788,378"/>
+    <polygon points="875,150 905,140 884,166"/>
+  </g>
+  <circle cx="930" cy="150" r="46" fill="#0b3c6d"/><text class="lbl" x="930" y="156" text-anchor="middle" font-size="15">Legis.</text>
+  <circle cx="1050" cy="340" r="46" fill="#b22234"/><text class="lbl" x="1050" y="346" text-anchor="middle" font-size="15">Exec.</text>
+  <circle cx="800" cy="340" r="46" fill="#2e8b57"/><text class="lbl" x="800" y="346" text-anchor="middle" font-size="15">Jud.</text>
+</svg>

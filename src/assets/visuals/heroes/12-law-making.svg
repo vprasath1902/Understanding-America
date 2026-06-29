@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h12-title h12-desc">
+  <title id="h12-title">Chapter 12 hero — How a Bill Becomes a Law</title>
+  <desc id="h12-desc">A flat geometric banner: a navy title panel beside a bill document, a gold arrow, and a sealed law with a checkmark, showing a bill becoming law.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .lbl{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">How a Bill</text>
+  <text class="title" x="80" y="306" font-size="44">Becomes a Law</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 12</text>
+
+  <!-- bill document -->
+  <rect x="730" y="150" width="150" height="190" rx="8" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/>
+  <g stroke="#667085" stroke-width="4" opacity="0.6"><line x1="752" y1="186" x2="858" y2="186"/><line x1="752" y1="214" x2="858" y2="214"/><line x1="752" y1="242" x2="858" y2="242"/><line x1="752" y1="270" x2="828" y2="270"/></g>
+  <text class="lbl" x="805" y="320" text-anchor="middle" font-size="18">BILL</text>
+
+  <!-- arrow -->
+  <path class="line" d="M900 245 H980" stroke="#0b3c6d" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <polygon points="980,228 1014,245 980,262" fill="#c9a227"/>
+
+  <!-- law seal -->
+  <circle cx="1080" cy="245" r="58" fill="#0b3c6d"/>
+  <circle cx="1080" cy="245" r="58" fill="none" stroke="#c9a227" stroke-width="4"/>
+  <path d="M1056 246 l16 18 l30 -38" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="title" x="1080" y="330" text-anchor="middle" font-size="18">LAW</text>
+</svg>

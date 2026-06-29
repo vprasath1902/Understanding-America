@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h11-title h11-desc">
+  <title id="h11-title">Chapter 11 hero — The United States Senate</title>
+  <desc id="h11-desc">A flat geometric banner: a navy title panel beside the number 100 and two seats per state motif, representing the 100 members of the Senate — two from each state.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+    .cap{font-family:Arial,Helvetica,sans-serif;fill:#667085}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="42">The United States</text>
+  <text class="title" x="80" y="300" font-size="42">Senate</text>
+  <text class="sub" x="84" y="350" font-size="22">Chapter 11</text>
+
+  <text class="big" x="935" y="210" text-anchor="middle" font-size="120">100</text>
+  <text class="cap" x="935" y="246" text-anchor="middle" font-size="22">two senators per state</text>
+
+  <!-- two seats per state motif -->
+  <g>
+    <circle cx="890" cy="320" r="14" fill="#0b3c6d"/><circle cx="922" cy="320" r="14" fill="#b22234"/>
+    <text class="cap" x="906" y="360" text-anchor="middle" font-size="14">×50 states</text>
+    <circle cx="980" cy="320" r="14" fill="#0b3c6d"/><circle cx="1012" cy="320" r="14" fill="#b22234"/>
+  </g>
+</svg>

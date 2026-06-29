@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h10-title h10-desc">
+  <title id="h10-title">Chapter 10 hero — The House of Representatives</title>
+  <desc id="h10-desc">A flat geometric banner: a navy title panel beside the number 435 and rows of small seats, representing the 435 members of the House of Representatives.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+    .cap{font-family:Arial,Helvetica,sans-serif;fill:#667085}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="42">The House of</text>
+  <text class="title" x="80" y="300" font-size="42">Representatives</text>
+  <text class="sub" x="84" y="350" font-size="22">Chapter 10</text>
+
+  <text class="big" x="935" y="220" text-anchor="middle" font-size="120">435</text>
+  <text class="cap" x="935" y="256" text-anchor="middle" font-size="22">voting members</text>
+
+  <!-- rows of seats -->
+  <g fill="#b22234">
+    <circle cx="775" cy="300" r="8"/><circle cx="807" cy="300" r="8"/><circle cx="839" cy="300" r="8"/><circle cx="871" cy="300" r="8"/><circle cx="903" cy="300" r="8"/><circle cx="935" cy="300" r="8"/><circle cx="967" cy="300" r="8"/><circle cx="999" cy="300" r="8"/><circle cx="1031" cy="300" r="8"/><circle cx="1063" cy="300" r="8"/><circle cx="1095" cy="300" r="8"/>
+    <circle cx="775" cy="332" r="8"/><circle cx="807" cy="332" r="8"/><circle cx="839" cy="332" r="8"/><circle cx="871" cy="332" r="8"/><circle cx="903" cy="332" r="8"/><circle cx="935" cy="332" r="8"/><circle cx="967" cy="332" r="8"/><circle cx="999" cy="332" r="8"/><circle cx="1031" cy="332" r="8"/><circle cx="1063" cy="332" r="8"/><circle cx="1095" cy="332" r="8"/>
+    <circle cx="775" cy="364" r="8"/><circle cx="807" cy="364" r="8"/><circle cx="839" cy="364" r="8"/><circle cx="871" cy="364" r="8"/><circle cx="903" cy="364" r="8"/><circle cx="935" cy="364" r="8"/><circle cx="967" cy="364" r="8"/><circle cx="999" cy="364" r="8"/><circle cx="1031" cy="364" r="8"/><circle cx="1063" cy="364" r="8"/><circle cx="1095" cy="364" r="8"/>
+  </g>
+</svg>

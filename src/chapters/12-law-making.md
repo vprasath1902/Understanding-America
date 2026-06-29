@@ -1,6 +1,9 @@
 ---
 title: "How a Bill Becomes a Law"
 subtitle: "A bill becomes law only after passing through several constitutional steps."
+hero:
+  src: "assets/visuals/heroes/12-law-making.svg"
+  alt: "A bill document with an arrow to a sealed law marked with a checkmark"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for How a Bill Becomes a Law"
