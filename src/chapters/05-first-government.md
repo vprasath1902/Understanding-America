@@ -1,6 +1,9 @@
 ---
 title: "America’s First Government"
 subtitle: "The Articles of Confederation created a weak national government that soon proved unable to solve major national problems."
+hero:
+  src: "assets/visuals/heroes/05-first-government.svg"
+  alt: "A parchment ringed by thirteen gold stars for the thirteen states under the Articles of Confederation"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for America’s First Government"

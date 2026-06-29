@@ -1,6 +1,9 @@
 ---
 title: "The Road to Independence"
 subtitle: "After 1763, taxes, military presence, and arguments over representation pushed many colonists toward independence."
+hero:
+  src: "assets/visuals/heroes/03-road-to-independence.svg"
+  alt: "Parchment with a quill and a gold liberty bell, evoking the road to independence"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The Road to Independence"
