@@ -15,6 +15,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import { renderChapter } from "../templates/chapter.mjs";
 import { renderPage } from "../templates/page.mjs";
+import { generateVisuals } from "./visuals/generate.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC_CHAPTERS = path.join(ROOT, "src", "chapters");
@@ -78,6 +79,10 @@ function copySite() {
   for (const f of ROOT_HTML)
     fs.copyFileSync(path.join(HTML_DIR, f), path.join(BUILD, f));
   fs.copyFileSync(path.join(ROOT, "index.html"), path.join(BUILD, "index.html"));
+  // Authored visual assets (heroes, maps, etc.) live in src/assets/.
+  const srcAssets = path.join(ROOT, "src", "assets");
+  if (fs.existsSync(srcAssets))
+    fs.cpSync(srcAssets, path.join(BUILD, "assets"), { recursive: true });
 }
 
 // ---- Render one migrated chapter -------------------------------------------
@@ -93,6 +98,8 @@ function renderOne(ch, manifest, byOutput) {
     quote: data.quote,
     diagram: data.diagram,
     objectives: data.objectives || [],
+    hero: data.hero || null,
+    figures: data.figures || [],
     bodyHtml: content.trim() ? marked.parse(content.trim()) : "",
     callout: data.callout,
     visualPack: data.visual_pack,
@@ -145,6 +152,7 @@ function main() {
   const byOutput = Object.fromEntries(manifest.map((c) => [c.output, c]));
   copySite();
   fs.mkdirSync(path.join(BUILD, "chapters"), { recursive: true });
+  const visuals = generateVisuals(BUILD);
 
   const migrated = [];
   for (const ch of manifest) {
@@ -161,6 +169,8 @@ function main() {
   if (migrated.length) console.log(`  migrated: ${migrated.join(", ")}`);
   if (appendices.length)
     console.log(`  appendix pages:     ${appendices.join(", ")}`);
+  if (visuals.length)
+    console.log(`  generated visuals:  ${visuals.length}`);
 }
 
 main();

@@ -1,9 +1,16 @@
 ---
 title: "The World Before America"
 subtitle: "Before there was a United States, North America was home to Indigenous nations and later European settlements that shaped the future country."
+hero:
+  src: "assets/visuals/heroes/01-world-before-america.svg"
+  alt: "Stylized globe and sailing ship evoking the age of exploration before America"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The World Before America"
+figures:
+  - src: "assets/visuals/timelines/early-america.svg"
+    caption: "From the world before America to the first lasting settlements"
+    alt: "Timeline: ~1000 Indigenous nations, 1492 Columbus, 1565 St. Augustine, 1607 Jamestown, 1620 Plymouth"
 objectives:
   - "Recognize that the United States did not always exist"
   - "Understand why Europeans came to North America"

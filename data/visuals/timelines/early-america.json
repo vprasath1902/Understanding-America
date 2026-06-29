@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "early-america",
+  "title": "From the World Before America to First Settlements",
+  "desc": "A timeline of early American history: around 1000 Indigenous nations thrive across the continent, 1492 Columbus reaches the Americas, 1565 St. Augustine is founded, 1607 Jamestown, and 1620 Plymouth.",
+  "events": [
+    { "year": "~1000", "label": "Indigenous nations" },
+    { "year": "1492", "label": "Columbus arrives" },
+    { "year": "1565", "label": "St. Augustine" },
+    { "year": "1607", "label": "Jamestown" },
+    { "year": "1620", "label": "Plymouth" }
+  ]
+}
