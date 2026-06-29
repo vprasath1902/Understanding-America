@@ -101,8 +101,36 @@ src/assets/visuals/
 Filenames: lowercase, hyphenated; chapter-bound assets prefix the chapter number
 (e.g. `15-cabinet-structure.svg`).
 
+## Build integration — the figures system (W2)
+
+Chapters declare visuals in front-matter:
+
+```yaml
+hero:
+  src: "assets/visuals/heroes/01-world-before-america.svg"
+  alt: "Short description of the hero image"
+figures:
+  - src: "assets/visuals/timelines/early-america.svg"
+    caption: "What the figure shows"          # rendered as "Figure 1.1 — ..."
+    alt: "Accessible description of the figure"
+```
+
+- The `hero` renders as a banner under the chapter title; `figures` render as
+  numbered, captioned `<figure>` blocks after the body (numbering derives from
+  the chapter number). `print.css` keeps heroes/figures from breaking across
+  pages.
+- **Authored** assets (heroes, historical maps) live in `src/assets/visuals/`
+  and are copied into the build.
+- **Generated** assets come from data: `data/visuals/**/*.json` declares a
+  `type` (e.g. `timeline`) + data; the toolkit in `scripts/visuals/` renders
+  them into `build/assets/visuals/<type>/`. The site build runs this
+  automatically; `npm run visuals [outDir]` runs it standalone.
+
 ## Status
 
-W1 deliverables complete: tokens, conventions, accessibility rules, hero
-decision, and four reference visuals. Next: **W2 — visual toolkit + figures
-system** (build integration), then W3/W4 production.
+- **W1 complete:** tokens, conventions, accessibility rules, hero decision, four
+  reference visuals.
+- **W2 complete:** visual toolkit (`scripts/visuals/`), `hero`/`figures`
+  front-matter, captioned/numbered figure rendering, print rules, asset build
+  integration, and the first timeline generator — demonstrated on Chapter 1.
+- **Next:** W3 (generated visuals at scale) and W4 (authored heroes/maps).

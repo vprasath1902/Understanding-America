@@ -97,6 +97,8 @@ export function renderChapter(ctx) {
     quote = "Understanding is stronger than memorization. This chapter connects facts to meaning and real civic life.",
     diagram,
     objectives = [],
+    hero,
+    figures = [],
     bodyHtml = "",
     callout,
     visualPack,
@@ -112,6 +114,26 @@ export function renderChapter(ctx) {
     ? `\n<div class="diagram"><img src="${rootPrefix}${esc(
         diagram.src
       )}" alt="${esc(diagram.alt)}"></div>`
+    : "";
+
+  const heroBlock = hero
+    ? `\n<div class="chapter-hero-image"><img src="${rootPrefix}${esc(
+        hero.src
+      )}" alt="${esc(hero.alt)}" loading="lazy"></div>`
+    : "";
+
+  const figuresBlock = figures.length
+    ? "\n" +
+      figures
+        .map(
+          (f, i) =>
+            `<figure class="figure"><img src="${rootPrefix}${esc(
+              f.src
+            )}" alt="${esc(f.alt)}" loading="lazy"><figcaption>Figure ${number}.${
+              i + 1
+            } — ${esc(f.caption)}</figcaption></figure>`
+        )
+        .join("\n")
     : "";
 
   const objectivesBlock = objectives.length
@@ -166,8 +188,8 @@ export function renderChapter(ctx) {
     title
   )}</h1><p class="subtitle">${esc(subtitle)}</p><div class="quote">${esc(
     quote
-  )}</div></div>${objectivesBlock}${diagramBlock}
-${bodyHtml}${calloutBlock}
+  )}</div></div>${heroBlock}${objectivesBlock}${diagramBlock}
+${bodyHtml}${figuresBlock}${calloutBlock}
 ${visualPackBlock}${summaryBlock}${termsBlock}${reviewBlock}${referencesSection(
     ctx.references
   )}${furtherReadingSection(ctx.further_reading)}${relatedSection(ctx)}

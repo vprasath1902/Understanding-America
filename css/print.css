@@ -113,4 +113,51 @@
   .page-number::after {
     content: counter(page);
   }
+
+  /* Hero images and figures (Milestone 7 visuals) */
+  .chapter-hero-image,
+  .figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .chapter-hero-image img,
+  .figure img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .figure figcaption {
+    font-size: 9pt;
+    color: #444;
+  }
+}
+
+/* Hero images and figures — shared screen layout */
+.chapter-hero-image {
+  margin: 18px 0 8px;
+}
+
+.chapter-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.figure {
+  margin: 24px 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figure figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #667085;
+  text-align: center;
 }
