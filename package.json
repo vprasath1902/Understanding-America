@@ -1,0 +1,18 @@
+{
+  "name": "understanding-america",
+  "version": "6.0.0-dev",
+  "private": true,
+  "description": "Understanding America — an interactive digital handbook for U.S. history, government, the Constitution, and citizenship.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('build',{recursive:true,force:true}))\"",
+    "serve": "npx --yes http-server build -p 8080"
+  },
+  "author": "Venkata Prasath",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.0"
+  }
+}
