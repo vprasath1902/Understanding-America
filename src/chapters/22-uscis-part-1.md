@@ -1,6 +1,9 @@
 ---
 title: "USCIS Questions Explained: Principles of Democracy"
 subtitle: The first civics questions focus on the Constitution, Declaration, and fundamental freedoms.
+hero:
+  src: "assets/visuals/heroes/22-uscis-part-1.svg"
+  alt: "A civics-test clipboard with green checkmarks"
 diagram:
   src: svg/constitution-explorer.svg
   alt: "Visual diagram for USCIS Questions Explained: Principles of Democracy"

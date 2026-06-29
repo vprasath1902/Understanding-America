@@ -1,6 +1,9 @@
 ---
 title: "USCIS Questions Explained: Modern America and Symbols"
 subtitle: "The final civics questions cover modern history, geography, symbols, and holidays."
+hero:
+  src: "assets/visuals/heroes/25-uscis-part-4.svg"
+  alt: "An American flag beside a torch flame, symbols of the United States"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for USCIS Questions Explained: Modern America and Symbols"

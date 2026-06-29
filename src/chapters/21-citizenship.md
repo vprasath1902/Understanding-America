@@ -1,6 +1,9 @@
 ---
 title: "Becoming an American Citizen"
 subtitle: "Naturalization is the process through which eligible permanent residents become U.S. citizens."
+hero:
+  src: "assets/visuals/heroes/21-citizenship.svg"
+  alt: "A naturalization certificate with a gold seal and a small American flag"
 diagram:
   src: "svg/naturalization.svg"
   alt: "Visual diagram for Becoming an American Citizen"

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h27-title h27-desc">
+  <title id="h27-title">Chapter 27 hero — Your First 30 Days as a U.S. Citizen</title>
+  <desc id="h27-desc">A flat geometric banner: a navy title panel beside a calendar showing the number 30 with a gold star, representing the first thirty days as a citizen.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">Your First</text>
+  <text class="title" x="80" y="306" font-size="46">30 Days</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 27</text>
+
+  <!-- calendar -->
+  <rect x="800" y="130" width="270" height="240" rx="14" fill="#ffffff" stroke="#0b3c6d" stroke-width="4"/>
+  <rect x="800" y="130" width="270" height="54" rx="14" fill="#b22234"/>
+  <rect x="800" y="170" width="270" height="14" fill="#b22234"/>
+  <rect x="838" y="116" width="16" height="36" rx="6" fill="#0b3c6d"/>
+  <rect x="1016" y="116" width="16" height="36" rx="6" fill="#0b3c6d"/>
+  <text class="big" x="935" y="312" text-anchor="middle" font-size="110">30</text>
+  <polygon fill="#c9a227" points="935,330 942,352 965,352 946,366 953,388 935,374 917,388 924,366 905,352 928,352"/>
+</svg>
