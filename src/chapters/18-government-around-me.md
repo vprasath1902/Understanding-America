@@ -1,6 +1,9 @@
 ---
 title: "Government Around Me"
 subtitle: "Government becomes easier to understand when connected to your own home and community."
+hero:
+  src: "assets/visuals/heroes/18-government-around-me.svg"
+  alt: "A small town of civic buildings — school, city hall, and library — with a location pin"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for Government Around Me"

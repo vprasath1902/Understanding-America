@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h20-title h20-desc">
+  <title id="h20-title">Chapter 20 hero — Elections and Voting</title>
+  <desc id="h20-desc">A flat geometric banner: a navy title panel beside a ballot box receiving a ballot marked with a checkmark, with a gold star, representing elections and voting.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">Elections</text>
+  <text class="title" x="80" y="306" font-size="46">and Voting</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 20</text>
+
+  <!-- ballot going in -->
+  <g transform="rotate(-12 930 170)">
+    <rect x="862" y="120" width="136" height="92" rx="6" fill="#ffffff" stroke="#0b3c6d" stroke-width="3"/>
+    <path d="M884 158 l16 18 l30 -38" fill="none" stroke="#2e8b57" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="884" y1="190" x2="976" y2="190" stroke="#667085" stroke-width="4"/>
+  </g>
+  <!-- ballot box -->
+  <g>
+    <rect x="820" y="240" width="220" height="150" rx="10" fill="#0b3c6d"/>
+    <rect x="856" y="234" width="148" height="16" rx="6" fill="#c9a227"/>
+    <rect x="900" y="200" width="60" height="40" rx="4" fill="#b22234"/>
+    <polygon fill="#c9a227" points="930,300 940,330 972,330 946,349 956,380 930,361 904,380 914,349 888,330 920,330"/>
+  </g>
+</svg>

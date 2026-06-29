@@ -1,6 +1,9 @@
 ---
 title: "Elections and Voting"
 subtitle: "Voting is one of the central rights and responsibilities of citizenship."
+hero:
+  src: "assets/visuals/heroes/20-elections.svg"
+  alt: "A ballot box receiving a ballot marked with a checkmark"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for Elections and Voting"

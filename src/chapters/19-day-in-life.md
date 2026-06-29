@@ -1,6 +1,9 @@
 ---
 title: "A Day in the Life of an American Citizen"
 subtitle: "Ordinary daily activities often involve multiple levels of government."
+hero:
+  src: "assets/visuals/heroes/19-day-in-life.svg"
+  alt: "A clock surrounded by everyday civic icons — a road, a book, and a mail envelope"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for A Day in the Life of an American Citizen"
