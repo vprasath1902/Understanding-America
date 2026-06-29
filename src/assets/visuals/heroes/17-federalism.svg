@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h17-title h17-desc">
+  <title id="h17-title">Chapter 17 hero — Federal Government vs. State Government</title>
+  <desc id="h17-desc">A flat geometric banner: a navy title panel beside three stacked tiers labeled Federal, State, and Local, showing how federalism divides power among levels of government.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .tier{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">Federal, State,</text>
+  <text class="title" x="80" y="306" font-size="44">and Local</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 17</text>
+
+  <rect x="800" y="110" width="280" height="76" rx="14" fill="#0b3c6d"/>
+  <text class="tier" x="940" y="156" text-anchor="middle" font-size="22">Federal</text>
+  <rect x="770" y="202" width="340" height="76" rx="14" fill="#2e8b57"/>
+  <text class="tier" x="940" y="248" text-anchor="middle" font-size="22">State</text>
+  <rect x="740" y="294" width="400" height="76" rx="14" fill="#c9a227"/>
+  <text class="tier" x="940" y="340" text-anchor="middle" font-size="22">Local</text>
+</svg>

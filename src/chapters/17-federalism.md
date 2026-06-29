@@ -1,6 +1,9 @@
 ---
 title: "Federal Government vs. State Government"
 subtitle: "Federalism divides power between national and state governments."
+hero:
+  src: "assets/visuals/heroes/17-federalism.svg"
+  alt: "Three stacked tiers labeled Federal, State, and Local"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for Federal Government vs. State Government"

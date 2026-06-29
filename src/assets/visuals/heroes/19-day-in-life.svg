@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h19-title h19-desc">
+  <title id="h19-title">Chapter 19 hero — A Day in the Life of an American Citizen</title>
+  <desc id="h19-desc">A flat geometric banner: a navy title panel beside a clock surrounded by everyday civic icons — a road, a book, and a mail envelope — showing government in daily life.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">A Day in the</text>
+  <text class="title" x="80" y="306" font-size="46">Life</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 19</text>
+
+  <!-- clock -->
+  <circle cx="930" cy="240" r="96" fill="#ffffff" stroke="#0b3c6d" stroke-width="6"/>
+  <circle cx="930" cy="240" r="8" fill="#b22234"/>
+  <line x1="930" y1="240" x2="930" y2="186" stroke="#0b3c6d" stroke-width="6" stroke-linecap="round"/>
+  <line x1="930" y1="240" x2="972" y2="262" stroke="#c9a227" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- envelope -->
+  <g transform="translate(770 130)">
+    <rect x="-40" y="-26" width="80" height="56" rx="6" fill="#c9a227" stroke="#0b3c6d" stroke-width="3"/>
+    <path d="M-40 -26 L0 6 L40 -26" fill="none" stroke="#0b3c6d" stroke-width="3"/>
+  </g>
+  <!-- book -->
+  <g transform="translate(1090 150)">
+    <rect x="-36" y="-26" width="72" height="52" rx="4" fill="#2e8b57" stroke="#0b3c6d" stroke-width="3"/>
+    <line x1="0" y1="-26" x2="0" y2="26" stroke="#0b3c6d" stroke-width="3"/>
+  </g>
+  <!-- road -->
+  <g transform="translate(1080 350)">
+    <path d="M-50 40 L-16 -40 L16 -40 L50 40 Z" fill="#0b3c6d"/>
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#c9a227" stroke-width="5" stroke-dasharray="10 10"/>
+  </g>
+</svg>
