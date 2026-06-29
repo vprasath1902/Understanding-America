@@ -1,6 +1,9 @@
 ---
 title: "American Government Quick Reference Guide"
 subtitle: "This chapter is a concise reference for the entire structure of American government."
+hero:
+  src: "assets/visuals/heroes/28-quick-reference.svg"
+  alt: "An open book with index tabs and a gold star"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for American Government Quick Reference Guide"

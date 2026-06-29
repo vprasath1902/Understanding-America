@@ -1,6 +1,9 @@
 ---
 title: "An American Citizen’s Life Journey"
 subtitle: "Government supports citizens through many life stages, from birth records to retirement benefits."
+hero:
+  src: "assets/visuals/heroes/29-life-journey.svg"
+  alt: "A winding path with milestone markers leading to a flag"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for An American Citizen’s Life Journey"

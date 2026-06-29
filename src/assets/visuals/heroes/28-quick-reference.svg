@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h28-title h28-desc">
+  <title id="h28-title">Chapter 28 hero — American Government Quick Reference Guide</title>
+  <desc id="h28-desc">A flat geometric banner: a navy title panel beside an open book with index tabs and a gold star, representing a quick reference guide.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">Quick Reference</text>
+  <text class="title" x="80" y="306" font-size="46">Guide</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 28</text>
+
+  <!-- index tabs -->
+  <g>
+    <rect x="1020" y="140" width="60" height="30" rx="6" fill="#b22234"/>
+    <rect x="1020" y="190" width="60" height="30" rx="6" fill="#2e8b57"/>
+    <rect x="1020" y="240" width="60" height="30" rx="6" fill="#c9a227"/>
+  </g>
+  <!-- open book -->
+  <g>
+    <path d="M760 150 Q930 120 930 150 L930 350 Q930 320 760 350 Z" fill="#ffffff" stroke="#0b3c6d" stroke-width="3"/>
+    <path d="M1040 150 Q930 120 930 150 L930 350 Q930 320 1040 350 Z" fill="#eef4fb" stroke="#0b3c6d" stroke-width="3"/>
+    <line x1="930" y1="150" x2="930" y2="350" stroke="#0b3c6d" stroke-width="3"/>
+    <g stroke="#667085" stroke-width="3" opacity="0.55">
+      <line x1="792" y1="196" x2="900" y2="184"/><line x1="792" y1="226" x2="900" y2="214"/><line x1="792" y1="256" x2="900" y2="244"/><line x1="792" y1="286" x2="900" y2="274"/>
+      <line x1="960" y1="184" x2="1010" y2="190"/><line x1="960" y1="214" x2="1010" y2="220"/><line x1="960" y1="244" x2="1010" y2="250"/><line x1="960" y1="274" x2="1010" y2="280"/>
+    </g>
+  </g>
+  <polygon fill="#c9a227" points="930,110 937,132 960,132 941,146 948,168 930,154 912,168 919,146 900,132 923,132"/>
+</svg>

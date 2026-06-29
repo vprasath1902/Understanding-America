@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h30-title h30-desc">
+  <title id="h30-title">Chapter 30 hero — Elections and the Electoral College</title>
+  <desc id="h30-desc">A flat geometric banner: a navy title panel beside a grid of state tiles and the number 270, representing the Electoral College and the votes needed to win.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+    .cap{font-family:Arial,Helvetica,sans-serif;fill:#667085}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="252" font-size="42">Elections &amp; the</text>
+  <text class="title" x="80" y="302" font-size="42">Electoral College</text>
+  <text class="sub" x="84" y="352" font-size="22">Chapter 30</text>
+
+  <!-- tile grid -->
+  <g>
+    <rect x="724" y="120" width="46" height="46" rx="6" fill="#0b3c6d"/><rect x="778" y="120" width="46" height="46" rx="6" fill="#dbeafe"/><rect x="832" y="120" width="46" height="46" rx="6" fill="#0b3c6d"/><rect x="886" y="120" width="46" height="46" rx="6" fill="#dbeafe"/>
+    <rect x="724" y="174" width="46" height="46" rx="6" fill="#dbeafe"/><rect x="778" y="174" width="46" height="46" rx="6" fill="#0b3c6d"/><rect x="832" y="174" width="46" height="46" rx="6" fill="#dbeafe"/><rect x="886" y="174" width="46" height="46" rx="6" fill="#0b3c6d"/>
+    <rect x="724" y="228" width="46" height="46" rx="6" fill="#0b3c6d"/><rect x="778" y="228" width="46" height="46" rx="6" fill="#dbeafe"/><rect x="832" y="228" width="46" height="46" rx="6" fill="#0b3c6d"/><rect x="886" y="228" width="46" height="46" rx="6" fill="#dbeafe"/>
+  </g>
+  <!-- 270 to win -->
+  <text class="big" x="1040" y="220" text-anchor="middle" font-size="92">270</text>
+  <text class="cap" x="1040" y="256" text-anchor="middle" font-size="20">to win of 538</text>
+  <polygon fill="#c9a227" points="1040,290 1048,314 1073,314 1053,329 1061,353 1040,338 1019,353 1027,329 1007,314 1032,314"/>
+</svg>

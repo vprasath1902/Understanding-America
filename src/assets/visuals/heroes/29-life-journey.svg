@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h29-title h29-desc">
+  <title id="h29-title">Chapter 29 hero — An American Citizen's Life Journey</title>
+  <desc id="h29-desc">A flat geometric banner: a navy title panel beside a winding path with milestone markers leading to a flag, representing a citizen's life journey.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">A Citizen’s</text>
+  <text class="title" x="80" y="306" font-size="46">Life Journey</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 29</text>
+
+  <!-- winding path -->
+  <path d="M740 400 Q840 300 920 340 Q1010 386 1030 280 Q1046 196 1110 150" fill="none" stroke="#c9a227" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+  <!-- milestone markers -->
+  <circle cx="740" cy="400" r="14" fill="#0b3c6d"/>
+  <circle cx="920" cy="340" r="14" fill="#b22234"/>
+  <circle cx="1030" cy="280" r="14" fill="#2e8b57"/>
+  <!-- flag at the destination -->
+  <g transform="translate(1110 150)">
+    <rect x="-3" y="-10" width="6" height="90" fill="#667085"/>
+    <path d="M3 -8 L70 6 L3 30 Z" fill="#b22234" stroke="#0b3c6d" stroke-width="2"/>
+  </g>
+</svg>

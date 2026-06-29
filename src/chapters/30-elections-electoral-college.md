@@ -1,6 +1,9 @@
 ---
 title: "Elections and the Electoral College"
 subtitle: "The United States holds many different elections — and chooses its President through the Electoral College."
+hero:
+  src: "assets/visuals/heroes/30-elections-electoral-college.svg"
+  alt: "A grid of state tiles beside the number 270, representing the Electoral College"
 diagram:
   src: "svg/election-cycle.svg"
   alt: "Visual diagram for Elections and the Electoral College"
