@@ -203,6 +203,13 @@ const BOOK_NAV = [
     "number": 29
   },
   {
+    "section": "Part VII — Understanding Elections",
+    "title": "Elections and the Electoral College",
+    "href": "chapters/chapter-30-30-elections-electoral-college.html",
+    "kind": "chapter",
+    "number": 30
+  },
+  {
     "section": "Appendices",
     "title": "Appendix A: The Constitution Reader-Friendly Edition",
     "href": "appendices/appendix-a-constitution.html",
