@@ -1,6 +1,9 @@
 ---
 title: "Congress"
 subtitle: "Congress is the legislative branch and consists of the House of Representatives and the Senate."
+hero:
+  src: "assets/visuals/heroes/09-congress.svg"
+  alt: "A stylized U.S. Capitol with a central dome, where Congress meets"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for Congress"

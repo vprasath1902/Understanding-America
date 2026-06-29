@@ -1,6 +1,9 @@
 ---
 title: "The Judicial Branch"
 subtitle: "The courts interpret laws and protect the Constitution."
+hero:
+  src: "assets/visuals/heroes/16-judicial-branch.svg"
+  alt: "A stylized courthouse with columns and a pediment, with a gold gavel"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The Judicial Branch"

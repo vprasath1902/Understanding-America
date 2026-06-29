@@ -1,6 +1,9 @@
 ---
 title: "The President of the United States"
 subtitle: "The President leads the Executive Branch but does not rule the country."
+hero:
+  src: "assets/visuals/heroes/13-president.svg"
+  alt: "A stylized White House with columns, a pediment, and a flag"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The President of the United States"

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h15-title h15-desc">
+  <title id="h15-title">Chapter 15 hero — The Cabinet and Executive Departments</title>
+  <desc id="h15-desc">A flat geometric banner: a navy title panel beside an oval cabinet table ringed by seats, with a gold star, representing the President's Cabinet of department leaders.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="46">The Cabinet</text>
+  <text class="title" x="80" y="306" font-size="44">&amp; Departments</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 15</text>
+
+  <!-- cabinet table -->
+  <ellipse cx="930" cy="240" rx="150" ry="86" fill="#c9a227" stroke="#0b3c6d" stroke-width="4"/>
+  <ellipse cx="930" cy="240" rx="110" ry="56" fill="#f4ecd8"/>
+  <!-- seats around the table -->
+  <g fill="#0b3c6d">
+    <circle cx="930" cy="128" r="16"/><circle cx="1030" cy="158" r="16"/><circle cx="1080" cy="240" r="16"/>
+    <circle cx="1030" cy="322" r="16"/><circle cx="930" cy="352" r="16"/><circle cx="830" cy="322" r="16"/>
+    <circle cx="780" cy="240" r="16"/><circle cx="830" cy="158" r="16"/>
+  </g>
+  <polygon fill="#b22234" points="930,212 938,236 964,236 943,251 951,275 930,260 909,275 917,251 896,236 922,236"/>
+</svg>

@@ -1,6 +1,9 @@
 ---
 title: "The Cabinet and Executive Departments"
 subtitle: "The Cabinet is the President's team of department leaders who run the federal government day to day."
+hero:
+  src: "assets/visuals/heroes/15-cabinet.svg"
+  alt: "An oval cabinet table ringed by seats, representing the President's Cabinet"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for The Cabinet and Executive Departments"

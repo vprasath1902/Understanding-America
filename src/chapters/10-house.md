@@ -1,6 +1,9 @@
 ---
 title: "The House of Representatives"
 subtitle: "The House is designed to stay close to the people through population-based districts and two-year terms."
+hero:
+  src: "assets/visuals/heroes/10-house.svg"
+  alt: "The number 435 with rows of seats, representing the members of the House"
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The House of Representatives"
