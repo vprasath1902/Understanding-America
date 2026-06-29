@@ -21,9 +21,11 @@ const BUILD = path.join(ROOT, "build");
 
 // Assets and pages copied verbatim into build/ (the parts not yet generated).
 const COPY_DIRS = ["css", "js", "svg", "appendices", "chapters"];
-const ROOT_HTML = fs
-  .readdirSync(ROOT)
-  .filter((f) => f.endsWith(".html"));
+// Static tool/QA pages live in html/ and are flattened into build/ root so
+// their relative links (css/..., quiz.html) resolve. index.html stays at the
+// repo root (entry point / GitHub Pages) and is also copied into build/ root.
+const HTML_DIR = path.join(ROOT, "html");
+const ROOT_HTML = fs.readdirSync(HTML_DIR).filter((f) => f.endsWith(".html"));
 
 // ---- Read the ordering source of truth -------------------------------------
 
@@ -71,7 +73,9 @@ function copySite() {
     if (fs.existsSync(from))
       fs.cpSync(from, path.join(BUILD, dir), { recursive: true });
   }
-  for (const f of ROOT_HTML) fs.copyFileSync(path.join(ROOT, f), path.join(BUILD, f));
+  for (const f of ROOT_HTML)
+    fs.copyFileSync(path.join(HTML_DIR, f), path.join(BUILD, f));
+  fs.copyFileSync(path.join(ROOT, "index.html"), path.join(BUILD, "index.html"));
 }
 
 // ---- Render one migrated chapter -------------------------------------------

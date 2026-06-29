@@ -22,9 +22,15 @@ scripts/
   build.mjs        # Static site generator
 build/             # Generated site (git-ignored — never edit by hand)
 docs/              # Project documentation
+html/              # Static tool/QA pages (explorer, quiz, glossary, ...)
+index.html         # Site entry point (stays at root; copied into build/)
 css/ js/ svg/      # Shared assets (copied into build/ as-is for now)
-*.html             # Interactive tools + legacy chapter pages (copied into build/)
+chapters/          # Legacy chapter HTML (still copied, but Markdown is canonical)
 ```
+
+The site is published to GitHub Pages by `.github/workflows/deploy-pages.yml`,
+which builds and deploys `build/`. The `html/` pages are flattened into the
+`build/` root so their relative links resolve.
 
 ## How the build works
 
