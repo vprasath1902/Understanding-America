@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h26-title h26-desc">
+  <title id="h26-title">Chapter 26 hero — The Complete Naturalization Interview</title>
+  <desc id="h26-desc">A flat geometric banner: a navy title panel beside two speech bubbles — a question and an answer with a checkmark — representing the naturalization interview.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .q{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="40">The Naturalization</text>
+  <text class="title" x="80" y="306" font-size="44">Interview</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 26</text>
+
+  <!-- question bubble -->
+  <g>
+    <rect x="760" y="120" width="190" height="120" rx="18" fill="#0b3c6d"/>
+    <polygon points="800,240 840,240 800,280" fill="#0b3c6d"/>
+    <text class="q" x="855" y="200" text-anchor="middle" font-size="80">?</text>
+  </g>
+  <!-- answer bubble -->
+  <g>
+    <rect x="960" y="240" width="200" height="120" rx="18" fill="#c9a227"/>
+    <polygon points="1120,360 1080,360 1120,400" fill="#c9a227"/>
+    <path d="M1010 300 l24 26 l46 -54" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

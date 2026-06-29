@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h23-title h23-desc">
+  <title id="h23-title">Chapter 23 hero — USCIS Civics: System of Government</title>
+  <desc id="h23-desc">A flat geometric banner: a navy title panel beside three columns representing the three branches that make up the system of government.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .series{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#c9a227}
+    .lbl{font-family:Arial,Helvetica,sans-serif;fill:#667085}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="series" x="80" y="212" font-size="22">USCIS Civics Test</text>
+  <text class="title" x="80" y="262" font-size="42">System of</text>
+  <text class="title" x="80" y="312" font-size="42">Government</text>
+  <text class="sub" x="84" y="360" font-size="22">Chapter 23</text>
+
+  <!-- three columns -->
+  <g>
+    <g transform="translate(800 0)"><rect x="-10" y="160" width="100" height="20" fill="#0b3c6d"/><rect x="0" y="180" width="80" height="150" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/><g fill="#fff" stroke="#d8dee8" stroke-width="2"><rect x="10" y="180" width="14" height="150"/><rect x="33" y="180" width="14" height="150"/><rect x="56" y="180" width="14" height="150"/></g><rect x="-12" y="330" width="104" height="20" fill="#0b3c6d"/><text class="lbl" x="40" y="378" text-anchor="middle" font-size="15">Legislative</text></g>
+    <g transform="translate(910 0)"><rect x="-10" y="160" width="100" height="20" fill="#b22234"/><rect x="0" y="180" width="80" height="150" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/><g fill="#fff" stroke="#d8dee8" stroke-width="2"><rect x="10" y="180" width="14" height="150"/><rect x="33" y="180" width="14" height="150"/><rect x="56" y="180" width="14" height="150"/></g><rect x="-12" y="330" width="104" height="20" fill="#b22234"/><text class="lbl" x="40" y="378" text-anchor="middle" font-size="15">Executive</text></g>
+    <g transform="translate(1020 0)"><rect x="-10" y="160" width="100" height="20" fill="#2e8b57"/><rect x="0" y="180" width="80" height="150" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/><g fill="#fff" stroke="#d8dee8" stroke-width="2"><rect x="10" y="180" width="14" height="150"/><rect x="33" y="180" width="14" height="150"/><rect x="56" y="180" width="14" height="150"/></g><rect x="-12" y="330" width="104" height="20" fill="#2e8b57"/><text class="lbl" x="40" y="378" text-anchor="middle" font-size="15">Judicial</text></g>
+  </g>
+</svg>

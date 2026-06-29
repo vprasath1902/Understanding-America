@@ -1,6 +1,9 @@
 ---
 title: "The Complete Naturalization Interview"
 subtitle: "Knowing the interview process reduces anxiety and helps applicants prepare confidently."
+hero:
+  src: "assets/visuals/heroes/26-interview.svg"
+  alt: "A question speech bubble and an answer bubble with a checkmark"
 diagram:
   src: "svg/naturalization.svg"
   alt: "Visual diagram for The Complete Naturalization Interview"

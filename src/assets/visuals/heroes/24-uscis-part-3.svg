@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h24-title h24-desc">
+  <title id="h24-title">Chapter 24 hero — USCIS Civics: American History</title>
+  <desc id="h24-desc">A flat geometric banner: a navy title panel beside an open scroll marked with three gold milestone dots on a line, representing American history.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .series{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#c9a227}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="series" x="80" y="212" font-size="22">USCIS Civics Test</text>
+  <text class="title" x="80" y="262" font-size="42">American</text>
+  <text class="title" x="80" y="312" font-size="42">History</text>
+  <text class="sub" x="84" y="360" font-size="22">Chapter 24</text>
+
+  <!-- scroll -->
+  <g transform="translate(930 240)">
+    <rect x="-150" y="-70" width="300" height="140" fill="#f4ecd8" stroke="#c9a227" stroke-width="3"/>
+    <rect x="-170" y="-82" width="20" height="164" rx="10" fill="#c9a227"/>
+    <rect x="150" y="-82" width="20" height="164" rx="10" fill="#c9a227"/>
+    <!-- timeline on the scroll -->
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#0b3c6d" stroke-width="5"/>
+    <circle cx="-90" cy="0" r="12" fill="#b22234"/>
+    <circle cx="0" cy="0" r="12" fill="#b22234"/>
+    <circle cx="90" cy="0" r="12" fill="#b22234"/>
+  </g>
+</svg>

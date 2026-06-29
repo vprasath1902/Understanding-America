@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h22-title h22-desc">
+  <title id="h22-title">Chapter 22 hero — USCIS Civics: Principles of Democracy</title>
+  <desc id="h22-desc">A flat geometric banner: a navy title panel beside a clipboard checklist with green checkmarks and a gold star, representing the civics test questions on the principles of democracy.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .series{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#c9a227}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="series" x="80" y="212" font-size="22">USCIS Civics Test</text>
+  <text class="title" x="80" y="262" font-size="42">Principles of</text>
+  <text class="title" x="80" y="312" font-size="42">Democracy</text>
+  <text class="sub" x="84" y="360" font-size="22">Chapter 22</text>
+
+  <!-- clipboard -->
+  <rect x="800" y="120" width="270" height="250" rx="12" fill="#ffffff" stroke="#0b3c6d" stroke-width="4"/>
+  <rect x="890" y="106" width="90" height="30" rx="8" fill="#c9a227"/>
+  <g>
+    <rect x="826" y="176" width="26" height="26" rx="5" fill="#2e8b57"/><path d="M831 189 l6 7 l11 -14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="866" y1="189" x2="1040" y2="189" stroke="#667085" stroke-width="5"/>
+    <rect x="826" y="226" width="26" height="26" rx="5" fill="#2e8b57"/><path d="M831 239 l6 7 l11 -14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="866" y1="239" x2="1040" y2="239" stroke="#667085" stroke-width="5"/>
+    <rect x="826" y="276" width="26" height="26" rx="5" fill="#2e8b57"/><path d="M831 289 l6 7 l11 -14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="866" y1="289" x2="1010" y2="289" stroke="#667085" stroke-width="5"/>
+  </g>
+</svg>

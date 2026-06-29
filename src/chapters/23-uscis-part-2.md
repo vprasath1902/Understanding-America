@@ -1,6 +1,9 @@
 ---
 title: "USCIS Questions Explained: System of Government"
 subtitle: "Many USCIS questions become easy once the three branches are understood."
+hero:
+  src: "assets/visuals/heroes/23-uscis-part-2.svg"
+  alt: "Three columns representing the legislative, executive, and judicial branches"
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for USCIS Questions Explained: System of Government"

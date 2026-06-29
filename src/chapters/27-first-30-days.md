@@ -1,6 +1,9 @@
 ---
 title: "Your First 30 Days as a U.S. Citizen"
 subtitle: "The first month after naturalization is the time to protect documents and begin full civic participation."
+hero:
+  src: "assets/visuals/heroes/27-first-30-days.svg"
+  alt: "A calendar showing the number 30 with a gold star"
 diagram:
   src: "svg/naturalization.svg"
   alt: "Visual diagram for Your First 30 Days as a U.S. Citizen"

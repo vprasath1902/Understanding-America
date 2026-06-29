@@ -1,6 +1,9 @@
 ---
 title: "USCIS Questions Explained: American History"
 subtitle: "The history questions connect colonies, revolution, Constitution, expansion, Civil War, and modern America."
+hero:
+  src: "assets/visuals/heroes/24-uscis-part-3.svg"
+  alt: "An open scroll with three milestone dots on a timeline"
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for USCIS Questions Explained: American History"
