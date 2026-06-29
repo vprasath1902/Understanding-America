@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="rh-title rh-desc">
+  <title id="rh-title">Reference hero — flat geometric civic illustration</title>
+  <desc id="rh-desc">A flat geometric banner: a navy panel with a gold star and the title, beside a stylized Capitol dome with columns and flag stripes. Demonstrates the chapter hero style.</desc>
+  <defs><style>
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .col{fill:#ffffff}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6" rx="0"/>
+
+  <!-- navy title panel -->
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,86 96,128 140,128 104,154 118,196 80,170 42,196 56,154 20,128 64,128"/>
+  <text class="title" x="80" y="270" font-size="58">Understanding</text>
+  <text class="title" x="80" y="334" font-size="58">America</text>
+  <text class="sub" x="84" y="384" font-size="22">Chapter hero — reference style</text>
+
+  <!-- flag stripes accent -->
+  <g>
+    <rect x="660" y="0" width="540" height="40" fill="#b22234"/>
+    <rect x="660" y="80" width="540" height="40" fill="#b22234"/>
+  </g>
+
+  <!-- stylized Capitol dome -->
+  <g transform="translate(930 300)">
+    <rect x="-150" y="120" width="300" height="40" rx="6" fill="#0b3c6d"/>
+    <rect x="-130" y="40" width="260" height="80" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/>
+    <g class="col">
+      <rect x="-118" y="40" width="14" height="80"/>
+      <rect x="-78" y="40" width="14" height="80"/>
+      <rect x="-38" y="40" width="14" height="80"/>
+      <rect x="2" y="40" width="14" height="80"/>
+      <rect x="42" y="40" width="14" height="80"/>
+      <rect x="82" y="40" width="14" height="80"/>
+    </g>
+    <path d="M-90 40 A90 90 0 0 1 90 40 Z" fill="#0b3c6d"/>
+    <rect x="-10" y="-70" width="20" height="40" fill="#c9a227"/>
+    <circle cx="0" cy="-80" r="12" fill="#c9a227"/>
+  </g>
+</svg>
