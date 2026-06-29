@@ -4,6 +4,10 @@ subtitle: "Congress is the legislative branch and consists of the House of Repre
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for Congress"
+figures:
+  - src: "assets/visuals/infographics/house-vs-senate.svg"
+    caption: "How the two chambers of Congress differ"
+    alt: "Comparison of House and Senate: members, term length, election cycle, minimum age, who they represent, and special roles"
 objectives:
   - "Explain why Congress has two chambers"
   - "Describe congressional powers"

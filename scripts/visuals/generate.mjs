@@ -11,6 +11,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { timeline } from "./timeline.mjs";
 import { tilemap } from "./tilemap.mjs";
+import { infographic } from "./infographic.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DATA = path.join(ROOT, "data", "visuals");
@@ -18,6 +19,7 @@ const DATA = path.join(ROOT, "data", "visuals");
 const GENERATORS = {
   timeline: { render: timeline, folder: "timelines" },
   tilemap: { render: tilemap, folder: "maps" },
+  infographic: { render: infographic, folder: "infographics" },
 };
 
 function listJson(dir) {

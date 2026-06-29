@@ -4,6 +4,10 @@ subtitle: "The Cabinet is the President's team of department leaders who run the
 diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for The Cabinet and Executive Departments"
+figures:
+  - src: "assets/visuals/infographics/cabinet-structure.svg"
+    caption: "The Cabinet within the Executive Branch"
+    alt: "Org chart: the President over example departments — State, Treasury, Defense, Justice, and Homeland Security (which includes USCIS)"
 objectives:
   - "Explain what the Cabinet is and that it is part of the Executive Branch"
   - "Describe how Cabinet members are nominated and confirmed"

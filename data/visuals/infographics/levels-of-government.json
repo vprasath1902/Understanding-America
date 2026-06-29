@@ -1,0 +1,14 @@
+{
+  "type": "infographic",
+  "layout": "compare",
+  "name": "levels-of-government",
+  "title": "Federal, State, and Local Government",
+  "desc": "A comparison of the three levels of government. Federal: led by the President, lawmaking by Congress, handling defense and currency. State: led by the Governor, lawmaking by the state legislature, handling schools and highways. Local: led by the Mayor, lawmaking by the city council, handling police and zoning.",
+  "headers": ["Federal", "State", "Local"],
+  "aspects": [
+    { "label": "Leader", "values": ["President", "Governor", "Mayor"] },
+    { "label": "Lawmakers", "values": ["Congress", "State legislature", "City council"] },
+    { "label": "Courts", "values": ["Federal courts", "State courts", "Local courts"] },
+    { "label": "Examples", "values": ["Defense, currency", "Schools, highways", "Police, zoning"] }
+  ]
+}

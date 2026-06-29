@@ -4,6 +4,10 @@ subtitle: "A bill becomes law only after passing through several constitutional 
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for How a Bill Becomes a Law"
+figures:
+  - src: "assets/visuals/infographics/how-a-bill-becomes-law.svg"
+    caption: "The path from introduced bill to law"
+    alt: "Seven-step process: introduced, committee, floor vote, other chamber, conference, President, becomes law"
 objectives:
   - "Define a bill"
   - "Trace committee, debate, vote, and presidential action"
