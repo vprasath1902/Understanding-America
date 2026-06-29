@@ -151,10 +151,7 @@ export function renderChapter(ctx) {
     : "";
 
   const prevHref = prev ? prev.output : `${rootPrefix}index.html`;
-  const prevLabel = prev ? "Previous" : "Home";
-  const nextBlock = next
-    ? `<a class="button" href="${esc(next.output)}">Next</a>`
-    : `<a class="button" href="${rootPrefix}index.html">Finish</a>`;
+  const nextHref = next ? next.output : `${rootPrefix}index.html`;
 
   return `<!doctype html>
 <html lang="en">
@@ -176,6 +173,8 @@ ${visualPackBlock}${summaryBlock}${termsBlock}${reviewBlock}${referencesSection(
   )}${furtherReadingSection(ctx.further_reading)}${relatedSection(ctx)}
 <nav class="chapter-nav"><a class="button secondary" href="${esc(
     prevHref
-  )}">${prevLabel}</a><a class="button secondary" href="${rootPrefix}index.html">Table of Contents</a>${nextBlock}</nav>
+  )}">Previous</a><a class="button secondary" href="${rootPrefix}index.html">Table of Contents</a><a class="button" href="${esc(
+    nextHref
+  )}">Next</a></nav>
 </article></main></div><script src="${rootPrefix}js/navigation.js"></script></body></html>`;
 }
