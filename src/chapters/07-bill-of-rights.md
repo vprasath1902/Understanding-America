@@ -4,6 +4,10 @@ subtitle: "The first ten amendments protect individual liberties by limiting gov
 diagram:
   src: "svg/constitution-explorer.svg"
   alt: "Visual diagram for The Bill of Rights"
+figures:
+  - src: "assets/visuals/timelines/amendments.svg"
+    caption: "How later amendments expanded rights"
+    alt: "Timeline: 1791 Bill of Rights, 1865 13th, 1868 14th, 1870 15th, 1920 19th, 1971 26th"
 objectives:
   - "Explain why the Bill of Rights was added"
   - "Name the five First Amendment freedoms"

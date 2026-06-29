@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "voting-rights",
+  "title": "Expanding the Right to Vote",
+  "desc": "Timeline of expanding voting rights: 1870 the 15th Amendment bars denying the vote based on race, 1920 the 19th Amendment gives women the vote, 1964 the 24th Amendment bans poll taxes, 1965 the Voting Rights Act, and 1971 the 26th Amendment sets the voting age at 18.",
+  "events": [
+    { "year": "1870", "label": "15th: race" },
+    { "year": "1920", "label": "19th: women" },
+    { "year": "1964", "label": "24th: poll taxes" },
+    { "year": "1965", "label": "Voting Rights Act" },
+    { "year": "1971", "label": "26th: age 18" }
+  ]
+}

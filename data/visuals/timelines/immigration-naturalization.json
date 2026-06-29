@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "immigration-naturalization",
+  "title": "Citizenship and Immigration Milestones",
+  "desc": "Timeline of U.S. citizenship and immigration milestones: 1790 the first Naturalization Act, 1868 the 14th Amendment defines citizenship, 1952 the Immigration and Nationality Act, 1965 the Immigration and Nationality Act amendments, and 2003 USCIS is created.",
+  "events": [
+    { "year": "1790", "label": "First Naturalization Act" },
+    { "year": "1868", "label": "14th: citizenship" },
+    { "year": "1952", "label": "INA" },
+    { "year": "1965", "label": "1965 INA reforms" },
+    { "year": "2003", "label": "USCIS created" }
+  ]
+}

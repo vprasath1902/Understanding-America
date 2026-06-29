@@ -4,6 +4,10 @@ subtitle: "Naturalization is the process through which eligible permanent reside
 diagram:
   src: "svg/naturalization.svg"
   alt: "Visual diagram for Becoming an American Citizen"
+figures:
+  - src: "assets/visuals/timelines/immigration-naturalization.svg"
+    caption: "Milestones in U.S. citizenship and immigration"
+    alt: "Timeline: 1790 first Naturalization Act, 1868 14th Amendment citizenship, 1952 INA, 1965 reforms, 2003 USCIS created"
 objectives:
   - "Understand the N-400 process"
   - "Know what happens at the interview"

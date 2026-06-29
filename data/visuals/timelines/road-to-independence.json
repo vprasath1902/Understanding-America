@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "road-to-independence",
+  "title": "The Road to Independence",
+  "desc": "Timeline of events leading to American independence: 1763 the Proclamation, 1765 the Stamp Act, 1770 the Boston Massacre, 1773 the Boston Tea Party, and 1775 Lexington and Concord.",
+  "events": [
+    { "year": "1763", "label": "Proclamation" },
+    { "year": "1765", "label": "Stamp Act" },
+    { "year": "1770", "label": "Boston Massacre" },
+    { "year": "1773", "label": "Boston Tea Party" },
+    { "year": "1775", "label": "Lexington & Concord" }
+  ]
+}

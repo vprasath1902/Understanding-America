@@ -4,6 +4,10 @@ subtitle: "The courts interpret laws and protect the Constitution."
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for The Judicial Branch"
+figures:
+  - src: "assets/visuals/timelines/landmark-supreme-court.svg"
+    caption: "Landmark Supreme Court decisions"
+    alt: "Timeline: 1803 Marbury v. Madison, 1896 Plessy v. Ferguson, 1954 Brown v. Board, 1966 Miranda v. Arizona, 1974 U.S. v. Nixon"
 objectives:
   - "Describe the federal court system"
   - "Explain judicial review"

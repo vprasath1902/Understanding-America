@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "landmark-supreme-court",
+  "title": "Landmark Supreme Court Cases",
+  "desc": "Timeline of landmark Supreme Court decisions: 1803 Marbury v. Madison establishes judicial review, 1896 Plessy v. Ferguson, 1954 Brown v. Board of Education, 1966 Miranda v. Arizona, and 1974 United States v. Nixon.",
+  "events": [
+    { "year": "1803", "label": "Marbury v. Madison" },
+    { "year": "1896", "label": "Plessy v. Ferguson" },
+    { "year": "1954", "label": "Brown v. Board" },
+    { "year": "1966", "label": "Miranda v. Arizona" },
+    { "year": "1974", "label": "U.S. v. Nixon" }
+  ]
+}

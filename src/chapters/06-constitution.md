@@ -4,6 +4,10 @@ subtitle: The Constitution is the blueprint for American government and the supr
 diagram:
   src: svg/constitution-explorer.svg
   alt: Visual diagram for The United States Constitution
+figures:
+  - src: "assets/visuals/timelines/founding-documents.svg"
+    caption: "From the Articles of Confederation to the Bill of Rights"
+    alt: "Timeline: 1781 Articles of Confederation, 1787 Constitutional Convention, 1788 Constitution ratified, 1789 first government, 1791 Bill of Rights"
 objectives:
   - Understand the Preamble
   - Describe the seven Articles

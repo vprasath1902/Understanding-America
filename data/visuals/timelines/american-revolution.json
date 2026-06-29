@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "american-revolution",
+  "title": "The American Revolution",
+  "desc": "Timeline of the Revolutionary War: 1775 the war begins, 1776 the Declaration of Independence, 1777 the victory at Saratoga, 1781 the surrender at Yorktown, and 1783 the Treaty of Paris.",
+  "events": [
+    { "year": "1775", "label": "War begins" },
+    { "year": "1776", "label": "Declaration" },
+    { "year": "1777", "label": "Saratoga" },
+    { "year": "1781", "label": "Yorktown" },
+    { "year": "1783", "label": "Treaty of Paris" }
+  ]
+}
