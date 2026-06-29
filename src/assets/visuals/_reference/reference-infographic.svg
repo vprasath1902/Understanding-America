@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="ri-title ri-desc">
+  <title id="ri-title">Reference infographic — the Cabinet within the Executive Branch</title>
+  <desc id="ri-desc">An organization chart: the President at the top connects to four example executive departments — State, Treasury, Defense, and Homeland Security — each shown as a labeled box.</desc>
+  <defs><style>
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:800;fill:#0b3c6d}
+    .s{fill:#667085}
+    .box{fill:#ffffff;stroke:#d8dee8;stroke-width:2}
+    .hdr{fill:#0b3c6d}
+    .hdrtext{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .line{stroke:#0b3c6d;stroke-width:4;fill:none;stroke-linecap:round}
+  </style></defs>
+  <rect width="920" height="520" fill="#f8f8f6" rx="24"/>
+  <text class="t h" x="460" y="52" text-anchor="middle" font-size="30">The Cabinet within the Executive Branch</text>
+
+  <rect class="hdr" x="350" y="90" width="220" height="70" rx="18"/>
+  <text class="hdrtext" x="460" y="125" text-anchor="middle" font-size="22">President</text>
+  <text class="t" fill="#ffffff" x="460" y="148" text-anchor="middle" font-size="14">Leads the Executive Branch</text>
+
+  <path class="line" d="M460 160 v40 M170 230 H750 M170 230 v30 M350 230 v30 M570 230 v30 M750 230 v30"/>
+
+  <g text-anchor="middle">
+    <rect class="box" x="80" y="260" width="180" height="92" rx="18"/>
+    <text class="t h" x="170" y="300" font-size="18">State</text>
+    <text class="t s" x="170" y="326" font-size="14">Diplomacy</text>
+
+    <rect class="box" x="280" y="260" width="180" height="92" rx="18"/>
+    <text class="t h" x="370" y="300" font-size="18">Treasury</text>
+    <text class="t s" x="370" y="326" font-size="14">Federal finances</text>
+
+    <rect class="box" x="480" y="260" width="180" height="92" rx="18"/>
+    <text class="t h" x="570" y="300" font-size="18">Defense</text>
+    <text class="t s" x="570" y="326" font-size="14">National defense</text>
+
+    <rect class="box" x="660" y="260" width="180" height="92" rx="18"/>
+    <text class="t h" x="750" y="296" font-size="18">Homeland</text>
+    <text class="t h" x="750" y="318" font-size="18">Security</text>
+    <text class="t s" x="750" y="342" font-size="13">Includes USCIS</text>
+  </g>
+
+  <text class="t s" x="460" y="430" text-anchor="middle" font-size="15">The President nominates Cabinet members; the Senate confirms most of them.</text>
+</svg>

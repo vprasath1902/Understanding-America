@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-labelledby="rt-title rt-desc">
+  <title id="rt-title">Reference timeline — American story milestones</title>
+  <desc id="rt-desc">A horizontal timeline showing five milestones: 1607 Jamestown, 1776 Independence, 1787 Constitution, 1865 Civil War ends, and 1920 the 19th Amendment.</desc>
+  <defs><style>
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:800;fill:#0b3c6d}
+    .s{fill:#667085}
+    .rule{stroke:#c9a227;stroke-width:6}
+    .dot{fill:#b22234}
+  </style></defs>
+  <rect width="900" height="280" fill="#f8f8f6" rx="24"/>
+  <text class="t h" x="450" y="48" text-anchor="middle" font-size="30">American Story Timeline</text>
+  <line class="rule" x1="90" y1="150" x2="810" y2="150" stroke-linecap="round"/>
+  <g class="t" text-anchor="middle">
+    <g transform="translate(90 150)"><circle class="dot" r="12"/><text class="h" y="-30" font-size="20">1607</text><text class="s" y="44" font-size="15">Jamestown</text></g>
+    <g transform="translate(270 150)"><circle class="dot" r="12"/><text class="h" y="-30" font-size="20">1776</text><text class="s" y="44" font-size="15">Independence</text></g>
+    <g transform="translate(450 150)"><circle class="dot" r="12"/><text class="h" y="-30" font-size="20">1787</text><text class="s" y="44" font-size="15">Constitution</text></g>
+    <g transform="translate(630 150)"><circle class="dot" r="12"/><text class="h" y="-30" font-size="20">1865</text><text class="s" y="44" font-size="15">Civil War ends</text></g>
+    <g transform="translate(810 150)"><circle class="dot" r="12"/><text class="h" y="-30" font-size="20">1920</text><text class="s" y="44" font-size="15">19th Amendment</text></g>
+  </g>
+</svg>
