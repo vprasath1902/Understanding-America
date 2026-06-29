@@ -1,0 +1,16 @@
+{
+  "type": "infographic",
+  "layout": "compare",
+  "name": "house-vs-senate",
+  "title": "House vs. Senate",
+  "desc": "A comparison of the two chambers of Congress. The House has 435 members serving 2-year terms with all seats up each election, a minimum age of 25, and represents districts by population; it starts revenue bills and brings impeachments. The Senate has 100 members serving 6-year terms with about one-third up each election, a minimum age of 30, and represents whole states; it confirms appointments and tries impeachments.",
+  "headers": ["House", "Senate"],
+  "aspects": [
+    { "label": "Members", "values": ["435", "100"] },
+    { "label": "Term length", "values": ["2 years", "6 years"] },
+    { "label": "Elected", "values": ["All seats every 2 yrs", "~one-third every 2 yrs"] },
+    { "label": "Minimum age", "values": ["25", "30"] },
+    { "label": "Represents", "values": ["Districts by population", "Entire state"] },
+    { "label": "Special role", "values": ["Starts revenue bills; impeaches", "Confirms nominees; tries impeachments"] }
+  ]
+}

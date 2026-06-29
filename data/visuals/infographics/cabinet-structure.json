@@ -1,0 +1,15 @@
+{
+  "type": "infographic",
+  "layout": "structure",
+  "name": "cabinet-structure",
+  "title": "The Cabinet within the Executive Branch",
+  "desc": "An organization chart: the President leads the Executive Branch and oversees the executive departments. Example departments shown are State (diplomacy), Treasury (finances), Defense (military), Justice (law), and Homeland Security (which includes USCIS).",
+  "top": { "title": "President", "subtitle": "Leads the Executive Branch" },
+  "nodes": [
+    { "title": "State", "subtitle": "Diplomacy" },
+    { "title": "Treasury", "subtitle": "Federal finances" },
+    { "title": "Defense", "subtitle": "National defense" },
+    { "title": "Justice", "subtitle": "Federal law" },
+    { "title": "Homeland Sec.", "subtitle": "Includes USCIS" }
+  ]
+}

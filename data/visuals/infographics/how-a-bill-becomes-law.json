@@ -1,0 +1,16 @@
+{
+  "type": "infographic",
+  "layout": "process",
+  "name": "how-a-bill-becomes-law",
+  "title": "How a Bill Becomes a Law",
+  "desc": "A seven-step process: a bill is introduced, studied in committee, passed by the full chamber, passed again by the other chamber, reconciled in conference if needed, signed or vetoed by the President, and becomes law.",
+  "steps": [
+    { "title": "Introduced", "detail": "A member introduces the bill in the House or Senate." },
+    { "title": "Committee", "detail": "A committee studies, amends, and votes on the bill." },
+    { "title": "Floor vote", "detail": "The full chamber debates and votes." },
+    { "title": "Other chamber", "detail": "The second chamber repeats the process." },
+    { "title": "Conference", "detail": "Differences between the two versions are reconciled." },
+    { "title": "President", "detail": "The President signs the bill or vetoes it." },
+    { "title": "Becomes law", "detail": "If signed — or a veto is overridden — it becomes law." }
+  ]
+}

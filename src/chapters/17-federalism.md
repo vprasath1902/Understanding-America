@@ -4,6 +4,10 @@ subtitle: "Federalism divides power between national and state governments."
 diagram:
   src: "svg/civic-learning-map.svg"
   alt: "Visual diagram for Federal Government vs. State Government"
+figures:
+  - src: "assets/visuals/infographics/levels-of-government.svg"
+    caption: "What each level of government does"
+    alt: "Comparison of Federal, State, and Local government: leaders, lawmakers, courts, and example responsibilities"
 objectives:
   - "Define federalism"
   - "Identify federal, state, and local powers"
