@@ -10,12 +10,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { timeline } from "./timeline.mjs";
+import { tilemap } from "./tilemap.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const DATA = path.join(ROOT, "data", "visuals");
 
 const GENERATORS = {
   timeline: { render: timeline, folder: "timelines" },
+  tilemap: { render: tilemap, folder: "maps" },
 };
 
 function listJson(dir) {

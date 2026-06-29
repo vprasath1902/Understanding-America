@@ -8,6 +8,9 @@ figures:
   - src: "assets/visuals/timelines/voting-rights.svg"
     caption: "How the right to vote expanded over time"
     alt: "Timeline: 1870 15th Amendment, 1920 19th Amendment, 1964 24th Amendment, 1965 Voting Rights Act, 1971 26th Amendment"
+  - src: "assets/visuals/maps/electoral-college.svg"
+    caption: "Each state's electoral votes — 270 of 538 wins"
+    alt: "Tile-grid map of the U.S. showing each state's electoral votes; 538 total, 270 needed to win"
 objectives:
   - "Identify the federal, state, and local elections in the U.S. and how often they happen"
   - "Distinguish primary, general, and midterm elections"
