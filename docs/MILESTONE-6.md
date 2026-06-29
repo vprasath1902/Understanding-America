@@ -15,7 +15,7 @@ The same source will later produce the site, PDF, and EPUB.
 ```
 src/
   chapters/        # Markdown source — ONE file per chapter (the source of truth)
-  appendices/      # Markdown source for appendices
+  appendices/      # Markdown source for appendix pages (e.g. current-officials.md)
 templates/
   chapter.mjs      # Chapter page template (reproduces the site design)
 scripts/
@@ -122,4 +122,13 @@ Proof-of-concept chapters migrated to Markdown:
 - `06-constitution` — also demonstrates the new References / Related sections.
 - `21-uscis-part-1` — verified byte-identical to the original page.
 
-Remaining 26 chapters still render from their original HTML until migrated.
+All 28 chapters are migrated to Markdown.
+
+## Central reference: current officials & fees
+
+Time-sensitive facts (President, VP, PA Governor, senators, USCIS fees and
+forms) live in one place: `src/appendices/current-officials.md`, rendered to
+`appendices/current-officials.html` and linked from the sidebar (Appendix H).
+Chapters reference this page instead of naming officeholders or fees directly,
+so each year only this one file is updated. Every value carries an official
+source link and the page shows a "Last verified" date.
