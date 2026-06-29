@@ -4,6 +4,10 @@ subtitle: "The United States holds many different elections — and chooses its 
 diagram:
   src: "svg/election-cycle.svg"
   alt: "Visual diagram for Elections and the Electoral College"
+figures:
+  - src: "assets/visuals/timelines/voting-rights.svg"
+    caption: "How the right to vote expanded over time"
+    alt: "Timeline: 1870 15th Amendment, 1920 19th Amendment, 1964 24th Amendment, 1965 Voting Rights Act, 1971 26th Amendment"
 objectives:
   - "Identify the federal, state, and local elections in the U.S. and how often they happen"
   - "Distinguish primary, general, and midterm elections"

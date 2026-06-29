@@ -1,0 +1,14 @@
+{
+  "type": "timeline",
+  "name": "amendments",
+  "title": "Expanding Rights Through Amendments",
+  "desc": "Timeline of key constitutional amendments: 1791 the Bill of Rights, 1865 the 13th ends slavery, 1868 the 14th guarantees equal protection and citizenship, 1870 the 15th protects voting regardless of race, 1920 the 19th gives women the vote, and 1971 the 26th sets the voting age at 18.",
+  "events": [
+    { "year": "1791", "label": "Bill of Rights" },
+    { "year": "1865", "label": "13th: ends slavery" },
+    { "year": "1868", "label": "14th: equal protection" },
+    { "year": "1870", "label": "15th: voting & race" },
+    { "year": "1920", "label": "19th: women vote" },
+    { "year": "1971", "label": "26th: age 18" }
+  ]
+}

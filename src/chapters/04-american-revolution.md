@@ -4,6 +4,10 @@ subtitle: "The Revolutionary War tested whether the Declaration of Independence 
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The American Revolution"
+figures:
+  - src: "assets/visuals/timelines/american-revolution.svg"
+    caption: "From the first shots to the Treaty of Paris"
+    alt: "Timeline: 1775 war begins, 1776 Declaration, 1777 Saratoga, 1781 Yorktown, 1783 Treaty of Paris"
 objectives:
   - "Explain why Britain was expected to win"
   - "Understand George Washington’s leadership"

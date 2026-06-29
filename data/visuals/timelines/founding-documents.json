@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "founding-documents",
+  "title": "Founding the Government",
+  "desc": "Timeline from independence to the early republic: 1781 the Articles of Confederation, 1787 the Constitutional Convention, 1788 the Constitution is ratified, 1789 the first government begins, and 1791 the Bill of Rights.",
+  "events": [
+    { "year": "1781", "label": "Articles of Confederation" },
+    { "year": "1787", "label": "Constitutional Convention" },
+    { "year": "1788", "label": "Constitution ratified" },
+    { "year": "1789", "label": "First government" },
+    { "year": "1791", "label": "Bill of Rights" }
+  ]
+}

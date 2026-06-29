@@ -4,6 +4,10 @@ subtitle: "After 1763, taxes, military presence, and arguments over representati
 diagram:
   src: "svg/timeline.svg"
   alt: "Visual diagram for The Road to Independence"
+figures:
+  - src: "assets/visuals/timelines/road-to-independence.svg"
+    caption: "Key events on the road to independence"
+    alt: "Timeline: 1763 Proclamation, 1765 Stamp Act, 1770 Boston Massacre, 1773 Boston Tea Party, 1775 Lexington and Concord"
 objectives:
   - "Explain why tensions grew with Britain"
   - "Understand “No Taxation Without Representation”"
