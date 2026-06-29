@@ -245,6 +245,13 @@ const BOOK_NAV = [
     "number": null
   },
   {
+    "section": "Appendices",
+    "title": "Appendix H: Current Officials & Fees",
+    "href": "appendices/current-officials.html",
+    "kind": "appendix",
+    "number": null
+  },
+  {
     "section": "Publication Tools",
     "title": "Print Preview and PDF Prep",
     "href": "print-preview.html",

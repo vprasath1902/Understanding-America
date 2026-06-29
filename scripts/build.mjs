@@ -14,9 +14,11 @@ import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { renderChapter } from "../templates/chapter.mjs";
+import { renderPage } from "../templates/page.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SRC_CHAPTERS = path.join(ROOT, "src", "chapters");
+const SRC_APPENDICES = path.join(ROOT, "src", "appendices");
 const BUILD = path.join(ROOT, "build");
 
 // Assets and pages copied verbatim into build/ (the parts not yet generated).
@@ -113,6 +115,29 @@ function renderOne(ch, manifest, byOutput) {
   return ch.output;
 }
 
+// ---- Render standalone appendix pages from Markdown ------------------------
+
+function renderAppendices() {
+  if (!fs.existsSync(SRC_APPENDICES)) return [];
+  fs.mkdirSync(path.join(BUILD, "appendices"), { recursive: true });
+  const built = [];
+  for (const f of fs.readdirSync(SRC_APPENDICES).filter((f) => f.endsWith(".md"))) {
+    const { data, content } = matter(
+      fs.readFileSync(path.join(SRC_APPENDICES, f), "utf8")
+    );
+    const out = `${f.replace(/\.md$/, "")}.html`;
+    const html = renderPage({
+      title: data.title || out,
+      subtitle: data.subtitle || "",
+      bodyHtml: content.trim() ? marked.parse(content.trim()) : "",
+      rootPrefix: "../",
+    });
+    fs.writeFileSync(path.join(BUILD, "appendices", out), html);
+    built.push(`appendices/${out}`);
+  }
+  return built;
+}
+
 // ---- Main -------------------------------------------------------------------
 
 function main() {
@@ -126,11 +151,15 @@ function main() {
       migrated.push(renderOne(ch, manifest, byOutput));
   }
 
+  const appendices = renderAppendices();
+
   console.log(`Build complete -> ${path.relative(ROOT, BUILD)}/`);
   console.log(`  chapters total:     ${manifest.length}`);
   console.log(`  generated from MD:  ${migrated.length}`);
   console.log(`  copied legacy HTML: ${manifest.length - migrated.length}`);
   if (migrated.length) console.log(`  migrated: ${migrated.join(", ")}`);
+  if (appendices.length)
+    console.log(`  appendix pages:     ${appendices.join(", ")}`);
 }
 
 main();
