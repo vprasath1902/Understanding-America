@@ -357,6 +357,90 @@ ${sections}
   return terms.length;
 }
 
+// ---- Mock civics exam page (generated from data/civics-exam.json) ----------
+
+function renderExam(manifest) {
+  const file = path.join(ROOT, "data", "civics-exam.json");
+  if (!fs.existsSync(file)) return 0;
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  const byNum = Object.fromEntries(manifest.map((c) => [c.number, c]));
+
+  // Resolve each question's chapter number to a link + title for the bank.
+  const bank = data.questions.map((q) => {
+    const ch = byNum[q.ch];
+    return {
+      q: q.q,
+      o: q.o,
+      a: q.a,
+      chN: q.ch,
+      chTitle: ch ? ch.title : `Chapter ${q.ch}`,
+      chHref: ch ? `chapters/${ch.output}` : "#",
+    };
+  });
+
+  const askCount = data.askCount || 20;
+  const passMark = data.passMark || 12;
+
+  const body = `<style>
+.exam-card{border:1px solid var(--line,#d8dee8);border-radius:16px;padding:22px;background:var(--card,#fff);box-shadow:var(--shadow)}
+.exam-progress{color:#667085;font-weight:700;margin-bottom:6px}
+.exam-q{font-weight:800;color:#0b3c6d;font-size:1.15rem;margin:6px 0 14px}
+.exam-opts{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.exam-opt{width:100%;text-align:left;background:#fff;color:var(--ink,#1f2937);border:1px solid var(--line,#d8dee8);border-radius:12px;padding:12px 16px;font:inherit;cursor:pointer}
+.exam-opt:hover:not(:disabled){background:#eef4fb}
+.exam-opt:disabled{cursor:default}
+.exam-opt.correct{background:#e6f4ec;border-color:#2e8b57;color:#14532d;font-weight:700}
+.exam-opt.wrong{background:#fdecec;border-color:#b22234;color:#7f1d1d}
+.exam-feedback{margin:14px 0 0;font-weight:700;min-height:1.2em}
+.exam-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.exam-score{font-size:1.4rem;font-weight:800;color:#0b3c6d}
+.exam-verdict{font-weight:800;margin:6px 0 16px}
+.exam-verdict.pass{color:#2e8b57}.exam-verdict.fail{color:#b22234}
+.exam-review{list-style:none;padding:0;margin:16px 0}
+.exam-review li{padding:12px 0;border-bottom:1px solid #eef4fb}
+.exam-review .mark{font-weight:800;margin-right:6px}
+.exam-review .ok{color:#2e8b57}.exam-review .no{color:#b22234}
+.exam-review .ans{display:block;color:#667085;font-size:.92rem;margin-top:2px}
+.suggest{background:#fff8e8;border:1px solid #c9a227;border-radius:12px;padding:14px 18px;margin:16px 0}
+.suggest ul{margin:6px 0 0}
+body.dark .exam-opt:hover:not(:disabled){background:#374151}
+body.dark .exam-opt.correct{background:#14532d;color:#d1fae5}
+body.dark .exam-opt.wrong{background:#4c1d1d;color:#fecaca}
+</style>
+<div id="examRoot" class="exam-card">
+  <div id="examStart">
+    <p>This is a practice civics test. It asks <strong>${askCount} questions</strong> drawn at random from the official USCIS pool, one at a time, and tells you right away if each answer is correct. At the end you'll get a score, the correct answers, and suggestions for which chapters to review. On the official 2025 test you must answer <strong>${passMark} of ${askCount}</strong> correctly to pass.</p>
+    <div class="exam-actions"><button id="examStartBtn">Start the ${askCount}-question test</button></div>
+    <p style="color:#667085;font-size:.9rem;margin-top:12px">The questions change every time. For the full list, see <a href="appendices/appendix-i-civics-questions.html">Appendix I</a>.</p>
+  </div>
+  <div id="examQuiz" hidden>
+    <div class="exam-progress" id="examProgress"></div>
+    <div class="exam-q" id="examQuestion"></div>
+    <ul class="exam-opts" id="examOpts"></ul>
+    <div class="exam-feedback" id="examFeedback" aria-live="polite"></div>
+    <div class="exam-actions"><button id="examNext" hidden>Next</button></div>
+  </div>
+  <div id="examResults" hidden></div>
+</div>
+<script>
+window.CIVICS_BANK = ${JSON.stringify(bank)};
+window.CIVICS_ASK = ${askCount};
+window.CIVICS_PASS = ${passMark};
+</script>
+<script src="js/civics-exam.js"></script>`;
+
+  fs.writeFileSync(
+    path.join(BUILD, "quiz.html"),
+    renderPage({
+      title: "Civics Practice Test",
+      subtitle: "A randomized 20-question mock of the USCIS civics test.",
+      bodyHtml: body,
+      rootPrefix: "",
+    })
+  );
+  return bank.length;
+}
+
 // ---- Main -------------------------------------------------------------------
 
 function main() {
@@ -379,6 +463,7 @@ function main() {
   const appendices = renderAppendices();
   const inventory = renderGallery(registry);
   const glossaryTerms = renderGlossary();
+  const examQuestions = renderExam(manifest);
 
   console.log(`Build complete -> ${path.relative(ROOT, BUILD)}/`);
   console.log(`  chapters total:     ${manifest.length}`);
@@ -392,6 +477,7 @@ function main() {
   console.log(`  optimized SVGs:     ${optimized}`);
   console.log(`  inventory entries:  ${inventory} (visual-gallery.html + registry.json)`);
   console.log(`  glossary terms:     ${glossaryTerms}`);
+  console.log(`  exam question bank: ${examQuestions}`);
 }
 
 main();
