@@ -308,6 +308,13 @@ const BOOK_NAV = [
     "number": null
   },
   {
+    "section": "Appendices",
+    "title": "Appendix I: USCIS Civics Test (128 Questions)",
+    "href": "appendices/appendix-i-civics-questions.html",
+    "kind": "appendix",
+    "number": null
+  },
+  {
     "section": "Publication Tools",
     "title": "Print Preview and PDF Prep",
     "href": "print-preview.html",
