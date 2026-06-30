@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Who wrote the Declaration of Independence?", "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Benjamin Franklin"], "answer": 1, "explanation": "Thomas Jefferson was its main author." },
+    { "q": "When was the Constitution written?", "options": ["1776", "1787", "1812", "1865"], "answer": 1, "explanation": "It was written at the Constitutional Convention in 1787." },
+    { "q": "Who was the first President of the United States?", "options": ["Thomas Jefferson", "George Washington", "John Adams", "James Madison"], "answer": 1, "explanation": "Washington is called the 'Father of Our Country.'" },
+    { "q": "What did the Emancipation Proclamation do?", "options": ["Freed enslaved people in the Confederate states", "Ended World War I", "Created the income tax", "Gave women the vote"], "answer": 0, "explanation": "Lincoln issued it during the Civil War in 1863." },
+    { "q": "Name one war fought by the United States in the 1900s.", "options": ["The Civil War", "World War II", "The Revolutionary War", "The War of 1812"], "answer": 1, "explanation": "WWI, WWII, Korea, Vietnam, and the Cold War were all 1900s conflicts." }
+  ]
+}

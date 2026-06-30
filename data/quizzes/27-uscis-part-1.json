@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the supreme law of the land?", "options": ["The Constitution", "The Declaration of Independence", "An act of Congress", "A presidential order"], "answer": 0, "explanation": "The Constitution is the supreme law of the land." },
+    { "q": "What do the first three words of the Constitution express?", "options": ["Rule by a king", "Self-government — 'We the People'", "Freedom of the press", "States' rights"], "answer": 1, "explanation": "'We the People' means government comes from the people." },
+    { "q": "What is the Bill of Rights?", "options": ["The first ten amendments to the Constitution", "The seven Articles", "The Declaration of Independence", "A Supreme Court ruling"], "answer": 0, "explanation": "The first ten amendments protect basic freedoms." },
+    { "q": "What did the Declaration of Independence do?", "options": ["Created Congress", "Announced that the colonies were free from Great Britain", "Abolished slavery", "Set the voting age"], "answer": 1, "explanation": "Adopted July 4, 1776, it declared independence." },
+    { "q": "Name one freedom protected by the First Amendment.", "options": ["The right to bear arms", "Freedom of speech", "Trial by jury", "Protection from search"], "answer": 1, "explanation": "The First Amendment protects speech, religion, press, assembly, and petition." }
+  ]
+}

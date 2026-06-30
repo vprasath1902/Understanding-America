@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What are the three branches of government?", "options": ["Federal, state, local", "Legislative, executive, judicial", "House, Senate, President", "Army, Navy, Air Force"], "answer": 1, "explanation": "Legislative makes laws, executive enforces, judicial interprets." },
+    { "q": "How many U.S. senators are there?", "options": ["100", "435", "50", "9"], "answer": 0, "explanation": "Two senators from each of the 50 states." },
+    { "q": "How many voting members does the House of Representatives have?", "options": ["100", "435", "538", "50"], "answer": 1, "explanation": "There are 435 voting members, divided by population." },
+    { "q": "Who is the Commander in Chief of the military?", "options": ["The President", "The Speaker of the House", "The Chief Justice", "The Secretary of Defense"], "answer": 0, "explanation": "The President leads the armed forces." },
+    { "q": "What is the highest court in the United States?", "options": ["The Court of Appeals", "The Supreme Court", "The District Court", "The state supreme court"], "answer": 1, "explanation": "The Supreme Court is the highest court in the land." }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "How many total electoral votes are there?", "options": ["435", "538", "270", "100"], "answer": 1, "explanation": "There are 538 electoral votes in all." },
+    { "q": "How many electoral votes are needed to win the presidency?", "options": ["218", "270", "300", "435"], "answer": 1, "explanation": "A majority — 270 of 538 — wins." },
+    { "q": "How is a state's number of electoral votes determined?", "options": ["By land area", "Its number of Representatives plus its two Senators", "By population alone", "Equally for every state"], "answer": 1, "explanation": "Electoral votes equal a state's House members plus its two senators." },
+    { "q": "Who do voters technically choose on Election Day for President?", "options": ["The President directly", "Electors, who then formally elect the President", "Members of Congress", "Supreme Court justices"], "answer": 1, "explanation": "Voters choose electors in the Electoral College." },
+    { "q": "Why was the Electoral College created?", "options": ["To speed up vote counting", "As a compromise giving both the people and the states a role in choosing the President", "To replace Congress", "To limit voting"], "answer": 1, "explanation": "It balanced direct popular election with a role for the states." }
+  ]
+}

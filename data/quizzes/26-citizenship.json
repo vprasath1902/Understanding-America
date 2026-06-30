@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is naturalization?", "options": ["Being born a citizen", "The legal process by which a non-citizen becomes a U.S. citizen", "Renewing a green card", "Registering to vote"], "answer": 1, "explanation": "It is how eligible permanent residents become citizens." },
+    { "q": "Which form is the Application for Naturalization?", "options": ["Form N-400", "Form I-912", "Form N-565", "Form G-1055"], "answer": 0, "explanation": "Form N-400 is filed with USCIS to apply for citizenship." },
+    { "q": "At what moment does a person officially become a citizen?", "options": ["When filing the N-400", "At the biometrics appointment", "When taking the Oath of Allegiance", "When passing the interview"], "answer": 2, "explanation": "Citizenship becomes official at the oath ceremony." },
+    { "q": "Which is a right gained with citizenship?", "options": ["The right to vote in federal elections", "Exemption from all taxes", "Immunity from laws", "A free passport for life"], "answer": 0, "explanation": "Citizens can vote, hold a passport, and run for most offices." },
+    { "q": "Which is a responsibility of citizens?", "options": ["Serving on a jury when called", "Ignoring elections", "Avoiding taxes", "Leaving the country yearly"], "answer": 0, "explanation": "Jury service, obeying the law, and paying taxes are responsibilities." }
+  ]
+}

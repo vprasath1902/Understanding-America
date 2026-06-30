@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Which everyday system is supported by government rules and services?", "options": ["Only private companies", "Clean water, food safety, and roads", "Nothing in daily life", "Only the military"], "answer": 1, "explanation": "Government quietly supports water, food safety, roads, and more." },
+    { "q": "Which federal agency screens airline passengers?", "options": ["The TSA", "USCIS", "The IRS", "The SSA"], "answer": 0, "explanation": "The Transportation Security Administration screens travelers." },
+    { "q": "Who delivers the mail?", "options": ["The U.S. Postal Service", "The Department of State", "The Supreme Court", "The DMV"], "answer": 0, "explanation": "The U.S. Postal Service delivers mail nationwide." },
+    { "q": "Which level of government runs most public schools and local roads?", "options": ["The federal government", "State and local governments", "The Supreme Court", "Foreign governments"], "answer": 1, "explanation": "Schools and local roads are mainly state and local responsibilities." },
+    { "q": "When do your constitutional rights apply?", "options": ["Only on Election Day", "Throughout daily life, whether or not you think about them", "Only in court", "Only for officials"], "answer": 1, "explanation": "Rights like speech, religion, and due process are always in force." }
+  ]
+}
