@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the economic system of the United States?", "options": ["Capitalism (free market economy)", "Communism", "A command economy", "Feudalism"], "answer": 0, "explanation": "The U.S. has a capitalist, free-market economy." },
+    { "q": "In a free market, what mainly determines prices and what is produced?", "options": ["The President", "Supply and demand", "Congress", "The Supreme Court"], "answer": 1, "explanation": "Prices and production are guided mostly by supply and demand." },
+    { "q": "What is the role of the Federal Reserve?", "options": ["It writes laws", "It manages the money supply and interest rates as the central bank", "It collects income taxes", "It runs elections"], "answer": 1, "explanation": "The Fed is the nation's central bank." },
+    { "q": "Which amendment authorized the federal income tax?", "options": ["1st Amendment", "16th Amendment", "22nd Amendment", "10th Amendment"], "answer": 1, "explanation": "The 16th Amendment (1913) allows a federal income tax." },
+    { "q": "Why is it important to pay federal taxes?", "options": ["It is optional", "It is required by law and funds the federal government", "Only businesses pay them", "They fund only the military"], "answer": 1, "explanation": "Taxes are required by law and pay for the government's work." }
+  ]
+}
