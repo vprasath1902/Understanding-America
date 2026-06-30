@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What linked the country coast to coast when it was completed in 1869?", "options": ["The Erie Canal", "The transcontinental railroad", "The Panama Canal", "The interstate highway system"], "answer": 1, "explanation": "The transcontinental railroad connected the country from east to west." },
+    { "q": "Through which station did millions of immigrants enter the United States?", "options": ["Ellis Island", "Pearl Harbor", "Plymouth Rock", "Cape Canaveral"], "answer": 0, "explanation": "Ellis Island in New York Harbor processed millions of newcomers." },
+    { "q": "What did workers organize to bargain for better wages and conditions?", "options": ["Political parties", "Labor unions", "Town meetings", "Committees of Congress"], "answer": 1, "explanation": "Labor unions formed in response to harsh industrial conditions." },
+    { "q": "What did the Progressive Era focus on?", "options": ["Expanding slavery", "Reforming business, labor, and government", "Leaving the United Nations", "Ending public schools"], "answer": 1, "explanation": "Progressives fought corruption and protected workers and consumers." },
+    { "q": "What does the Statue of Liberty symbolize?", "options": ["Military power", "Freedom and welcome to immigrants", "The federal budget", "States' rights"], "answer": 1, "explanation": "A gift from France, it became a symbol of liberty and welcome." }
+  ]
+}

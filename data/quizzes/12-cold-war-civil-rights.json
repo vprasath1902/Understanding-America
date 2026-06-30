@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What was the main concern of the United States during the Cold War?", "options": ["Communism", "Inflation", "Immigration", "Prohibition"], "answer": 0, "explanation": "The Cold War was a decades-long rivalry centered on the spread of communism." },
+    { "q": "What did the Civil Rights Movement work to end?", "options": ["The income tax", "Racial discrimination and segregation", "The two-party system", "Federalism"], "answer": 1, "explanation": "It sought to end segregation and secure equal rights and voting rights." },
+    { "q": "Who was a key leader of the Civil Rights Movement?", "options": ["Martin Luther King Jr.", "Theodore Roosevelt", "Andrew Jackson", "John Smith"], "answer": 0, "explanation": "Dr. King led much of the movement through nonviolent protest." },
+    { "q": "Which 1954 Supreme Court case ruled segregated public schools unconstitutional?", "options": ["Marbury v. Madison", "Brown v. Board of Education", "Plessy v. Ferguson", "United States v. Nixon"], "answer": 1, "explanation": "Brown v. Board of Education struck down 'separate but equal' in schools." },
+    { "q": "Around what year did the Cold War end with the collapse of the Soviet Union?", "options": ["1945", "1969", "1991", "2008"], "answer": 2, "explanation": "The Soviet Union collapsed around 1991, ending the Cold War." }
+  ]
+}
