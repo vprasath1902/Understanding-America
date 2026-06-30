@@ -183,28 +183,28 @@ const BOOK_NAV = [
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Principles of Democracy",
+    "title": "USCIS Civics: Principles of Democracy",
     "href": "chapters/chapter-27-27-uscis-part-1.html",
     "kind": "chapter",
     "number": 27
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: System of Government",
+    "title": "USCIS Civics: System of Government",
     "href": "chapters/chapter-28-28-uscis-part-2.html",
     "kind": "chapter",
     "number": 28
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: American History",
+    "title": "USCIS Civics: American History",
     "href": "chapters/chapter-29-29-uscis-part-3.html",
     "kind": "chapter",
     "number": 29
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Modern America and Symbols",
+    "title": "USCIS Civics: Modern America and Symbols",
     "href": "chapters/chapter-30-30-uscis-part-4.html",
     "kind": "chapter",
     "number": 30
