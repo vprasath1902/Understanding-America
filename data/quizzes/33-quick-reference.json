@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Which branch makes the laws?", "options": ["The legislative branch (Congress)", "The executive branch", "The judicial branch", "The states"], "answer": 0, "explanation": "Congress makes laws; the executive enforces; the judicial interprets." },
+    { "q": "How many electoral votes are needed to win the presidency?", "options": ["218", "270", "435", "538"], "answer": 1, "explanation": "270 of the 538 electoral votes are needed to win." },
+    { "q": "How many Supreme Court justices are there?", "options": ["7", "9", "12", "15"], "answer": 1, "explanation": "The Supreme Court has nine justices." },
+    { "q": "Which office handles passports?", "options": ["USCIS", "The U.S. Department of State", "The IRS", "The DMV"], "answer": 1, "explanation": "The Department of State issues U.S. passports." },
+    { "q": "Where should you look for current officeholders and fees?", "options": ["Appendix H (Current Officials & Fees)", "The Bill of Rights", "Chapter 1", "The glossary"], "answer": 0, "explanation": "Time-sensitive facts live in Appendix H and should be verified." }
+  ]
+}

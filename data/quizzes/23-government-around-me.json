@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "At how many levels are you governed at the same time?", "options": ["One — just the federal government", "Several — local, state, and national", "Two — state and city only", "None"], "answer": 1, "explanation": "You live under local, state, and national governments at once." },
+    { "q": "Who represents you in the U.S. Senate?", "options": ["One senator for your district", "Two senators for your state", "Your mayor", "Your governor"], "answer": 1, "explanation": "Each state has two U.S. senators." },
+    { "q": "Which office handles driver licenses?", "options": ["USCIS", "Your state's motor vehicle agency (DMV)", "The IRS", "The Department of State"], "answer": 1, "explanation": "Driver licenses are a state responsibility." },
+    { "q": "Which office handles citizenship and green cards?", "options": ["USCIS", "The DMV", "The school board", "The county clerk"], "answer": 0, "explanation": "USCIS handles naturalization and green cards." },
+    { "q": "Why does local government often matter most to daily life?", "options": ["It controls the military", "It decides schools, roads, zoning, and local services close to home", "It prints money", "It signs treaties"], "answer": 1, "explanation": "Local decisions directly shape everyday life." }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What does federalism mean?", "options": ["Rule by one national government only", "Dividing power between the national government and the states", "Rule by the courts", "Government without states"], "answer": 1, "explanation": "Power is shared between the federal and state governments." },
+    { "q": "Which is a federal (national) responsibility?", "options": ["Driver licenses", "Immigration, national defense, and currency", "Local zoning", "Public school curriculum"], "answer": 1, "explanation": "National matters are handled by the federal government." },
+    { "q": "Which is usually a state or local responsibility?", "options": ["Printing money", "Driver licenses and public schools", "Foreign policy", "Issuing passports"], "answer": 1, "explanation": "States handle most everyday matters." },
+    { "q": "What does the Supremacy Clause do when valid federal and state laws conflict?", "options": ["State law wins", "Federal law generally prevails", "The conflict is ignored", "The President decides"], "answer": 1, "explanation": "The Constitution makes federal law the highest law of the land." },
+    { "q": "What are powers shared by both federal and state governments called?", "options": ["Reserved powers", "Concurrent powers", "Enumerated powers", "Implied powers"], "answer": 1, "explanation": "Taxing is an example of a concurrent power." }
+  ]
+}

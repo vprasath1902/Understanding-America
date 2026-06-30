@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What was the main concern of the United States during the Cold War?", "options": ["Communism", "Climate", "Immigration", "Inflation"], "answer": 0, "explanation": "The Cold War centered on the spread of communism." },
+    { "q": "What movement did Martin Luther King Jr. lead?", "options": ["The labor movement", "The Civil Rights Movement", "The temperance movement", "The space program"], "answer": 1, "explanation": "He led the Civil Rights Movement against racial discrimination." },
+    { "q": "What do the 13 stripes on the flag represent?", "options": ["The 13 original colonies", "13 presidents", "13 amendments", "13 states today"], "answer": 0, "explanation": "The stripes stand for the original thirteen colonies." },
+    { "q": "What do the 50 stars on the flag represent?", "options": ["50 senators", "The 50 states", "50 years of independence", "50 amendments"], "answer": 1, "explanation": "Each star represents one state." },
+    { "q": "When is Independence Day?", "options": ["July 4", "January 1", "December 25", "November 11"], "answer": 0, "explanation": "Independence Day marks the adoption of the Declaration of Independence." }
+  ]
+}

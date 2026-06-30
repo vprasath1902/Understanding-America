@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Which level of government records a birth or a marriage?", "options": ["The federal government", "State and local governments", "The Supreme Court", "Foreign governments"], "answer": 1, "explanation": "Vital records are kept by state and local governments." },
+    { "q": "Who mainly provides and funds public schools?", "options": ["The federal government alone", "States and local school districts", "The Supreme Court", "Private companies only"], "answer": 1, "explanation": "Public education is largely a state and local responsibility." },
+    { "q": "Which federal program provides retirement and disability benefits?", "options": ["Medicare", "Social Security", "The IRS", "The TSA"], "answer": 1, "explanation": "Social Security provides retirement and disability income." },
+    { "q": "Which federal program provides health coverage for people 65 and older?", "options": ["Medicare", "Social Security", "FEMA", "USCIS"], "answer": 0, "explanation": "Medicare is the federal health-insurance program for seniors." },
+    { "q": "What does lifelong civic participation include?", "options": ["Voting, jury service, and community involvement", "Only paying taxes", "Avoiding elections", "Leaving government to officials"], "answer": 0, "explanation": "Citizenship is an ongoing, two-way relationship." }
+  ]
+}

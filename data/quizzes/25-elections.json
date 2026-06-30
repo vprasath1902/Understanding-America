@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Who is eligible to vote in U.S. federal elections?", "options": ["Any resident", "U.S. citizens who meet age and residency rules", "Green card holders", "Anyone over 16"], "answer": 1, "explanation": "Voting in federal elections is reserved for citizens, generally 18 and older." },
+    { "q": "What must most people do before they can vote?", "options": ["Pay a poll tax", "Register to vote", "Join a political party", "Pass the civics test"], "answer": 1, "explanation": "Most states require voter registration; start at vote.gov." },
+    { "q": "What is the difference between a primary and a general election?", "options": ["There is none", "A primary chooses a party's nominee; the general election chooses the officeholder", "A primary is only for president", "A general election picks party leaders"], "answer": 1, "explanation": "Primaries narrow the field; the general election fills the office." },
+    { "q": "What is a midterm election?", "options": ["A presidential election", "A federal election held between presidential elections", "A local-only election", "A primary"], "answer": 1, "explanation": "Midterms decide House seats, a third of the Senate, and many state/local offices." },
+    { "q": "Besides the President, who else do voters elect?", "options": ["Only senators", "Senators, representatives, governors, and many state and local officials", "Only judges", "No one else"], "answer": 1, "explanation": "Ballots include many offices at every level." }
+  ]
+}

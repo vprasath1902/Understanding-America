@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "How should you treat your Certificate of Naturalization?", "options": ["Carry the original daily", "Store the original safely and keep copies", "Laminate and use it as ID everywhere", "Throw it away after the ceremony"], "answer": 1, "explanation": "It is costly to replace, so protect the original." },
+    { "q": "Which new right should a new citizen act on first?", "options": ["Registering to vote", "Joining the military", "Running for President", "Leaving the country"], "answer": 0, "explanation": "Registering to vote is a key new right of citizenship." },
+    { "q": "What document can a new citizen apply for that proves citizenship and allows international travel?", "options": ["A green card", "A U.S. passport", "A visa", "A Social Security card"], "answer": 1, "explanation": "Apply for a passport using the Certificate of Naturalization." },
+    { "q": "Which records should a new citizen update?", "options": ["Social Security records", "None", "Their birth certificate", "Their high school records"], "answer": 0, "explanation": "Update the Social Security Administration to reflect citizenship." },
+    { "q": "Which is a way to begin civic life?", "options": ["Learn your representatives and follow elections", "Avoid all local meetings", "Ignore jury duty", "Stop paying taxes"], "answer": 0, "explanation": "Engaging locally and voting are part of active citizenship." }
+  ]
+}
