@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Into how many branches does the Constitution divide the federal government?", "options": ["Two", "Three", "Four", "One"], "answer": 1, "explanation": "Legislative, executive, and judicial — the separation of powers." },
+    { "q": "What is the system called that lets each branch limit the others?", "options": ["Federalism", "Checks and balances", "Popular sovereignty", "Judicial review"], "answer": 1, "explanation": "Each branch has tools to check the other two." },
+    { "q": "How can Congress respond to a presidential veto?", "options": ["It cannot do anything", "Override it with a two-thirds vote in each chamber", "Ask the Supreme Court to sign", "Hold a national vote"], "answer": 1, "explanation": "A two-thirds vote in both chambers overrides a veto." },
+    { "q": "Which power lets courts check the other branches?", "options": ["The veto", "Judicial review", "Impeachment", "Appropriations"], "answer": 1, "explanation": "Judicial review lets courts strike down unconstitutional laws or actions." },
+    { "q": "Why did the founders separate powers?", "options": ["To make government faster", "To prevent any one person or branch from gaining too much power", "To save money", "To copy Britain exactly"], "answer": 1, "explanation": "Divided power guards against tyranny." }
+  ]
+}

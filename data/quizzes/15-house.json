@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "How many voting members are in the House of Representatives?", "options": ["100", "435", "50", "538"], "answer": 1, "explanation": "There are 435 voting members, divided among the states by population." },
+    { "q": "How are House seats divided among the states?", "options": ["Equally — the same number for each state", "By population", "By land area", "By the year a state joined"], "answer": 1, "explanation": "More populous states get more seats; every state gets at least one." },
+    { "q": "How long is a term in the House?", "options": ["2 years", "4 years", "6 years", "Life"], "answer": 0, "explanation": "Short terms keep representatives accountable to voters." },
+    { "q": "Which power belongs only to the House?", "options": ["Confirming judges", "Starting revenue (tax) bills and impeaching officials", "Approving treaties", "Trying impeachments"], "answer": 1, "explanation": "Revenue bills begin in the House, which also impeaches officials." },
+    { "q": "Who leads the House of Representatives?", "options": ["The Vice President", "The Speaker of the House", "The Chief Justice", "The President"], "answer": 1, "explanation": "The Speaker leads the House and is second in line to the presidency." }
+  ]
+}

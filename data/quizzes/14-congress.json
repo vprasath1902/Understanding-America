@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What are the two chambers of Congress?", "options": ["The Cabinet and the Court", "The House of Representatives and the Senate", "The state and federal houses", "The upper and lower courts"], "answer": 1, "explanation": "Congress is bicameral: the House and the Senate." },
+    { "q": "What did the Great Compromise establish?", "options": ["A single national house", "A House based on population and a Senate with equal state representation", "Direct election of the President", "The Bill of Rights"], "answer": 1, "explanation": "It balanced the demands of large and small states." },
+    { "q": "Which article of the Constitution creates Congress?", "options": ["Article I", "Article II", "Article III", "Article V"], "answer": 0, "explanation": "Article I comes first, reflecting Congress's central role." },
+    { "q": "Which of these is a power of Congress?", "options": ["Interpreting the Constitution", "Making laws, taxing, and declaring war", "Commanding the army in battle", "Vetoing its own bills"], "answer": 1, "explanation": "Congress makes laws, controls spending, and can declare war." },
+    { "q": "Where does much of the detailed work on bills happen?", "options": ["In the Supreme Court", "In committees", "At the White House", "In state legislatures"], "answer": 1, "explanation": "Committees study, amend, and recommend bills." }
+  ]
+}
