@@ -245,6 +245,13 @@ const BOOK_NAV = [
     "number": 35
   },
   {
+    "section": "Part VIII — The American Economy",
+    "title": "The American Economy",
+    "href": "chapters/chapter-36-36-american-economy.html",
+    "kind": "chapter",
+    "number": 36
+  },
+  {
     "section": "Appendices",
     "title": "Appendix A: The Constitution Reader-Friendly Edition",
     "href": "appendices/appendix-a-constitution.html",

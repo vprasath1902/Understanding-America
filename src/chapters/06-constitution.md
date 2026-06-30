@@ -69,6 +69,8 @@ The Preamble begins with three famous words: "**We the People**." They announce 
 
 The body of the Constitution is organized into seven **Articles**. **Article I** creates Congress, the lawmaking branch; **Article II** creates the Presidency; and **Article III** creates the federal courts. **Article IV** describes the relationships among the states; **Article V** explains how to amend the Constitution; **Article VI** contains the **Supremacy Clause**, making the Constitution and federal law the highest law; and **Article VII** set out how the document would be ratified. Together they form the structure of the entire federal government.
 
+Ratification was not automatic — it took a national debate. Supporters known as Federalists made the case for the Constitution in the **Federalist Papers**, a series of essays by **James Madison, Alexander Hamilton, and John Jay** (writing as "Publius") that remain a key guide to its meaning.
+
 ## How the Constitution Is Amended
 
 The founders knew they could not foresee everything, so **Article V** provides a way to **amend** the Constitution. The usual path requires a **two-thirds vote of both houses of Congress** to propose an amendment, followed by **ratification by three-fourths of the states** (38 of 50 today). That high bar is deliberate: it lets the country make lasting change when there is broad agreement, while protecting the Constitution from passing political moods. In more than 230 years, only **27** amendments have been adopted out of thousands proposed.

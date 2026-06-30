@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h36-title h36-desc">
+  <title id="h36-title">Chapter 36 hero — The American Economy</title>
+  <desc id="h36-desc">A flat geometric banner: a navy title panel beside a rising bar chart with an upward arrow and a gold dollar coin, representing the U.S. free-market economy.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+    .coin{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#0b3c6d}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="48">The American</text>
+  <text class="title" x="80" y="306" font-size="48">Economy</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 36</text>
+
+  <!-- axis -->
+  <path d="M740 360 H1120 M740 360 V150" fill="none" stroke="#0b3c6d" stroke-width="4" stroke-linecap="round"/>
+  <!-- bars -->
+  <rect x="770" y="300" width="50" height="60" fill="#9cc7f5"/>
+  <rect x="840" y="260" width="50" height="100" fill="#2e8b57"/>
+  <rect x="910" y="210" width="50" height="150" fill="#b22234"/>
+  <!-- upward trend arrow -->
+  <path d="M760 330 L840 280 L910 240 L1090 160" fill="none" stroke="#c9a227" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="1090,160 1058,158 1078,186" fill="#c9a227"/>
+  <!-- dollar coin -->
+  <circle cx="1030" cy="320" r="46" fill="#c9a227" stroke="#0b3c6d" stroke-width="4"/>
+  <text class="coin" x="1030" y="338" text-anchor="middle" font-size="48">$</text>
+</svg>

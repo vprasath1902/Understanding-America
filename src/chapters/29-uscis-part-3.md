@@ -50,7 +50,9 @@ Long before Europeans arrived, **Native Americans** lived across the land. As co
 
 ## Founding Documents and Figures
 
-**Thomas Jefferson** wrote the **Declaration of Independence**, which the Continental Congress adopted on **July 4, 1776**. After winning independence and finding the first government too weak, delegates wrote the **Constitution in 1787**. **George Washington**, who had led the Continental Army, became the **first President** and is often called the "Father of Our Country." James Madison is known as the "Father of the Constitution."
+**Thomas Jefferson** wrote the **Declaration of Independence**, which the Continental Congress adopted on **July 4, 1776**. After winning independence and finding the first government too weak, delegates wrote the **Constitution in 1787**. **George Washington**, who had led the Continental Army, became the **first President** and is often called the "Father of Our Country." **James Madison** is known as the "Father of the Constitution." **Benjamin Franklin** — a writer, inventor, diplomat, and the first Postmaster General — also helped found the nation.
+
+To win approval of the new Constitution, **James Madison, Alexander Hamilton, and John Jay** wrote the **Federalist Papers** (under the pen name "Publius"), essays that explained and defended the Constitution and helped persuade the states to ratify it. Hamilton went on to become the first Secretary of the Treasury.
 
 ## The Civil War
 
