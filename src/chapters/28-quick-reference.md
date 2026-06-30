@@ -41,7 +41,7 @@ Federal government handles immigration, passports, defense, and currency. States
 
 ## Who Do I Contact?
 
-Citizenship goes to USCIS, passports to the Department of State, Social Security to SSA, federal taxes to IRS, driver licenses to PennDOT, and local roads to township or county offices.
+Citizenship goes to USCIS, passports to the Department of State, Social Security to SSA, federal taxes to the IRS, driver licenses to your state motor vehicle agency (DMV), and local roads to city, township, or county offices.
 
 ## Memory Map
 

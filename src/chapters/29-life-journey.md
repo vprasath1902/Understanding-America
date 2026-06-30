@@ -37,7 +37,7 @@ State and local governments handle birth records and schools, while federal agen
 
 ## Driving, Work, and Taxes
 
-PennDOT handles driver licenses. Employers report taxes. The IRS, Social Security, labor agencies, and workplace safety systems shape working life.
+Your state's motor vehicle agency handles driver licenses. Employers report taxes. The IRS, Social Security, labor agencies, and workplace safety systems shape working life.
 
 ## Home and Family
 

@@ -45,4 +45,4 @@ Revenue bills begin in the House. The House also has the sole power to impeach f
 
 ## Your District
 
-For Chester Springs, the U.S. House district has been Pennsylvania’s 6th Congressional District. Always verify current representation before an interview or election.
+Every voter lives in one congressional district and is represented by one member of the House. Your district depends on your home address, and districts can change after each ten-year census. Find your current representative at [house.gov](https://www.house.gov/representatives/find-your-representative), and see Appendix H for current officeholders.
