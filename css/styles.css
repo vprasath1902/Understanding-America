@@ -512,9 +512,12 @@ body.sepia {
   --line: #e1d0a8;
 }
 body.large-text { font-size: 18px; }
-body.reader-mode .sidebar,
-body.reader-mode .app-header .control-link,
-body.reader-mode .app-header .mobile-menu { display:none !important; }
+/* Reader mode declutters the page but keeps the top-bar navigation usable:
+   the Explorer/Timeline/Quiz links stay, and the Menu button is shown so the
+   contents (hidden sidebar) are one click away as an overlay. */
+body.reader-mode .sidebar { display:none !important; }
+body.reader-mode .sidebar.open { display:block !important; position:fixed; inset:68px 16px 16px; z-index:30; height:auto; overflow:auto; background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:16px; }
+body.reader-mode .app-header .mobile-menu { display:inline-block !important; }
 body.reader-mode .layout { display:block; max-width:920px; }
 body.reader-mode main { max-width:860px; margin:0 auto; }
 body.reader-mode .chapter-card { box-shadow:none; border:0; }
