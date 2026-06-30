@@ -267,6 +267,85 @@ ${order
   return rows.length;
 }
 
+// ---- Glossary page (generated from data/glossary.json) ---------------------
+
+const slugifyTerm = (s = "") =>
+  String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+function renderGlossary() {
+  const file = path.join(ROOT, "data", "glossary.json");
+  if (!fs.existsSync(file)) return 0;
+  const terms = JSON.parse(fs.readFileSync(file, "utf8")).terms.slice().sort((a, b) =>
+    a.term.localeCompare(b.term, "en", { sensitivity: "base" })
+  );
+
+  const groups = {};
+  for (const t of terms) {
+    let L = (t.term[0] || "#").toUpperCase();
+    if (!/[A-Z]/.test(L)) L = "#";
+    (groups[L] ||= []).push(t);
+  }
+  const letters = Object.keys(groups).sort();
+  const jump = letters.map((L) => `<a href="#g-${L}">${L}</a>`).join("\n");
+  const sections = letters
+    .map((L) => {
+      const items = groups[L]
+        .map(
+          (t) =>
+            `<div class="g-entry" id="${slugifyTerm(t.term)}" data-term="${escHtml(
+              t.term.toLowerCase()
+            )}"><dt>${escHtml(t.term)}</dt><dd>${escHtml(t.definition)}</dd></div>`
+        )
+        .join("\n");
+      return `<section class="g-letter" id="g-${L}"><h2>${L}</h2><dl class="g-list">${items}</dl></section>`;
+    })
+    .join("\n");
+
+  const body = `<style>
+.g-filter{width:100%;padding:12px 14px;font-size:1rem;border:2px solid var(--line,#d8dee8);border-radius:12px;margin:8px 0 14px}
+.g-jump{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.g-jump a{display:inline-block;min-width:28px;text-align:center;padding:4px 8px;border:1px solid var(--line,#d8dee8);border-radius:8px;color:#0b3c6d;text-decoration:none;font-weight:800;font-size:.85rem}
+.g-letter h2{color:#c9a227;border-bottom:2px solid var(--line,#d8dee8);padding-bottom:4px}
+.g-list{margin:0}
+.g-entry{padding:10px 0;border-bottom:1px solid #eef4fb}
+.g-entry dt{font-weight:800;color:#0b3c6d}
+.g-entry dd{margin:4px 0 0}
+.g-empty{color:#667085}
+</style>
+<p>${terms.length} terms. Use the filter to jump to a word, or pick a letter.</p>
+<input class="g-filter" id="gFilter" type="text" placeholder="Filter ${terms.length} terms…" aria-label="Filter glossary terms">
+<nav class="g-jump" aria-label="Jump to letter">
+${jump}
+</nav>
+${sections}
+<p class="g-empty" id="gEmpty" hidden>No terms match your filter.</p>
+<script>
+(function(){
+  var f=document.getElementById('gFilter');if(!f)return;
+  var entries=[].slice.call(document.querySelectorAll('.g-entry'));
+  var letters=[].slice.call(document.querySelectorAll('.g-letter'));
+  var empty=document.getElementById('gEmpty');
+  f.addEventListener('input',function(){
+    var q=f.value.trim().toLowerCase();var any=false;
+    entries.forEach(function(e){var m=e.getAttribute('data-term').indexOf(q)>-1;e.hidden=q&&!m;if(m||!q)any=true;});
+    letters.forEach(function(s){var vis=s.querySelectorAll('.g-entry:not([hidden])').length>0;s.hidden=!vis;});
+    empty.hidden=any;
+  });
+})();
+</script>`;
+
+  fs.writeFileSync(
+    path.join(BUILD, "glossary.html"),
+    renderPage({
+      title: "Glossary",
+      subtitle: "Key terms used throughout Understanding America.",
+      bodyHtml: body,
+      rootPrefix: "",
+    })
+  );
+  return terms.length;
+}
+
 // ---- Main -------------------------------------------------------------------
 
 function main() {
@@ -288,6 +367,7 @@ function main() {
 
   const appendices = renderAppendices();
   const inventory = renderGallery(registry);
+  const glossaryTerms = renderGlossary();
 
   console.log(`Build complete -> ${path.relative(ROOT, BUILD)}/`);
   console.log(`  chapters total:     ${manifest.length}`);
@@ -300,6 +380,7 @@ function main() {
     console.log(`  generated visuals:  ${visuals.length}`);
   console.log(`  optimized SVGs:     ${optimized}`);
   console.log(`  inventory entries:  ${inventory} (visual-gallery.html + registry.json)`);
+  console.log(`  glossary terms:     ${glossaryTerms}`);
 }
 
 main();
