@@ -11,11 +11,12 @@ objectives:
   - "Prepare the right documents for the interview"
   - "Understand what happens, step by step, at the office"
   - "Know how the English and civics tests work, and the possible outcomes"
-callout: "Answer truthfully; you pass the civics test with 6 of 10 correct."
+callout: "Answer truthfully; the civics test now has two versions — 6 of 10 (2008) or 12 of 20 (2025)."
 summary:
   - "USCIS mails an interview notice with the date, place, and documents to bring."
   - "At the office you take an oath to tell the truth and review your N-400 with an officer."
-  - "The officer tests English (speaking, reading, writing) and asks up to 10 civics questions; 6 correct passes."
+  - "The officer tests English (speaking, reading, writing) and the civics test."
+  - "Civics test: the 2008 version (100 questions) asks 10 and needs 6 correct; the 2025 version (128 questions) asks 20 and needs 12 correct."
   - "Outcomes are recommended approval, continued, or denied; approval leads to the oath."
 terms:
   - "Interview Notice"
@@ -54,7 +55,14 @@ At the office you pass through security and wait to be called. When the officer 
 
 ## The English and Civics Tests
 
-Unless you qualify for an exemption, the officer administers two tests. The **English test** has three parts: speaking (judged during the interview), reading one sentence correctly out of up to three, and writing one sentence correctly out of up to three. The **civics test** is oral: the officer asks up to **10 questions** from the official list of 100, and you must answer **6 correctly** to pass. The previous four chapters cover that civics material.
+Unless you qualify for an exemption, the officer administers two tests. The **English test** has three parts: speaking (judged during the interview), reading one sentence correctly out of up to three, and writing one sentence correctly out of up to three.
+
+The **civics test** is oral, and there are now **two versions** — which one you take depends on when you filed Form N-400, so always confirm the current rules at [uscis.gov/citizenship](https://www.uscis.gov/citizenship):
+
+- **2008 version (100 questions):** the officer asks up to **10** questions; you must answer **6 correctly** to pass.
+- **2025 version (128 questions):** the officer asks up to **20** questions; you must answer **12 correctly** to pass.
+
+A **65/20 special consideration** applies to both versions: applicants who are **65 or older** and have been permanent residents for **20 or more years** study a smaller, marked set of questions and may test in their chosen language. The previous chapters cover the civics material itself.
 
 ## Decision and Oath
 
