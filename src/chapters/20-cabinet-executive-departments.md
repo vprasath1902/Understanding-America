@@ -43,9 +43,9 @@ references:
   - label: "A–Z Index of U.S. Government Departments and Agencies — USA.gov"
     url: "https://www.usa.gov/agency-index"
 related_chapters:
-  - chapter-13-13-president.html
-  - chapter-14-14-executive-branch.html
-  - chapter-16-16-judicial-branch.html
+  - chapter-18-18-president.html
+  - chapter-19-19-executive-branch.html
+  - chapter-21-21-judicial-branch.html
 related_glossary:
   - Cabinet
   - Executive Branch

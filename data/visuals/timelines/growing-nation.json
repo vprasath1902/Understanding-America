@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "growing-nation",
+  "title": "A Growing Nation",
+  "desc": "Timeline of early expansion: 1803 Louisiana Purchase, 1804 Lewis and Clark expedition, 1812 War of 1812, 1838 Trail of Tears, and 1848 Seneca Falls Convention.",
+  "events": [
+    { "year": "1803", "label": "Louisiana Purchase" },
+    { "year": "1804", "label": "Lewis & Clark" },
+    { "year": "1812", "label": "War of 1812" },
+    { "year": "1838", "label": "Trail of Tears" },
+    { "year": "1848", "label": "Seneca Falls" }
+  ]
+}

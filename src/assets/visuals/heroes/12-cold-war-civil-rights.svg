@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h12c-title h12c-desc">
+  <title id="h12c-title">Chapter 12 hero — The Cold War, Civil Rights, and Modern America</title>
+  <desc id="h12c-desc">A flat geometric banner: a navy title panel beside marching figures and a gold equals sign, representing the Civil Rights Movement and the pursuit of equality.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">Cold War &amp;</text>
+  <text class="title" x="80" y="306" font-size="44">Civil Rights</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 12</text>
+
+  <!-- equals sign (equality) -->
+  <g fill="#c9a227">
+    <rect x="980" y="150" width="150" height="30" rx="12"/>
+    <rect x="980" y="200" width="150" height="30" rx="12"/>
+  </g>
+
+  <!-- marching figures -->
+  <g>
+    <g transform="translate(740 250)" fill="#0b3c6d"><circle cy="-40" r="22"/><rect x="-20" y="-14" width="40" height="84" rx="12"/></g>
+    <g transform="translate(806 250)" fill="#b22234"><circle cy="-40" r="22"/><rect x="-20" y="-14" width="40" height="84" rx="12"/></g>
+    <g transform="translate(872 250)" fill="#2e8b57"><circle cy="-40" r="22"/><rect x="-20" y="-14" width="40" height="84" rx="12"/></g>
+    <g transform="translate(938 250)" fill="#6a4c93"><circle cy="-40" r="22"/><rect x="-20" y="-14" width="40" height="84" rx="12"/></g>
+    <rect x="700" y="324" width="300" height="16" rx="6" fill="#667085"/>
+  </g>
+</svg>

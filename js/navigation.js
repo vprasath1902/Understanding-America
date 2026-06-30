@@ -49,165 +49,200 @@ const BOOK_NAV = [
     "number": 7
   },
   {
-    "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "Separation of Powers and Checks &amp; Balances",
-    "href": "chapters/chapter-08-08-separation-checks.html",
+    "section": "Part I \u2014 The Story of America",
+    "title": "A Growing Nation",
+    "href": "chapters/chapter-08-08-growing-nation.html",
     "kind": "chapter",
     "number": 8
   },
   {
-    "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "Congress",
-    "href": "chapters/chapter-09-09-congress.html",
+    "section": "Part I \u2014 The Story of America",
+    "title": "Slavery, Civil War, and Reconstruction",
+    "href": "chapters/chapter-09-09-civil-war-reconstruction.html",
     "kind": "chapter",
     "number": 9
   },
   {
-    "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The House of Representatives",
-    "href": "chapters/chapter-10-10-house.html",
+    "section": "Part I \u2014 The Story of America",
+    "title": "Industrial America and a Nation of Immigrants",
+    "href": "chapters/chapter-10-10-industrial-immigration.html",
     "kind": "chapter",
     "number": 10
   },
   {
-    "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The United States Senate",
-    "href": "chapters/chapter-11-11-senate.html",
+    "section": "Part I \u2014 The Story of America",
+    "title": "Depression, World Wars, and a Global Power",
+    "href": "chapters/chapter-11-11-depression-world-wars.html",
     "kind": "chapter",
     "number": 11
   },
   {
-    "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "How a Bill Becomes a Law",
-    "href": "chapters/chapter-12-12-law-making.html",
+    "section": "Part I \u2014 The Story of America",
+    "title": "The Cold War, Civil Rights, and Modern America",
+    "href": "chapters/chapter-12-12-cold-war-civil-rights.html",
     "kind": "chapter",
     "number": 12
   },
   {
     "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The President of the United States",
-    "href": "chapters/chapter-13-13-president.html",
+    "title": "Separation of Powers and Checks &amp; Balances",
+    "href": "chapters/chapter-13-13-separation-checks.html",
     "kind": "chapter",
     "number": 13
   },
   {
     "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The Executive Branch",
-    "href": "chapters/chapter-14-14-executive-branch.html",
+    "title": "Congress",
+    "href": "chapters/chapter-14-14-congress.html",
     "kind": "chapter",
     "number": 14
   },
   {
     "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The Cabinet and Executive Departments",
-    "href": "chapters/chapter-15-15-cabinet-executive-departments.html",
+    "title": "The House of Representatives",
+    "href": "chapters/chapter-15-15-house.html",
     "kind": "chapter",
     "number": 15
   },
   {
     "section": "Part II \u2014 The Constitution and Government Design",
-    "title": "The Judicial Branch",
-    "href": "chapters/chapter-16-16-judicial-branch.html",
+    "title": "The United States Senate",
+    "href": "chapters/chapter-16-16-senate.html",
     "kind": "chapter",
     "number": 16
   },
   {
-    "section": "Part III \u2014 Government in Daily Life",
-    "title": "Federal Government vs. State Government",
-    "href": "chapters/chapter-17-17-federalism.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "How a Bill Becomes a Law",
+    "href": "chapters/chapter-17-17-law-making.html",
     "kind": "chapter",
     "number": 17
   },
   {
-    "section": "Part III \u2014 Government in Daily Life",
-    "title": "Government Around Me",
-    "href": "chapters/chapter-18-18-government-around-me.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "The President of the United States",
+    "href": "chapters/chapter-18-18-president.html",
     "kind": "chapter",
     "number": 18
   },
   {
-    "section": "Part III \u2014 Government in Daily Life",
-    "title": "A Day in the Life of an American Citizen",
-    "href": "chapters/chapter-19-19-day-in-life.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "The Executive Branch",
+    "href": "chapters/chapter-19-19-executive-branch.html",
     "kind": "chapter",
     "number": 19
   },
   {
-    "section": "Part III \u2014 Government in Daily Life",
-    "title": "Elections and Voting",
-    "href": "chapters/chapter-20-20-elections.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "The Cabinet and Executive Departments",
+    "href": "chapters/chapter-20-20-cabinet-executive-departments.html",
     "kind": "chapter",
     "number": 20
   },
   {
-    "section": "Part IV \u2014 Becoming a Citizen",
-    "title": "Becoming an American Citizen",
-    "href": "chapters/chapter-21-21-citizenship.html",
+    "section": "Part II \u2014 The Constitution and Government Design",
+    "title": "The Judicial Branch",
+    "href": "chapters/chapter-21-21-judicial-branch.html",
     "kind": "chapter",
     "number": 21
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Principles of Democracy",
-    "href": "chapters/chapter-22-22-uscis-part-1.html",
+    "section": "Part III \u2014 Government in Daily Life",
+    "title": "Federal Government vs. State Government",
+    "href": "chapters/chapter-22-22-federalism.html",
     "kind": "chapter",
     "number": 22
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: System of Government",
-    "href": "chapters/chapter-23-23-uscis-part-2.html",
+    "section": "Part III \u2014 Government in Daily Life",
+    "title": "Government Around Me",
+    "href": "chapters/chapter-23-23-government-around-me.html",
     "kind": "chapter",
     "number": 23
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: American History",
-    "href": "chapters/chapter-24-24-uscis-part-3.html",
+    "section": "Part III \u2014 Government in Daily Life",
+    "title": "A Day in the Life of an American Citizen",
+    "href": "chapters/chapter-24-24-day-in-life.html",
     "kind": "chapter",
     "number": 24
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "USCIS Questions Explained: Modern America and Symbols",
-    "href": "chapters/chapter-25-25-uscis-part-4.html",
+    "section": "Part III \u2014 Government in Daily Life",
+    "title": "Elections and Voting",
+    "href": "chapters/chapter-25-25-elections.html",
     "kind": "chapter",
     "number": 25
   },
   {
-    "section": "Part V \u2014 USCIS Study Guide",
-    "title": "The Complete Naturalization Interview",
-    "href": "chapters/chapter-26-26-interview.html",
+    "section": "Part IV \u2014 Becoming a Citizen",
+    "title": "Becoming an American Citizen",
+    "href": "chapters/chapter-26-26-citizenship.html",
     "kind": "chapter",
     "number": 26
   },
   {
     "section": "Part V \u2014 USCIS Study Guide",
-    "title": "Your First 30 Days as a U.S. Citizen",
-    "href": "chapters/chapter-27-27-first-30-days.html",
+    "title": "USCIS Questions Explained: Principles of Democracy",
+    "href": "chapters/chapter-27-27-uscis-part-1.html",
     "kind": "chapter",
     "number": 27
   },
   {
-    "section": "Part VI \u2014 Reference",
-    "title": "American Government Quick Reference Guide",
-    "href": "chapters/chapter-28-28-quick-reference.html",
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "USCIS Questions Explained: System of Government",
+    "href": "chapters/chapter-28-28-uscis-part-2.html",
     "kind": "chapter",
     "number": 28
   },
   {
-    "section": "Part VI \u2014 Reference",
-    "title": "An American Citizen\u2019s Life Journey",
-    "href": "chapters/chapter-29-29-life-journey.html",
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "USCIS Questions Explained: American History",
+    "href": "chapters/chapter-29-29-uscis-part-3.html",
     "kind": "chapter",
     "number": 29
   },
   {
-    "section": "Part VII — Understanding Elections",
-    "title": "Elections and the Electoral College",
-    "href": "chapters/chapter-30-30-elections-electoral-college.html",
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "USCIS Questions Explained: Modern America and Symbols",
+    "href": "chapters/chapter-30-30-uscis-part-4.html",
     "kind": "chapter",
     "number": 30
+  },
+  {
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "The Complete Naturalization Interview",
+    "href": "chapters/chapter-31-31-interview.html",
+    "kind": "chapter",
+    "number": 31
+  },
+  {
+    "section": "Part V \u2014 USCIS Study Guide",
+    "title": "Your First 30 Days as a U.S. Citizen",
+    "href": "chapters/chapter-32-32-first-30-days.html",
+    "kind": "chapter",
+    "number": 32
+  },
+  {
+    "section": "Part VI \u2014 Reference",
+    "title": "American Government Quick Reference Guide",
+    "href": "chapters/chapter-33-33-quick-reference.html",
+    "kind": "chapter",
+    "number": 33
+  },
+  {
+    "section": "Part VI \u2014 Reference",
+    "title": "An American Citizen\u2019s Life Journey",
+    "href": "chapters/chapter-34-34-life-journey.html",
+    "kind": "chapter",
+    "number": 34
+  },
+  {
+    "section": "Part VII \u2014 Understanding Elections",
+    "title": "Elections and the Electoral College",
+    "href": "chapters/chapter-35-35-elections-electoral-college.html",
+    "kind": "chapter",
+    "number": 35
   },
   {
     "section": "Appendices",
