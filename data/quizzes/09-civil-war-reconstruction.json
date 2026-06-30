@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What was the central cause of the Civil War?", "options": ["Taxes on tea", "Slavery", "Immigration", "Foreign invasion"], "answer": 1, "explanation": "The war was fought chiefly over slavery and whether it would expand or end." },
+    { "q": "What did the Emancipation Proclamation (1863) declare?", "options": ["The end of the war", "That enslaved people in the Confederate states were free", "A new tax", "Independence from Britain"], "answer": 1, "explanation": "Lincoln's order turned the war into a fight for freedom as well as union." },
+    { "q": "Which amendment abolished slavery?", "options": ["13th", "14th", "15th", "19th"], "answer": 0, "explanation": "The 13th Amendment (1865) abolished slavery nationwide." },
+    { "q": "What did the 14th Amendment guarantee?", "options": ["The right to bear arms", "Citizenship and equal protection of the laws", "A federal income tax", "Presidential term limits"], "answer": 1, "explanation": "It granted citizenship to all born in the U.S. and promised equal protection." },
+    { "q": "What was Reconstruction?", "options": ["A war with Mexico", "The effort after the war to rebuild the South and protect the rights of freed people", "A new political party", "The building of railroads"], "answer": 1, "explanation": "Reconstruction lasted from 1865 to 1877." }
+  ]
+}

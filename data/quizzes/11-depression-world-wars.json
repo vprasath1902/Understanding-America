@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "In what year did the United States enter World War I?", "options": ["1914", "1917", "1929", "1941"], "answer": 1, "explanation": "The U.S. entered on the side of the Allies in 1917." },
+    { "q": "What event began the Great Depression?", "options": ["The attack on Pearl Harbor", "The 1929 stock market crash", "The end of World War I", "The New Deal"], "answer": 1, "explanation": "The 1929 crash began the worst economic crisis in U.S. history." },
+    { "q": "What were President Franklin D. Roosevelt's programs to fight the Depression called?", "options": ["The Great Society", "The New Deal", "The Square Deal", "Reconstruction"], "answer": 1, "explanation": "The New Deal provided relief, jobs, and reform, including Social Security." },
+    { "q": "What event brought the United States into World War II?", "options": ["The sinking of the Titanic", "The attack on Pearl Harbor in 1941", "The fall of the Berlin Wall", "The Louisiana Purchase"], "answer": 1, "explanation": "Japan's December 7, 1941 attack drew the U.S. into the war." },
+    { "q": "By 1945, the United States had become what?", "options": ["A British colony again", "One of the most powerful nations in the world", "A confederation", "Neutral in world affairs"], "answer": 1, "explanation": "The war made the U.S. a leading global power." }
+  ]
+}

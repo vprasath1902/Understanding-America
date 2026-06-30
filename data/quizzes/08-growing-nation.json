@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What did the 1803 Louisiana Purchase do?", "options": ["Ended the Revolution", "Roughly doubled the size of the United States", "Created the Constitution", "Started the Civil War"], "answer": 1, "explanation": "The U.S. bought the vast Louisiana Territory from France." },
+    { "q": "What was 'Manifest Destiny'?", "options": ["A trade agreement with Britain", "The belief that the U.S. was destined to expand across the continent", "A Supreme Court case", "An early political party"], "answer": 1, "explanation": "Many Americans believed the nation should stretch from the Atlantic to the Pacific." },
+    { "q": "The Trail of Tears refers to what?", "options": ["A westward trade route", "The forced removal of the Cherokee and other Native nations", "A Civil War battle", "An immigration station"], "answer": 1, "explanation": "Thousands died during the forced march off their homelands." },
+    { "q": "What was the focus of the 1848 Seneca Falls Convention?", "options": ["Ending the War of 1812", "Women's rights, including the vote", "Building railroads", "Banning alcohol"], "answer": 1, "explanation": "Reformers there demanded equal rights for women." },
+    { "q": "Who was a leading voice of the abolition movement?", "options": ["Frederick Douglass", "George Washington", "Andrew Jackson", "Woodrow Wilson"], "answer": 0, "explanation": "Douglass, who had escaped slavery, was a leading abolitionist." }
+  ]
+}
