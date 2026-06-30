@@ -1,6 +1,6 @@
 ---
 title: "American Government Quick Reference Guide"
-subtitle: "This chapter is a concise reference for the entire structure of American government."
+subtitle: "A concise desk reference to the structure of American government — handy before an interview, an election, or a quiz."
 hero:
   src: "assets/visuals/heroes/28-quick-reference.svg"
   alt: "An open book with index tabs and a gold star"
@@ -8,41 +8,69 @@ diagram:
   src: "svg/three-branches.svg"
   alt: "Visual diagram for American Government Quick Reference Guide"
 objectives:
-  - "Review branches at a glance"
-  - "Know who to contact"
-  - "Use quick facts for study"
-callout: "This is the desk reference chapter."
+  - "Recall the three branches and their jobs at a glance"
+  - "Know which level of government and which office handles what"
+  - "Use quick facts and memory aids for study"
+callout: "Three branches; three levels; one Constitution above them all."
 summary:
-  - "This is the desk reference chapter."
-  - "Use it before interviews or elections."
-  - "Verify current officials before relying on names."
+  - "Three branches: legislative makes laws, executive enforces, judicial interprets."
+  - "Three levels: federal, state, and local, each with its own responsibilities."
+  - "Key numbers: 100 senators, 435 representatives, 9 justices, 27 amendments, 270 of 538 electoral votes to win."
+  - "Always verify current officeholders (Appendix H) before relying on names."
 terms:
-  - "Constitution"
-  - "Government"
-  - "Rights"
-  - "Citizenship"
+  - "Three Branches"
+  - "Checks and Balances"
   - "Federalism"
-  - "Representation"
+  - "Bill of Rights"
+  - "Electoral College"
   - "Rule of Law"
 review:
-  - "What is the main idea of this chapter?"
-  - "How does this chapter connect to the Constitution?"
-  - "Why is this topic important for citizenship?"
-  - "Give one real-life example from this chapter."
+  - "What does each of the three branches do?"
+  - "How many senators, representatives, and Supreme Court justices are there?"
+  - "Which office handles citizenship? Passports? Driver licenses?"
+  - "How many electoral votes are needed to win the presidency?"
+references:
+  - label: "Branches of the U.S. Government — USA.gov"
+    url: "https://www.usa.gov/branches-of-government"
+  - label: "Citizenship Resource Center — USCIS"
+    url: "https://www.uscis.gov/citizenship"
+related_chapters:
+  - chapter-13-13-separation-checks.html
+  - chapter-22-22-federalism.html
+  - chapter-35-35-elections-electoral-college.html
+related_glossary:
+  - Checks and Balances
+  - Federalism
+  - Electoral College
+related_quiz: quiz.html
 ---
+This chapter gathers the most useful facts from the whole book in one place. Use it as a desk reference and a last-minute review.
 
-## Three Branches
+## The Three Branches
 
-Legislative makes laws. Executive enforces laws. Judicial interprets laws. This simple framework organizes most civics questions.
+- **Legislative (Congress)** — makes the laws; controls taxes and spending. Two chambers: the House and the Senate.
+- **Executive (President)** — carries out the laws; Commander in Chief; leads the departments and agencies.
+- **Judicial (the courts)** — interprets the laws and the Constitution; the Supreme Court is the highest court.
 
-## Federal, State, Local
+The branches share power through **checks and balances**, and all three answer to the Constitution — the supreme law of the land.
 
-Federal government handles immigration, passports, defense, and currency. States handle driver licenses, state roads, education, and state law. Local governments handle many community services.
+## Key Numbers
+
+- **100** senators (2 per state); **435** voting representatives (by population).
+- **6-year** Senate terms; **2-year** House terms; **4-year** presidential terms (limit of two).
+- **9** Supreme Court justices; **27** constitutional amendments; the **Bill of Rights** is the first **10**.
+- **538** electoral votes; **270** needed to win the presidency.
+
+## Federal, State, and Local
+
+- **Federal:** immigration and citizenship, passports, national defense, foreign policy, currency, federal taxes.
+- **State:** driver licenses, public schools, state roads and police, marriage and birth records.
+- **Local:** zoning, local roads, parks, libraries, schools (via the school board), local elections.
 
 ## Who Do I Contact?
 
-Citizenship goes to USCIS, passports to the Department of State, Social Security to SSA, federal taxes to the IRS, driver licenses to your state motor vehicle agency (DMV), and local roads to city, township, or county offices.
+Citizenship → **USCIS**. Passports → **U.S. Department of State**. Federal taxes → **IRS**. Social Security → **SSA**. Driver license → your **state DMV**. Local roads and services → **city, township, or county** offices.
 
 ## Memory Map
 
-House equals people, Senate equals states, President equals executive, Supreme Court equals constitutional review.
+House = people · Senate = states · President = enforce · Courts = interpret · Constitution = supreme. For current officeholders and fees, see **Appendix H** — those change, so always verify them.
