@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the main job of the judicial branch?", "options": ["To make laws", "To interpret the laws and the Constitution", "To enforce laws", "To collect taxes"], "answer": 1, "explanation": "Courts resolve disputes and decide what the law and Constitution mean." },
+    { "q": "What is the highest court in the United States?", "options": ["The Court of Appeals", "The Supreme Court", "The District Court", "The Federal Bench"], "answer": 1, "explanation": "The Supreme Court has the final word on federal law and the Constitution." },
+    { "q": "What is judicial review?", "options": ["The Senate reviewing judges", "The power of courts to declare laws or actions unconstitutional", "A yearly review of all laws", "The President reviewing court budgets"], "answer": 1, "explanation": "It lets courts check Congress and the President." },
+    { "q": "Which case established judicial review?", "options": ["Brown v. Board of Education", "Marbury v. Madison", "Plessy v. Ferguson", "United States v. Nixon"], "answer": 1, "explanation": "Marbury v. Madison (1803) established the principle." },
+    { "q": "Why do federal judges serve for life during good behavior?", "options": ["To save money", "So they can decide cases free from political and election pressure", "Because the Constitution requires elections", "To match the President's term"], "answer": 1, "explanation": "Independence lets judges rule on the law even when unpopular." }
+  ]
+}

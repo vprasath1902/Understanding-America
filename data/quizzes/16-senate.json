@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "How many U.S. senators are there in total?", "options": ["100", "435", "50", "200"], "answer": 0, "explanation": "Two senators from each of the 50 states make 100." },
+    { "q": "How many senators does each state have?", "options": ["One", "Two", "It depends on population", "Three"], "answer": 1, "explanation": "Every state has two senators regardless of population." },
+    { "q": "How long is a Senate term?", "options": ["2 years", "4 years", "6 years", "8 years"], "answer": 2, "explanation": "Senators serve six-year terms, with about one-third elected every two years." },
+    { "q": "Which power belongs to the Senate?", "options": ["Starting revenue bills", "Confirming appointments and approving treaties", "Impeaching officials", "Drawing district lines"], "answer": 1, "explanation": "The Senate confirms nominees, approves treaties, and tries impeachments." },
+    { "q": "What did the Seventeenth Amendment change about the Senate?", "options": ["It added more senators", "It created the direct election of senators by voters", "It shortened terms to two years", "It abolished the Senate"], "answer": 1, "explanation": "Before 1913, state legislatures chose senators." }
+  ]
+}

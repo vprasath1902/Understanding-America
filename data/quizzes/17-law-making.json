@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Who can formally introduce a bill in Congress?", "options": ["Any citizen", "Only a member of Congress", "The President", "A Supreme Court justice"], "answer": 1, "explanation": "Ideas can come from anyone, but only a member of Congress introduces a bill." },
+    { "q": "Where do most bills go to be studied and often die?", "options": ["The Supreme Court", "Committees", "The White House", "The states"], "answer": 1, "explanation": "Most bills never make it out of committee." },
+    { "q": "Before going to the President, a bill must be passed by which chambers?", "options": ["Only the House", "Only the Senate", "Both the House and the Senate in the same form", "The Supreme Court"], "answer": 2, "explanation": "Both chambers must pass identical text." },
+    { "q": "What can the President do with a bill?", "options": ["Only sign it", "Sign it into law or veto it", "Amend the Constitution", "Send it to a state"], "answer": 1, "explanation": "The President signs or vetoes; a veto can be overridden." },
+    { "q": "How can a bill become law even if the President vetoes it?", "options": ["It cannot", "Congress overrides the veto with a two-thirds vote in each chamber", "The Supreme Court signs it", "The states vote on it"], "answer": 1, "explanation": "A two-thirds vote in both chambers overrides the veto." }
+  ]
+}

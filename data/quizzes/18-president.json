@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the President's role as head of the armed forces called?", "options": ["Attorney General", "Commander in Chief", "Speaker", "Chief Justice"], "answer": 1, "explanation": "The President is Commander in Chief of the military." },
+    { "q": "How long is a presidential term, and how many terms may a President serve?", "options": ["2 years, unlimited", "4 years, a maximum of two", "6 years, one", "Life"], "answer": 1, "explanation": "Four-year terms, limited to two by the 22nd Amendment." },
+    { "q": "Which of these can the President do?", "options": ["Make laws alone", "Veto bills, appoint officials (with Senate consent), and grant pardons", "Raise taxes alone", "Decide court cases"], "answer": 1, "explanation": "These are core executive powers; lawmaking and taxing belong to Congress." },
+    { "q": "Which of these can the President NOT do?", "options": ["Sign bills", "Make laws or raise taxes alone", "Lead the military", "Conduct foreign relations"], "answer": 1, "explanation": "Only Congress can make laws and set taxes." },
+    { "q": "Who becomes President if the President can no longer serve?", "options": ["The Speaker", "The Vice President", "The Chief Justice", "A new election is held immediately"], "answer": 1, "explanation": "The Vice President is first in line of succession." }
+  ]
+}

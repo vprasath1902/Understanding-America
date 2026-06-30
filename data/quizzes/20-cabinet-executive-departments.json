@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the Cabinet?", "options": ["A separate branch of government", "The President's senior advisors who lead the executive departments", "A committee of Congress", "A type of court"], "answer": 1, "explanation": "The Cabinet is part of the executive branch, not a separate branch." },
+    { "q": "How many executive departments are there?", "options": ["3", "15", "50", "100"], "answer": 1, "explanation": "There are 15 executive departments." },
+    { "q": "How does a person become a Cabinet member?", "options": ["By election", "The President nominates them and the Senate confirms most positions", "By appointment of the Supreme Court", "By seniority in Congress"], "answer": 1, "explanation": "This is another example of checks and balances." },
+    { "q": "USCIS is part of which Cabinet department?", "options": ["State", "Homeland Security", "Treasury", "Justice"], "answer": 1, "explanation": "USCIS is one of the agencies within the Department of Homeland Security." },
+    { "q": "Who do Cabinet members report to?", "options": ["Congress", "The President", "The Supreme Court", "The states"], "answer": 1, "explanation": "They report to the President; Congress provides oversight." }
+  ]
+}

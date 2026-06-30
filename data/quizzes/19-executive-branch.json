@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the main job of the executive branch?", "options": ["To make the laws", "To carry out (enforce) the laws", "To interpret the laws", "To elect senators"], "answer": 1, "explanation": "The executive branch executes the laws Congress passes." },
+    { "q": "Besides the President, what makes up the executive branch?", "options": ["Only the Vice President", "The Vice President, Cabinet, departments, agencies, military, and federal workers", "Only Congress", "The Supreme Court"], "answer": 1, "explanation": "It is a large organization of departments and agencies." },
+    { "q": "Which agency handles citizenship and naturalization?", "options": ["The IRS", "USCIS", "The TSA", "The Postal Service"], "answer": 1, "explanation": "USCIS handles naturalization and green cards." },
+    { "q": "What are the detailed rules agencies write to carry out laws called?", "options": ["Amendments", "Regulations", "Treaties", "Vetoes"], "answer": 1, "explanation": "Agencies issue regulations within the authority Congress grants." },
+    { "q": "Who are most federal employees?", "options": ["Elected politicians", "Career civil servants who serve across administrations", "Members of Congress", "Judges"], "answer": 1, "explanation": "The civil service provides continuity regardless of which party governs." }
+  ]
+}
