@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Who lived in North America for thousands of years before European settlement?", "options": ["European colonists", "Indigenous peoples", "Pilgrims", "Roman settlers"], "answer": 1, "explanation": "Hundreds of Indigenous nations lived across the continent long before Europeans arrived." },
+    { "q": "Which of these was a reason European powers came to North America?", "options": ["To escape an ice age", "Land, trade, wealth, and religious freedom", "To join an existing United States", "To avoid the Atlantic Ocean"], "answer": 1, "explanation": "Europeans sought land, trade, wealth, religious freedom, and national advantage." },
+    { "q": "Which English settlement was founded in Virginia in 1607?", "options": ["Plymouth", "Jamestown", "Boston", "Philadelphia"], "answer": 1, "explanation": "Jamestown (1607) was England's first lasting colony; the Pilgrims reached Plymouth in 1620." },
+    { "q": "What political tradition did the Atlantic colonies develop that influenced later American democracy?", "options": ["Rule by a single governor for life", "Self-government through local assemblies and town meetings", "A national king", "No government at all"], "answer": 1, "explanation": "Distance from London led colonists to govern themselves through elected assemblies." },
+    { "q": "The Haudenosaunee (Iroquois) Confederacy is an example of what?", "options": ["A European trading company", "Several Indigenous nations united under a shared council", "An English colony", "A Spanish mission"], "answer": 1, "explanation": "It joined several nations under a common council — a sophisticated Indigenous government." }
+  ]
+}

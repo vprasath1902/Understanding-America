@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What did colonists mean by 'No Taxation Without Representation'?", "options": ["Taxes should be higher", "They should not be taxed by a Parliament in which they had no elected representatives", "Only the king could tax them", "Taxes should be paid in tea"], "answer": 1, "explanation": "The principle was consent: a free people should be taxed only with their agreement." },
+    { "q": "Why did Britain begin taxing the colonies after 1763?", "options": ["To fund space exploration", "To pay debts from the French and Indian War", "Because the colonies asked for taxes", "To build the Statue of Liberty"], "answer": 1, "explanation": "Britain won the war but was left with large debts." },
+    { "q": "The 1773 Boston Tea Party was a protest against what?", "options": ["The price of coffee", "British taxation (the Tea Act)", "The Declaration of Independence", "The U.S. Constitution"], "answer": 1, "explanation": "Colonists dumped British tea into Boston Harbor to protest the Tea Act." },
+    { "q": "Where did fighting begin in April 1775, starting the Revolutionary War?", "options": ["Yorktown", "Lexington and Concord", "Gettysburg", "Philadelphia"], "answer": 1, "explanation": "The clash at Lexington and Concord was the 'shot heard round the world.'" },
+    { "q": "On what date was the Declaration of Independence adopted?", "options": ["July 4, 1776", "December 25, 1776", "July 4, 1789", "March 1, 1781"], "answer": 0, "explanation": "The Continental Congress adopted it on July 4, 1776." }
+  ]
+}

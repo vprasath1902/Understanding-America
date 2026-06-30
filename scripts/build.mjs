@@ -87,6 +87,16 @@ function copySite() {
 
 // ---- Render one migrated chapter -------------------------------------------
 
+function loadQuiz(slug) {
+  const f = path.join(ROOT, "data", "quizzes", `${slug}.json`);
+  if (!fs.existsSync(f)) return [];
+  try {
+    return JSON.parse(fs.readFileSync(f, "utf8")).questions || [];
+  } catch {
+    return [];
+  }
+}
+
 function renderOne(ch, manifest, byOutput, registry) {
   const file = path.join(SRC_CHAPTERS, `${ch.slug}.md`);
   const { data, content } = matter(fs.readFileSync(file, "utf8"));
@@ -106,6 +116,7 @@ function renderOne(ch, manifest, byOutput, registry) {
     summary: data.summary || [],
     terms: data.terms || [],
     review: data.review || [],
+    quiz: loadQuiz(ch.slug),
     references: data.references || [],
     further_reading: data.further_reading || [],
     related_chapters: data.related_chapters || [],

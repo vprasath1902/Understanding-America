@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Who commanded the Continental Army during the Revolution?", "options": ["Thomas Jefferson", "George Washington", "Benjamin Franklin", "John Adams"], "answer": 1, "explanation": "Washington's leadership made him the 'Father of Our Country.'" },
+    { "q": "Which American victory convinced France to enter the war as an ally?", "options": ["Yorktown", "Saratoga", "Valley Forge", "Bunker Hill"], "answer": 1, "explanation": "The 1777 victory at Saratoga brought decisive French support." },
+    { "q": "The major fighting effectively ended with the British surrender at which battle?", "options": ["Saratoga", "Yorktown", "Trenton", "Lexington"], "answer": 1, "explanation": "American and French forces trapped the British at Yorktown in 1781." },
+    { "q": "What did the 1783 Treaty of Paris accomplish?", "options": ["Started the war", "Recognized the independence of the United States", "Created the Constitution", "Ended World War I"], "answer": 1, "explanation": "The treaty formally ended the war and recognized U.S. independence." },
+    { "q": "What was Washington's basic war strategy?", "options": ["Conquer Britain entirely", "Keep the Continental Army alive until Britain tired of the war", "Avoid all battles", "Rely only on the navy"], "answer": 1, "explanation": "He did not need to win every battle — only to outlast Britain." }
+  ]
+}

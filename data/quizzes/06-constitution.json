@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the supreme law of the land?", "options": ["The Declaration of Independence", "The Constitution", "An executive order", "A Supreme Court ruling"], "answer": 1, "explanation": "The Constitution is the highest law; all other laws must follow it." },
+    { "q": "What idea do the words 'We the People' express?", "options": ["Rule by a king", "Popular sovereignty — power comes from the people", "Rule by the courts", "Rule by the states only"], "answer": 1, "explanation": "Government's authority comes from the people themselves." },
+    { "q": "How many amendments does the Constitution have?", "options": ["10", "27", "50", "7"], "answer": 1, "explanation": "There are 27 amendments; the first ten are the Bill of Rights." },
+    { "q": "What does it take to amend the Constitution?", "options": ["A presidential signature", "A two-thirds vote of Congress and ratification by three-fourths of the states", "A simple majority in Congress", "A Supreme Court order"], "answer": 1, "explanation": "Article V sets a deliberately high bar requiring broad agreement." },
+    { "q": "What did the 13th Amendment do?", "options": ["Gave women the vote", "Abolished slavery", "Created the income tax", "Limited the President to two terms"], "answer": 1, "explanation": "Ratified in 1865, the 13th Amendment abolished slavery." }
+  ]
+}
