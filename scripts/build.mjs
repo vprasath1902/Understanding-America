@@ -122,6 +122,32 @@ function renderOne(ch, manifest, byOutput) {
   return ch.output;
 }
 
+// ---- Safe SVG minification --------------------------------------------------
+// Conservative: strips comments and whitespace-only gaps between tags. Never
+// touches element text, ids, <title>/<desc>, or aria-* — so it cannot break the
+// accessibility wiring (unlike aggressive SVGO presets).
+function optimizeSvg(svg) {
+  return svg
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/>\s+</g, "><")
+    .replace(/^\s+/gm, "")
+    .trim();
+}
+
+function optimizeSvgsIn(dir) {
+  if (!fs.existsSync(dir)) return 0;
+  let n = 0;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) n += optimizeSvgsIn(p);
+    else if (e.name.endsWith(".svg")) {
+      fs.writeFileSync(p, optimizeSvg(fs.readFileSync(p, "utf8")));
+      n++;
+    }
+  }
+  return n;
+}
+
 // ---- Render standalone appendix pages from Markdown ------------------------
 
 function renderAppendices() {
@@ -153,6 +179,9 @@ function main() {
   copySite();
   fs.mkdirSync(path.join(BUILD, "chapters"), { recursive: true });
   const visuals = generateVisuals(BUILD);
+  const optimized =
+    optimizeSvgsIn(path.join(BUILD, "assets")) +
+    optimizeSvgsIn(path.join(BUILD, "svg"));
 
   const migrated = [];
   for (const ch of manifest) {
@@ -171,6 +200,7 @@ function main() {
     console.log(`  appendix pages:     ${appendices.join(", ")}`);
   if (visuals.length)
     console.log(`  generated visuals:  ${visuals.length}`);
+  console.log(`  optimized SVGs:     ${optimized}`);
 }
 
 main();
