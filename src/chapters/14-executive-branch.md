@@ -12,7 +12,6 @@ objectives:
   - "Explain how agencies serve citizens"
   - "Connect executive work to daily life"
 callout: "The Executive Branch enforces laws."
-visual_pack: "svg/milestone3/revolution-roadmap.svg"
 summary:
   - "The Executive Branch enforces laws."
   - "Cabinet departments carry out specialized work."

@@ -12,7 +12,6 @@ objectives:
   - Explain We the People
   - Review the First Amendment freedoms
 callout: Constitution = government framework.
-visual_pack: svg/milestone3/constitution-blueprint.svg
 summary:
   - Constitution = government framework.
   - Declaration = independence.

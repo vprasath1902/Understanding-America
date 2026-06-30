@@ -12,7 +12,6 @@ objectives:
   - "Review Constitution and founding figures"
   - "Review Civil War and twentieth century topics"
 callout: "History questions tell one story."
-visual_pack: "svg/milestone3/citizenship-path.svg"
 summary:
   - "History questions tell one story."
   - "Washington, Jefferson, Lincoln, and Roosevelt connect to major events."

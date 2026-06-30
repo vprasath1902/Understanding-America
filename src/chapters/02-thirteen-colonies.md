@@ -12,7 +12,6 @@ objectives:
   - "Compare New England, Middle, and Southern colonies"
   - "Explain how colonial life influenced later government"
 callout: "The colonies were not identical."
-visual_pack: "svg/milestone3/revolution-roadmap.svg"
 summary:
   - "The colonies were not identical."
   - "Regional differences shaped politics and economics."

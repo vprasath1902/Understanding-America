@@ -12,7 +12,6 @@ objectives:
   - "Describe Senate terms"
   - "Understand unique Senate powers"
 callout: "There are 100 Senators."
-visual_pack: "svg/milestone3/citizenship-path.svg"
 summary:
   - "There are 100 Senators."
   - "Senators serve six years."

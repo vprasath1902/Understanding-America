@@ -12,7 +12,6 @@ objectives:
   - "Understand services by stage"
   - "See government as a lifelong system"
 callout: "Government appears at every life stage."
-visual_pack: "svg/milestone3/government-levels.svg"
 summary:
   - "Government appears at every life stage."
   - "Knowing which agency handles what saves time."

@@ -16,7 +16,6 @@ objectives:
   - "Understand George Washington’s leadership"
   - "Describe Saratoga, Valley Forge, Yorktown, and the Treaty of Paris"
 callout: "America won through leadership, endurance, French support, and British logistical challenges."
-visual_pack: "svg/milestone3/government-levels.svg"
 summary:
   - "America won through leadership, endurance, French support, and British logistical challenges."
   - "Washington became the “Father of Our Country.”"

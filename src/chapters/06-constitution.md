@@ -16,7 +16,6 @@ objectives:
   - Describe the seven Articles
   - Explain why amendments matter
 callout: The Constitution sets up and limits the government.
-visual_pack: svg/milestone3/election-cycle-m3.svg
 summary:
   - The Constitution sets up and limits the government.
   - The Preamble explains its purposes.

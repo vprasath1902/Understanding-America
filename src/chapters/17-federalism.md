@@ -16,7 +16,6 @@ objectives:
   - "Identify federal, state, and local powers"
   - "Explain the Supremacy Clause"
 callout: "Federalism shares power."
-visual_pack: "svg/milestone3/government-levels.svg"
 summary:
   - "Federalism shares power."
   - "Federal, state, and local governments have different responsibilities."

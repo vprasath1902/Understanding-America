@@ -12,7 +12,6 @@ objectives:
   - "Compare primary and general elections"
   - "Understand the Electoral College"
 callout: "Voting belongs to citizens."
-visual_pack: "svg/milestone3/colonial-regions.svg"
 summary:
   - "Voting belongs to citizens."
   - "Local elections matter."

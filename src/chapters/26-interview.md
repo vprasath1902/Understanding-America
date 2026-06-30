@@ -12,7 +12,6 @@ objectives:
   - "Understand interview flow"
   - "Know possible outcomes"
 callout: "Bring required documents."
-visual_pack: "svg/milestone3/colonial-regions.svg"
 summary:
   - "Bring required documents."
   - "Answer truthfully."

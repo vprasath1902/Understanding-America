@@ -16,7 +16,6 @@ objectives:
   - "Know what happens at the interview"
   - "Understand the oath and new responsibilities"
 callout: "Naturalization ends with the oath."
-visual_pack: "svg/milestone3/revolution-roadmap.svg"
 summary:
   - "Naturalization ends with the oath."
   - "Citizenship brings rights and responsibilities."

@@ -12,7 +12,6 @@ objectives:
   - "Know who handles common services"
   - "Understand local participation"
 callout: "Government works at multiple levels."
-visual_pack: "svg/milestone3/citizenship-path.svg"
 summary:
   - "Government works at multiple levels."
   - "Different problems go to different offices."

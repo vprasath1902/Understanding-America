@@ -87,7 +87,7 @@ function copySite() {
 
 // ---- Render one migrated chapter -------------------------------------------
 
-function renderOne(ch, manifest, byOutput) {
+function renderOne(ch, manifest, byOutput, registry) {
   const file = path.join(SRC_CHAPTERS, `${ch.slug}.md`);
   const { data, content } = matter(fs.readFileSync(file, "utf8"));
   const idx = manifest.findIndex((c) => c.output === ch.output);
@@ -119,6 +119,14 @@ function renderOne(ch, manifest, byOutput) {
   };
   const html = renderChapter(ctx);
   fs.writeFileSync(path.join(BUILD, "chapters", ch.output), html);
+  registry.push({
+    number: ch.number,
+    title: ctx.title,
+    output: ch.output,
+    hero: data.hero || null,
+    figures: data.figures || [],
+    diagram: data.diagram || null,
+  });
   return ch.output;
 }
 
@@ -171,6 +179,94 @@ function renderAppendices() {
   return built;
 }
 
+// ---- Visual inventory + gallery (W6) ---------------------------------------
+
+const escHtml = (s = "") =>
+  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+const TYPE_LABELS = {
+  heroes: "Chapter Heroes",
+  timelines: "Timelines",
+  maps: "Maps",
+  infographics: "Infographics",
+};
+
+function buildInventory(registry) {
+  // Flatten every chapter visual into inventory rows grouped by asset type.
+  const rows = [];
+  for (const e of registry) {
+    if (e.hero)
+      rows.push({ type: "heroes", src: e.hero.src, alt: e.hero.alt, chapter: e });
+    for (const f of e.figures)
+      rows.push({
+        type: (f.src.split("/")[2] || "figures"),
+        src: f.src,
+        alt: f.alt,
+        caption: f.caption,
+        chapter: e,
+      });
+  }
+  return rows;
+}
+
+function renderGallery(registry) {
+  const rows = buildInventory(registry);
+  const groups = {};
+  for (const r of rows) (groups[r.type] ||= []).push(r);
+
+  const counts = Object.entries(groups)
+    .map(([t, list]) => `${list.length} ${TYPE_LABELS[t] || t}`)
+    .join(" · ");
+
+  const section = (type, list) => {
+    const cards = list
+      .map(
+        (r) => `<figure class="gallery-card">
+  <a href="chapters/${escHtml(r.chapter.output)}"><img src="${escHtml(
+          r.src
+        )}" alt="${escHtml(r.alt || "")}" loading="lazy"></a>
+  <figcaption><strong>Ch ${r.chapter.number}. ${escHtml(
+          r.chapter.title
+        )}</strong>${
+          r.caption ? `<span>${escHtml(r.caption)}</span>` : ""
+        }</figcaption>
+</figure>`
+      )
+      .join("\n");
+    return `<h2>${TYPE_LABELS[type] || type}</h2>\n<div class="gallery-grid">\n${cards}\n</div>`;
+  };
+
+  const order = ["heroes", "timelines", "maps", "infographics"];
+  const body = `<style>
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin:18px 0 32px}
+.gallery-card{margin:0;border:1px solid var(--line,#d8dee8);border-radius:12px;overflow:hidden;background:#fff}
+.gallery-card img{display:block;width:100%;height:auto;background:#f8f8f6}
+.gallery-card figcaption{padding:10px 12px;font-size:.85rem;color:#667085}
+.gallery-card figcaption strong{display:block;color:#0b3c6d}
+</style>
+<p>Every illustration in the book, generated from <code>src/assets/visuals/</code> and <code>data/visuals/</code>. ${counts}.</p>
+${order
+    .filter((t) => groups[t])
+    .map((t) => section(t, groups[t]))
+    .join("\n")}`;
+
+  fs.writeFileSync(
+    path.join(BUILD, "visual-gallery.html"),
+    renderPage({
+      title: "Visual Gallery",
+      subtitle: "The complete illustration inventory for Understanding America.",
+      bodyHtml: body,
+      rootPrefix: "",
+    })
+  );
+
+  fs.writeFileSync(
+    path.join(BUILD, "assets", "visuals", "registry.json"),
+    JSON.stringify(rows.map((r) => ({ ...r, chapter: r.chapter.output })), null, 2)
+  );
+  return rows.length;
+}
+
 // ---- Main -------------------------------------------------------------------
 
 function main() {
@@ -184,12 +280,14 @@ function main() {
     optimizeSvgsIn(path.join(BUILD, "svg"));
 
   const migrated = [];
+  const registry = [];
   for (const ch of manifest) {
     if (fs.existsSync(path.join(SRC_CHAPTERS, `${ch.slug}.md`)))
-      migrated.push(renderOne(ch, manifest, byOutput));
+      migrated.push(renderOne(ch, manifest, byOutput, registry));
   }
 
   const appendices = renderAppendices();
+  const inventory = renderGallery(registry);
 
   console.log(`Build complete -> ${path.relative(ROOT, BUILD)}/`);
   console.log(`  chapters total:     ${manifest.length}`);
@@ -201,6 +299,7 @@ function main() {
   if (visuals.length)
     console.log(`  generated visuals:  ${visuals.length}`);
   console.log(`  optimized SVGs:     ${optimized}`);
+  console.log(`  inventory entries:  ${inventory} (visual-gallery.html + registry.json)`);
 }
 
 main();

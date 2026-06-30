@@ -12,7 +12,6 @@ objectives:
   - "Explain checks and balances"
   - "Identify how branches limit each other"
 callout: "Power is divided."
-visual_pack: "svg/milestone3/revolution-roadmap.svg"
 summary:
   - "Power is divided."
   - "Each branch checks the others."
