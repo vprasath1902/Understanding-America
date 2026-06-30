@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "industrial-immigration",
+  "title": "Industry and Immigration",
+  "desc": "Timeline: 1869 the transcontinental railroad, 1886 the Statue of Liberty is dedicated, 1892 Ellis Island opens, 1903 the first powered flight, and 1920 the 19th Amendment.",
+  "events": [
+    { "year": "1869", "label": "Transcontinental RR" },
+    { "year": "1886", "label": "Statue of Liberty" },
+    { "year": "1892", "label": "Ellis Island" },
+    { "year": "1903", "label": "First flight" },
+    { "year": "1920", "label": "19th: women vote" }
+  ]
+}

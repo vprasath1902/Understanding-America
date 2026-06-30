@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "civil-war",
+  "title": "Civil War and Reconstruction",
+  "desc": "Timeline: 1861 the Civil War begins, 1863 the Emancipation Proclamation, 1865 the war ends and the 13th Amendment, 1868 the 14th Amendment, and 1870 the 15th Amendment.",
+  "events": [
+    { "year": "1861", "label": "War begins" },
+    { "year": "1863", "label": "Emancipation" },
+    { "year": "1865", "label": "13th: ends slavery" },
+    { "year": "1868", "label": "14th: citizenship" },
+    { "year": "1870", "label": "15th: voting" }
+  ]
+}

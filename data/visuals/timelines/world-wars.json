@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "world-wars",
+  "title": "Depression and World Wars",
+  "desc": "Timeline: 1917 the U.S. enters World War I, 1929 the stock market crash, 1933 the New Deal begins, 1941 Pearl Harbor, and 1945 World War II ends.",
+  "events": [
+    { "year": "1917", "label": "Enters WWI" },
+    { "year": "1929", "label": "Crash" },
+    { "year": "1933", "label": "New Deal" },
+    { "year": "1941", "label": "Pearl Harbor" },
+    { "year": "1945", "label": "WWII ends" }
+  ]
+}

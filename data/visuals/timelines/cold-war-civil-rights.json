@@ -1,0 +1,13 @@
+{
+  "type": "timeline",
+  "name": "cold-war-civil-rights",
+  "title": "Cold War to Modern America",
+  "desc": "Timeline: 1954 Brown v. Board of Education, 1964 the Civil Rights Act, 1969 the Moon landing, 1991 the Cold War ends, and 2008 the first Black president is elected.",
+  "events": [
+    { "year": "1954", "label": "Brown v. Board" },
+    { "year": "1964", "label": "Civil Rights Act" },
+    { "year": "1969", "label": "Moon landing" },
+    { "year": "1991", "label": "Cold War ends" },
+    { "year": "2008", "label": "First Black president" }
+  ]
+}

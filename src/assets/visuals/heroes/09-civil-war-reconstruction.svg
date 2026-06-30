@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h09c-title h09c-desc">
+  <title id="h09c-title">Chapter 9 hero — Slavery, Civil War, and Reconstruction</title>
+  <desc id="h09c-desc">A flat geometric banner: a navy title panel beside a broken chain and a union star, representing the end of slavery and the preservation of the Union.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">Civil War &amp;</text>
+  <text class="title" x="80" y="306" font-size="44">Reconstruction</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 9</text>
+
+  <!-- union star -->
+  <circle cx="930" cy="150" r="60" fill="#0b3c6d"/>
+  <polygon fill="#ffffff" points="930,108 941,140 975,140 947,160 958,192 930,172 902,192 913,160 885,140 919,140"/>
+
+  <!-- broken chain (two links pulling apart) -->
+  <g fill="none" stroke="#c9a227" stroke-width="14" stroke-linecap="round">
+    <path d="M770 300 a40 26 0 0 1 64 0"/>
+    <path d="M770 300 a40 26 0 0 0 18 44"/>
+    <path d="M1030 360 a40 26 0 0 1 64 0"/>
+    <path d="M1094 360 a40 26 0 0 0 -16 -44"/>
+  </g>
+  <line x1="858" y1="332" x2="1012" y2="332" stroke="#b22234" stroke-width="8" stroke-dasharray="2 20" stroke-linecap="round"/>
+</svg>

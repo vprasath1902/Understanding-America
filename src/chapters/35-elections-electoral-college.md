@@ -47,9 +47,9 @@ references:
   - label: "Federal Election Commission (FEC)"
     url: "https://www.fec.gov/"
 related_chapters:
-  - chapter-20-20-elections.html
-  - chapter-13-13-president.html
-  - chapter-11-11-senate.html
+  - chapter-25-25-elections.html
+  - chapter-18-18-president.html
+  - chapter-16-16-senate.html
 related_glossary:
   - Electoral College
   - Primary Election

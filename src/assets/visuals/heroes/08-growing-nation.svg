@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h08g-title h08g-desc">
+  <title id="h08g-title">Chapter 8 hero — A Growing Nation</title>
+  <desc id="h08g-desc">A flat geometric banner: a navy title panel beside a covered wagon on a trail heading toward mountains and a rising sun, evoking westward expansion.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#dbeafe"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="48">A Growing</text>
+  <text class="title" x="80" y="306" font-size="48">Nation</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 8</text>
+
+  <!-- sun + mountains -->
+  <circle cx="1090" cy="150" r="48" fill="#c9a227"/>
+  <polygon points="700,360 820,200 940,360" fill="#2e8b57"/>
+  <polygon points="880,360 1010,180 1140,360" fill="#0b3c6d"/>
+  <rect x="660" y="360" width="540" height="60" fill="#2e8b57"/>
+  <!-- trail -->
+  <path d="M680 412 Q900 372 1140 400" fill="none" stroke="#c9a227" stroke-width="8" stroke-dasharray="4 18" stroke-linecap="round"/>
+  <!-- covered wagon -->
+  <g transform="translate(800 330)">
+    <path d="M-70 0 q70 -56 140 0 Z" fill="#ffffff" stroke="#0b3c6d" stroke-width="3"/>
+    <rect x="-72" y="0" width="144" height="34" fill="#b22234" stroke="#0b3c6d" stroke-width="3"/>
+    <circle cx="-44" cy="40" r="18" fill="#0b3c6d"/><circle cx="-44" cy="40" r="7" fill="#f8f8f6"/>
+    <circle cx="44" cy="40" r="18" fill="#0b3c6d"/><circle cx="44" cy="40" r="7" fill="#f8f8f6"/>
+  </g>
+</svg>

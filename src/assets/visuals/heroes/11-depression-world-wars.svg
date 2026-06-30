@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="h11d-title h11d-desc">
+  <title id="h11d-title">Chapter 11 hero — Depression, World Wars, and a Global Power</title>
+  <desc id="h11d-desc">A flat geometric banner: a navy title panel beside a globe with a gold star, representing the United States becoming a global power.</desc>
+  <defs><style>
+    .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;fill:#ffffff}
+    .sub{font-family:Arial,Helvetica,sans-serif;fill:#dbeafe}
+  </style></defs>
+  <rect width="1200" height="480" fill="#f8f8f6"/>
+  <rect x="0" y="0" width="660" height="480" fill="#0b3c6d"/>
+  <polygon fill="#c9a227" points="80,84 95,124 138,124 103,150 117,192 80,166 43,192 57,150 22,124 65,124"/>
+  <text class="title" x="80" y="250" font-size="44">Depression &amp;</text>
+  <text class="title" x="80" y="306" font-size="44">World Wars</text>
+  <text class="sub" x="84" y="356" font-size="22">Chapter 11</text>
+
+  <!-- globe -->
+  <g transform="translate(930 240)">
+    <circle r="120" fill="#2e8b57" stroke="#0b3c6d" stroke-width="4"/>
+    <path d="M-120 0 H120 M0 -120 V120" stroke="#0b3c6d" stroke-width="2" opacity="0.5"/>
+    <ellipse cx="0" cy="0" rx="60" ry="120" fill="none" stroke="#0b3c6d" stroke-width="2" opacity="0.5"/>
+    <path d="M-70 -60 q40 20 10 70 q-20 30 30 60" fill="#c9a227" opacity="0.85"/>
+    <path d="M40 -80 q34 40 -6 86 q-6 18 36 44" fill="#c9a227" opacity="0.85"/>
+  </g>
+  <polygon fill="#c9a227" points="1060,120 1071,152 1105,152 1077,172 1088,204 1060,184 1032,204 1043,172 1015,152 1049,152"/>
+</svg>

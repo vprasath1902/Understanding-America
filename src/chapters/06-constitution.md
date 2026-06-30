@@ -41,7 +41,7 @@ references:
     url: https://www.archives.gov/founding-docs/constitution
 related_chapters:
   - chapter-07-07-bill-of-rights.html
-  - chapter-08-08-separation-checks.html
+  - chapter-13-13-separation-checks.html
 related_glossary:
   - Constitution
   - Federalism
