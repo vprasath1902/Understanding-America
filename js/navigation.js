@@ -760,3 +760,34 @@ window.resetReadingProgress=function(){
   }
 };
 document.addEventListener('DOMContentLoaded',()=>{ renderPublicationChecklist(); });
+
+// Interactive per-chapter quiz
+function initChapterQuiz(){
+  const quiz=document.querySelector('.chapter-quiz'); if(!quiz) return;
+  const questions=[].slice.call(quiz.querySelectorAll('.quiz-q'));
+  const scoreEl=quiz.querySelector('.quiz-score');
+  let answered=0, correct=0;
+  function updateScore(){ if(scoreEl) scoreEl.textContent='Score: '+correct+' / '+questions.length+(answered===questions.length?' — quiz complete!':''); }
+  questions.forEach(function(q){
+    const ans=parseInt(q.getAttribute('data-answer'),10)||0;
+    const fb=q.querySelector('.quiz-feedback');
+    const exp=q.querySelector('.quiz-explain');
+    const opts=[].slice.call(q.querySelectorAll('.quiz-opt'));
+    opts.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        if(q.classList.contains('done')) return;
+        q.classList.add('done');
+        const i=parseInt(btn.getAttribute('data-i'),10);
+        const right=i===ans;
+        if(right){ btn.classList.add('correct'); }
+        else { btn.classList.add('wrong'); if(opts[ans]) opts[ans].classList.add('correct'); }
+        opts.forEach(function(b){ b.disabled=true; });
+        if(fb){ fb.textContent=right?'Correct.':'Not quite — the highlighted answer is correct.'; fb.hidden=false; }
+        if(exp){ exp.hidden=false; }
+        answered++; if(right) correct++; updateScore();
+      });
+    });
+  });
+  updateScore();
+}
+document.addEventListener('DOMContentLoaded', initChapterQuiz);

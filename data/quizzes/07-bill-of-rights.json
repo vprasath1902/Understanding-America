@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What is the Bill of Rights?", "options": ["The first ten amendments to the Constitution", "The Declaration of Independence", "The seven Articles", "A Supreme Court case"], "answer": 0, "explanation": "The first ten amendments, ratified in 1791, protect individual liberties." },
+    { "q": "Which freedoms does the First Amendment protect?", "options": ["The right to bear arms", "Religion, speech, press, assembly, and petition", "Protection from search and seizure", "The right to a jury trial"], "answer": 1, "explanation": "The First Amendment protects five core freedoms." },
+    { "q": "Protection from unreasonable search and seizure is found in which amendment?", "options": ["First", "Second", "Fourth", "Tenth"], "answer": 2, "explanation": "The Fourth Amendment guards against unreasonable searches and seizures." },
+    { "q": "What does the Tenth Amendment do?", "options": ["Abolishes slavery", "Reserves to the states and the people the powers not given to the federal government", "Gives Congress the power to tax", "Sets presidential term limits"], "answer": 1, "explanation": "It reinforces federalism by reserving undelegated powers to the states and people." },
+    { "q": "Why was the Bill of Rights added to the Constitution?", "options": ["To create the presidency", "To reassure those who feared a too-powerful national government", "To declare war on Britain", "To set up the courts"], "answer": 1, "explanation": "It placed explicit limits on government to win ratification." }
+  ]
+}

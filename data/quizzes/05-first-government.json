@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "What was the first national framework of government for the United States?", "options": ["The Constitution", "The Articles of Confederation", "The Bill of Rights", "The Declaration of Independence"], "answer": 1, "explanation": "The Articles (1781) created a deliberately weak national government." },
+    { "q": "Which was a major weakness of the Articles of Confederation?", "options": ["The President was too powerful", "Congress could not tax effectively or regulate trade", "There were too many courts", "States had no power"], "answer": 1, "explanation": "The national government could not tax, regulate interstate trade, or enforce its decisions." },
+    { "q": "What did Shays' Rebellion reveal?", "options": ["That the army was too large", "That the national government was too weak to keep order", "That taxes were too low", "That the Constitution had failed"], "answer": 1, "explanation": "The government could not help put down the uprising, alarming leaders." },
+    { "q": "What did the 1787 Philadelphia Convention ultimately decide to do?", "options": ["Restore British rule", "Write an entirely new Constitution", "Abolish all government", "Keep the Articles unchanged"], "answer": 1, "explanation": "Delegates met to revise the Articles but wrote a new Constitution instead." },
+    { "q": "Why did Americans first design a weak national government?", "options": ["They admired kings", "They feared concentrated power after fighting a monarch", "They wanted no states", "They had no leaders"], "answer": 1, "explanation": "Having fought a king, they were wary of strong central authority." }
+  ]
+}

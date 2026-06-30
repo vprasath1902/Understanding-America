@@ -1,0 +1,9 @@
+{
+  "questions": [
+    { "q": "Historians usually group the thirteen colonies into how many regions?", "options": ["Two", "Three", "Five", "Thirteen"], "answer": 1, "explanation": "New England, the Middle colonies, and the Southern colonies." },
+    { "q": "Which region's economy relied most heavily on plantations and the forced labor of enslaved Africans?", "options": ["New England", "The Middle colonies", "The Southern colonies", "None of them"], "answer": 2, "explanation": "Cash crops like tobacco, rice, and indigo were grown on Southern plantations." },
+    { "q": "Pennsylvania, founded by William Penn, became known for what?", "options": ["Shipbuilding", "Religious tolerance", "Gold mining", "Cotton plantations"], "answer": 1, "explanation": "Penn founded it as a haven for Quakers, and it welcomed many faiths." },
+    { "q": "The New England town meeting is an early example of what?", "options": ["A royal court", "Direct local self-government", "A trade monopoly", "A military draft"], "answer": 1, "explanation": "Townspeople governed themselves directly through town meetings." },
+    { "q": "Which of these were the Middle colonies?", "options": ["Massachusetts, Connecticut, Rhode Island", "New York, New Jersey, Pennsylvania, Delaware", "Virginia, the Carolinas, Georgia", "Maine, Vermont, New Hampshire"], "answer": 1, "explanation": "The Middle colonies were known for fertile farmland and religious diversity." }
+  ]
+}

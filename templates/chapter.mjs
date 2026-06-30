@@ -105,10 +105,38 @@ export function renderChapter(ctx) {
     summary = [],
     terms = [],
     review = [],
+    quiz = [],
     prev,
     next,
     rootPrefix, // "../" for /chapters pages
   } = ctx;
+
+  const hasQuiz = Array.isArray(quiz) && quiz.length > 0;
+  const quizHref = hasQuiz ? "#chapter-quiz" : `${rootPrefix}quiz.html`;
+
+  const quizBlock = hasQuiz
+    ? `\n<section class="chapter-quiz" id="chapter-quiz"><h2>Chapter Quiz</h2>
+<p class="quiz-intro">Answer the questions below to test yourself on this chapter.</p>
+<ol class="quiz-list">${quiz
+        .map((item) => {
+          const opts = (item.options || [])
+            .map(
+              (o, i) =>
+                `<li><button type="button" class="quiz-opt" data-i="${i}">${esc(
+                  o
+                )}</button></li>`
+            )
+            .join("");
+          const exp = item.explanation
+            ? `<p class="quiz-explain" hidden>${esc(item.explanation)}</p>`
+            : "";
+          return `<li class="quiz-q" data-answer="${Number(item.answer) || 0}"><p class="quiz-prompt">${esc(
+            item.q
+          )}</p><ul class="quiz-opts">${opts}</ul><p class="quiz-feedback" hidden></p>${exp}</li>`;
+        })
+        .join("\n")}</ol>
+<p class="quiz-score" data-total="${quiz.length}" aria-live="polite"></p></section>`
+    : "";
 
   const diagramBlock = diagram
     ? `\n<div class="diagram"><img src="${rootPrefix}${esc(
@@ -182,7 +210,7 @@ export function renderChapter(ctx) {
   <title>${esc(title)} - Understanding America</title>
   <link rel="stylesheet" href="${rootPrefix}css/styles.css"><link rel="stylesheet" href="${rootPrefix}css/print.css">
 </head>
-<body><div class="progress"></div><header class="app-header"><div class="header-inner"><a class="brand" href="${rootPrefix}index.html"><span class="brand-mark">★</span>Understanding America</a><div class="controls"><button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button><button class="secondary" onclick="openReaderPanel()">Reader</button><a class="control-link" href="${rootPrefix}government-explorer.html">Explorer</a><a class="control-link" href="${rootPrefix}timeline.html">Timeline</a><a class="control-link" href="${rootPrefix}quiz.html">Quiz</a><button onclick="printBook()">Print</button></div></div></header>
+<body><div class="progress"></div><header class="app-header"><div class="header-inner"><a class="brand" href="${rootPrefix}index.html"><span class="brand-mark">★</span>Understanding America</a><div class="controls"><button class="mobile-menu secondary" onclick="toggleMenu()">Menu</button><button class="secondary" onclick="openReaderPanel()">Reader</button><a class="control-link" href="${rootPrefix}government-explorer.html">Explorer</a><a class="control-link" href="${rootPrefix}timeline.html">Timeline</a><a class="control-link" href="${quizHref}">Quiz</a><button onclick="printBook()">Print</button></div></div></header>
 <div class="layout"><aside class="sidebar"><h3>Contents</h3><input id="search" class="search" aria-label="Search" placeholder="Search chapters, topics, or terms"><div class="search-results" id="searchResults"></div><div class="sidebar-scroll"><ul class="nav-list"></ul></div></aside><main><article class="chapter-card manuscript-integrated">
 <div class="chapter-hero"><div class="chapter-number">Chapter ${number}</div><h1>${esc(
     title
@@ -192,7 +220,7 @@ export function renderChapter(ctx) {
 ${bodyHtml}${figuresBlock}${calloutBlock}
 ${visualPackBlock}${summaryBlock}${termsBlock}${reviewBlock}${referencesSection(
     ctx.references
-  )}${furtherReadingSection(ctx.further_reading)}${relatedSection(ctx)}
+  )}${furtherReadingSection(ctx.further_reading)}${quizBlock}${relatedSection(ctx)}
 <nav class="chapter-nav"><a class="button secondary" href="${esc(
     prevHref
   )}">Previous</a><a class="button secondary" href="${rootPrefix}index.html">Table of Contents</a><a class="button" href="${esc(
