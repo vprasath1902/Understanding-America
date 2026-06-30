@@ -282,7 +282,7 @@ const BOOK_NAV = [
   {
     "section": "Appendices",
     "title": "Appendix F: Glossary",
-    "href": "appendices/appendix-f-glossary.html",
+    "href": "glossary.html",
     "kind": "appendix",
     "number": null
   },
