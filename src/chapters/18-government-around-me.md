@@ -33,15 +33,15 @@ review:
 
 ## Your Government Tree
 
-From your home in Chester Springs, government connects through township, county, Pennsylvania, and the United States. Each level has different responsibilities.
+From your own home, government connects through your city or township, your county, your state, and the United States. Each level has different responsibilities.
 
 ## Your Representatives
 
-Pennsylvania residents have a Governor, two U.S. Senators, a U.S. Representative, state legislators, county officials, township supervisors, and school board members.
+Wherever you live, you are represented at several levels: a Governor and two U.S. Senators for your state, a U.S. Representative for your district, plus state legislators, county officials, city or township officials, and school board members.
 
 ## Who Do I Contact?
 
-USCIS handles citizenship, the Department of State handles passports, PennDOT handles driver licenses, the IRS handles federal taxes, and local officials handle many community services.
+USCIS handles citizenship, the U.S. Department of State handles passports, your state's motor vehicle agency (often called the DMV) handles driver licenses, the IRS handles federal taxes, and local officials handle many community services. For a worked example, see Appendix E: Pennsylvania Citizen's Guide.
 
 ## Why Local Government Matters
 
