@@ -12,7 +12,6 @@ objectives:
   - "Register to vote and apply for passport"
   - "Update records and participate"
 callout: "Store your certificate safely."
-visual_pack: "svg/milestone3/revolution-roadmap.svg"
 summary:
   - "Store your certificate safely."
   - "Register to vote."

@@ -12,7 +12,6 @@ objectives:
   - "Describe two-year terms"
   - "Understand the Speaker and House powers"
 callout: "House seats are based on population."
-visual_pack: "svg/milestone3/government-levels.svg"
 summary:
   - "House seats are based on population."
   - "Representatives serve two-year terms."

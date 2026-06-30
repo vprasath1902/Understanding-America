@@ -140,7 +140,13 @@ figures:
   `<title>`/`<desc>`/ids), and a CI gate (`npm run check`) enforcing link/asset
   integrity, `<img>` alt attributes, M7 `<title>`/`<desc>`, well-formed SVGs
   (no unescaped `&`), and a per-asset size budget.
-- **Next:** W6 (visual inventory + gallery integration).
+- **W6 complete:** the build derives a visual inventory from chapter
+  front-matter and generates `visual-gallery.html` (every hero, timeline, map,
+  and infographic, grouped by type, each linked to its chapter) plus a
+  machine-readable `assets/visuals/registry.json`. The Milestone 3 placeholder
+  "visual pack" notes have been removed from all chapters.
+- **Milestone 7 complete.** Every chapter has a hero; key chapters have figures;
+  all visuals are accessible, optimized, inventoried, and CI-guarded.
 
 ## Accessibility & optimization (W5)
 

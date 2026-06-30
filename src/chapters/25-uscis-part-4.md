@@ -12,7 +12,6 @@ objectives:
   - "Review U.S. geography"
   - "Review symbols and holidays"
 callout: "Modern history includes the Cold War, Civil Rights Movement, and September 11."
-visual_pack: "svg/milestone3/election-cycle-m3.svg"
 summary:
   - "Modern history includes the Cold War, Civil Rights Movement, and September 11."
   - "Geography questions are easier with a mental map."

@@ -16,7 +16,6 @@ objectives:
   - "Understand “No Taxation Without Representation”"
   - "Describe the events leading to independence"
 callout: "Taxes symbolized a larger dispute over representation."
-visual_pack: "svg/milestone3/constitution-blueprint.svg"
 summary:
   - "Taxes symbolized a larger dispute over representation."
   - "The colonies gradually moved from protest to resistance."

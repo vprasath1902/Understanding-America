@@ -16,7 +16,6 @@ objectives:
   - "Name the five First Amendment freedoms"
   - "Connect rights to everyday life"
 callout: "The Bill of Rights protects people from government abuse."
-visual_pack: "svg/milestone3/colonial-regions.svg"
 summary:
   - "The Bill of Rights protects people from government abuse."
   - "The First Amendment has five freedoms."

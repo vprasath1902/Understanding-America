@@ -16,7 +16,6 @@ objectives:
   - "Trace committee, debate, vote, and presidential action"
   - "Understand veto and judicial review"
 callout: "A bill is a proposed law."
-visual_pack: "svg/milestone3/election-cycle-m3.svg"
 summary:
   - "A bill is a proposed law."
   - "Both chambers usually must approve the same text."

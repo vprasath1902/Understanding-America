@@ -12,7 +12,6 @@ objectives:
   - "Review Congress and terms"
   - "Review President and courts"
 callout: "Three branches organize government."
-visual_pack: "svg/milestone3/government-levels.svg"
 summary:
   - "Three branches organize government."
   - "Congress makes laws."

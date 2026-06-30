@@ -12,7 +12,6 @@ objectives:
   - "Identify agencies behind everyday systems"
   - "Understand rights in daily situations"
 callout: "Government is woven into daily life."
-visual_pack: "svg/milestone3/election-cycle-m3.svg"
 summary:
   - "Government is woven into daily life."
   - "Different services belong to different levels."

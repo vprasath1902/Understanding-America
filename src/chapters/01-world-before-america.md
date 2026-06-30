@@ -16,7 +16,6 @@ objectives:
   - "Understand why Europeans came to North America"
   - "Connect colonial self-government to later American democracy"
 callout: "Indigenous nations existed long before European settlement."
-visual_pack: "svg/milestone3/colonial-regions.svg"
 summary:
   - "Indigenous nations existed long before European settlement."
   - "European countries came for land, trade, religion, and power."

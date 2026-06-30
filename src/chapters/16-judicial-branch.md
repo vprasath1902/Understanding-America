@@ -16,7 +16,6 @@ objectives:
   - "Explain judicial review"
   - "Understand judicial independence"
 callout: "The Supreme Court is the highest court."
-visual_pack: "svg/milestone3/constitution-blueprint.svg"
 summary:
   - "The Supreme Court is the highest court."
   - "Judicial review protects the Constitution."

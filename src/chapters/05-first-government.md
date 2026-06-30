@@ -12,7 +12,6 @@ objectives:
   - "Understand Shays’ Rebellion"
   - "Explain why the Constitutional Convention was called"
 callout: "The Articles created a weak central government."
-visual_pack: "svg/milestone3/citizenship-path.svg"
 summary:
   - "The Articles created a weak central government."
   - "The weaknesses became obvious after independence."

@@ -12,7 +12,6 @@ objectives:
   - "Understand limits on the President"
   - "Describe the Vice President and Cabinet"
 callout: "The President enforces laws."
-visual_pack: "svg/milestone3/colonial-regions.svg"
 summary:
   - "The President enforces laws."
   - "The President is Commander in Chief."

@@ -16,7 +16,6 @@ objectives:
   - "Describe congressional powers"
   - "Understand representation of people and states"
 callout: "Congress makes federal laws."
-visual_pack: "svg/milestone3/constitution-blueprint.svg"
 summary:
   - "Congress makes federal laws."
   - "The House represents people; the Senate represents states."

@@ -12,7 +12,6 @@ objectives:
   - "Know who to contact"
   - "Use quick facts for study"
 callout: "This is the desk reference chapter."
-visual_pack: "svg/milestone3/constitution-blueprint.svg"
 summary:
   - "This is the desk reference chapter."
   - "Use it before interviews or elections."
