@@ -44,7 +44,7 @@ related_glossary:
   - Rule of Law
 related_quiz: quiz.html
 ---
-This chapter and the three that follow walk through the civics knowledge the USCIS test covers. You have already met most of these ideas earlier in the book; here they are gathered as the test frames them, so you can study the facts and understand the meaning behind them.
+This chapter and the three that follow walk through the civics knowledge the USCIS test covers. You have already met most of these ideas earlier in the book; here they are gathered as the test frames them, so you can study the facts and understand the meaning behind them. For the **complete official list**, see [Appendix I: USCIS Civics Test (128 Questions)](../appendices/appendix-i-civics-questions.html).
 
 ## The Constitution Is the Supreme Law
 
