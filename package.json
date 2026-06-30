@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "visuals": "node scripts/visuals/generate.mjs",
+    "check": "node scripts/check-visuals.mjs",
     "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('build',{recursive:true,force:true}))\"",
     "serve": "npx --yes http-server build -p 8080"
   },

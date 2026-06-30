@@ -133,4 +133,25 @@ figures:
 - **W2 complete:** visual toolkit (`scripts/visuals/`), `hero`/`figures`
   front-matter, captioned/numbered figure rendering, print rules, asset build
   integration, and the first timeline generator — demonstrated on Chapter 1.
-- **Next:** W3 (generated visuals at scale) and W4 (authored heroes/maps).
+- **W3 complete:** timeline, tilemap (Electoral College), and infographic
+  (process / compare / structure) generators, with visuals across the book.
+- **W4 complete:** flat-geometric hero banners for all 30 chapters.
+- **W5 complete:** safe SVG minification in the build (preserves
+  `<title>`/`<desc>`/ids), and a CI gate (`npm run check`) enforcing link/asset
+  integrity, `<img>` alt attributes, M7 `<title>`/`<desc>`, well-formed SVGs
+  (no unescaped `&`), and a per-asset size budget.
+- **Next:** W6 (visual inventory + gallery integration).
+
+## Accessibility & optimization (W5)
+
+- All visuals are embedded via `<img alt="…">`, so the **alt attribute is the
+  accessible name**; content visuals carry descriptive alt, decorative icons use
+  `alt=""`. M7 SVGs additionally include `<title>`/`<desc>` for direct viewing.
+- We deliberately use a **conservative minifier** (whitespace/comments only) over
+  the build output rather than an aggressive SVGO preset, because SVGO's
+  `removeTitle`/`removeDesc`/`cleanupIds` would strip the accessibility wiring and
+  break `aria-labelledby` id references.
+- Contrast follows the locked palette (white on navy, navy/ink/muted on light) —
+  all AA-safe — and color is never the sole carrier of meaning (labels/numbers
+  accompany it).
+- `npm run check` runs in CI after the build and fails on any regression.
