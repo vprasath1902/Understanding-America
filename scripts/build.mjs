@@ -372,6 +372,7 @@ function renderExam(manifest) {
       q: q.q,
       o: q.o,
       a: q.a,
+      accept: Array.isArray(q.accept) && q.accept.length ? q.accept : [q.o[q.a]],
       chN: q.ch,
       chTitle: ch ? ch.title : `Chapter ${q.ch}`,
       chHref: ch ? `chapters/${ch.output}` : "#",
@@ -422,10 +423,24 @@ body.dark .exam-opt.wrong{background:#4c1d1d;color:#fecaca}
 body.dark .exam-filter-label,body.dark .exam-filter-avail,body.dark .exam-dd-opt.all{color:#9cc7f5}
 body.dark .exam-dd-toggle,body.dark .exam-dd-panel{background:#111827}
 body.dark .exam-dd-opt:hover{background:#374151}
+.exam-mode{border:1px solid var(--line,#d8dee8);border-radius:12px;padding:12px 16px;margin:16px 0}
+.exam-mode legend{padding:0 6px;font-weight:800;color:#0b3c6d}
+.exam-mode-opt{display:flex;align-items:flex-start;gap:10px;padding:7px 4px;cursor:pointer}
+.exam-mode-opt input{margin-top:4px;width:17px;height:17px;flex:none;cursor:pointer}
+.exam-mode-opt .m-note{display:block;color:#667085;font-size:.88rem;font-weight:400}
+#examText{width:100%;border:1px solid var(--line,#d8dee8);border-radius:12px;padding:12px 14px;font:inherit;background:var(--paper,#f8f8f6);color:var(--ink,#1f2937);resize:vertical}
+.exam-accepted{color:#667085;font-size:.9rem;margin:8px 0 0}
+body.dark .exam-mode legend{color:#9cc7f5}
+body.dark #examText{background:#111827}
 </style>
 <div id="examRoot" class="exam-card">
   <div id="examStart">
     <p>This is a practice civics test. It asks <strong>${askCount} questions</strong> drawn at random from the official USCIS pool, one at a time, and tells you right away if each answer is correct. At the end you'll get a score, the correct answers, and suggestions for which chapters to review. On the official 2025 test you must answer <strong>${passMark} of ${askCount}</strong> correctly to pass.</p>
+    <fieldset class="exam-mode">
+      <legend>Answer format</legend>
+      <label class="exam-mode-opt"><input type="radio" name="examMode" value="mc" checked> <span>Multiple choice<span class="m-note">Pick from four options — quick to review.</span></span></label>
+      <label class="exam-mode-opt"><input type="radio" name="examMode" value="text"> <span>Type your answer<span class="m-note">Closer to the real interview: type each answer and we check the facts, allowing typos and short forms (e.g. "John Roberts" for "John G. Roberts, Jr.").</span></span></label>
+    </fieldset>
     <div class="exam-filter">
       <span class="exam-filter-label" id="examChaptersLabel">Chapters to test</span>
       <div class="exam-dropdown" id="examDropdown">
@@ -442,6 +457,10 @@ body.dark .exam-dd-opt:hover{background:#374151}
     <div class="exam-progress" id="examProgress"></div>
     <div class="exam-q" id="examQuestion"></div>
     <ul class="exam-opts" id="examOpts"></ul>
+    <div id="examTextWrap" hidden>
+      <textarea id="examText" rows="2" placeholder="Type your answer…" aria-label="Your answer"></textarea>
+      <div class="exam-actions"><button id="examSubmit">Check answer</button></div>
+    </div>
     <div class="exam-feedback" id="examFeedback" aria-live="polite"></div>
     <div class="exam-actions"><button id="examNext" hidden>Next</button></div>
   </div>
