@@ -1,5 +1,6 @@
 {
-  "_comment": "Mock-exam question bank: the official USCIS civics questions as multiple choice. The 8 'answers vary' current-official questions are excluded (they can't be auto-graded). 'a' is the index of the correct option; 'ch' is the chapter number, resolved to a link by the build.",
+  "_comment": "Mock-exam question bank: the official USCIS civics questions as multiple choice. The 8 'answers vary' current-official questions ARE included at the end, answered for this edition's location — state Pennsylvania, city Chester Springs (U.S. House district PA-06). Officeholder answers are current as of June 2026 and MUST be updated after federal/state elections; they mirror Appendix H (Current Officials). 'a' is the index of the correct option; 'ch' is the chapter number, resolved to a link by the build.",
+  "_localEdition": { "state": "Pennsylvania", "city": "Chester Springs", "houseDistrict": "PA-06", "verified": "2026-06" },
   "passMark": 12,
   "askCount": 20,
   "questions": [
@@ -122,6 +123,15 @@
     { "q": "What is Independence Day?", "o": ["A holiday celebrating U.S. independence", "A day to honor veterans", "The President's birthday", "A religious holiday"], "a": 0, "ch": 30 },
     { "q": "Which of these is a national U.S. holiday?", "o": ["Thanksgiving Day", "Halloween", "Valentine's Day", "Super Bowl Sunday"], "a": 0, "ch": 30 },
     { "q": "What is Memorial Day?", "o": ["A holiday to honor soldiers who died in military service", "A holiday to honor all workers", "A day celebrating independence", "A day to honor the flag"], "a": 0, "ch": 30 },
-    { "q": "What is Veterans Day?", "o": ["A holiday to honor all who have served in the U.S. military", "A holiday only for soldiers who died in service", "A day celebrating independence", "A day to honor teachers"], "a": 0, "ch": 30 }
+    { "q": "What is Veterans Day?", "o": ["A holiday to honor all who have served in the U.S. military", "A holiday only for soldiers who died in service", "A day celebrating independence", "A day to honor teachers"], "a": 0, "ch": 30 },
+
+    { "q": "Who is one of your state's U.S. Senators now? (Pennsylvania)", "o": ["John Fetterman or Dave McCormick", "Chuck Schumer or Kirsten Gillibrand", "Ted Cruz or John Cornyn", "Marco Rubio or Rick Scott"], "a": 0, "ch": 16 },
+    { "q": "Name your U.S. Representative now. (Chester Springs is in Pennsylvania's 6th district)", "o": ["Chrissy Houlahan", "Brian Fitzpatrick", "Madeleine Dean", "Mary Gay Scanlon"], "a": 0, "ch": 15 },
+    { "q": "What is the name of the Speaker of the House of Representatives now?", "o": ["Mike Johnson", "Nancy Pelosi", "Kevin McCarthy", "Hakeem Jeffries"], "a": 0, "ch": 15 },
+    { "q": "What is the name of the President of the United States now?", "o": ["Donald J. Trump", "Joe Biden", "Barack Obama", "Kamala Harris"], "a": 0, "ch": 18 },
+    { "q": "What is the name of the Vice President of the United States now?", "o": ["JD Vance", "Kamala Harris", "Mike Pence", "Tim Walz"], "a": 0, "ch": 18 },
+    { "q": "Who is the Chief Justice of the United States now?", "o": ["John G. Roberts, Jr.", "Clarence Thomas", "Samuel Alito", "Brett Kavanaugh"], "a": 0, "ch": 21 },
+    { "q": "Who is the Governor of your state now? (Pennsylvania)", "o": ["Josh Shapiro", "Tom Wolf", "Kathy Hochul", "Phil Murphy"], "a": 0, "ch": 23 },
+    { "q": "What is the capital of your state? (Pennsylvania)", "o": ["Harrisburg", "Philadelphia", "Pittsburgh", "Allentown"], "a": 0, "ch": 23 }
   ]
 }
