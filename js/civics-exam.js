@@ -1,6 +1,8 @@
 // Civics practice test engine. Reads window.CIVICS_BANK (questions with
-// resolved chapter links), draws CIVICS_ASK at random, runs them one at a time
-// with instant feedback, then scores and suggests chapters to review.
+// resolved chapter links + acceptable answers), draws CIVICS_ASK at random,
+// runs them one at a time with instant feedback, then scores and suggests
+// chapters to review. Supports two modes: multiple choice, or free-text
+// ("type your answer") judged by a tolerant fact-matcher.
 (function () {
   var BANK = window.CIVICS_BANK || [];
   var ASK = window.CIVICS_ASK || 20;
@@ -20,14 +22,20 @@
   var ddPanel = document.getElementById("examChaptersPanel");
   var availEl = document.getElementById("examAvail");
   var startBtn = document.getElementById("examStartBtn");
+  var textWrap = document.getElementById("examTextWrap");
+  var textEl = document.getElementById("examText");
+  var submitBtn = document.getElementById("examSubmit");
 
   // Passing pace kept proportional to the official standard (12 of 20 = 60%),
   // so a focused 5-question drill still reports a sensible pass mark.
   var PASS_RATIO = ASK ? PASS / ASK : 0.6;
 
-  var quiz = [];   // the selected questions, with shuffled options
+  var quiz = [];      // the selected questions, with shuffled options
   var idx = 0;
-  var picks = [];  // user's chosen option index per question
+  var picks = [];     // MC: chosen option index per question (-1 = unanswered)
+  var given = [];     // text of the answer the user gave (both modes)
+  var correctArr = []; // whether each answer was correct (both modes)
+  var mode = "mc";    // "mc" or "text", chosen on the start screen
 
   function shuffle(a) {
     a = a.slice();
@@ -38,9 +46,81 @@
     return a;
   }
 
+  // ---- Free-text answer matching -------------------------------------------
+
+  var DROP = {
+    // articles / connectors ignored in token comparison
+    the: 1, a: 1, an: 1, of: 1, to: 1, and: 1, in: 1, on: 1, for: 1, by: 1, or: 1,
+    // honorifics / suffixes
+    mr: 1, mrs: 1, ms: 1, dr: 1, jr: 1, sr: 1, ii: 1, iii: 1, iv: 1
+  };
+
+  // Split into meaningful tokens: lowercase, strip punctuation, drop stopwords,
+  // honorifics/suffixes, and lone initials (single letters).
+  function tokens(s) {
+    return normRaw(s).split(" ").filter(function (t) {
+      if (!t) return false;
+      if (DROP[t]) return false;
+      if (t.length === 1 && /[a-z]/.test(t)) return false; // middle initial
+      return true;
+    });
+  }
+
+  function normRaw(s) {
+    return String(s)
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // Normalized comparison string (tokens re-joined, stopwords/initials removed).
+  function normStr(s) { return tokens(s).join(" "); }
+
+  function lev(a, b) {
+    if (a === b) return 0;
+    var m = a.length, n = b.length;
+    if (!m) return n; if (!n) return m;
+    var prev = [], cur = [], i, j;
+    for (j = 0; j <= n; j++) prev[j] = j;
+    for (i = 1; i <= m; i++) {
+      cur[0] = i;
+      for (j = 1; j <= n; j++) {
+        var cost = a.charCodeAt(i - 1) === b.charCodeAt(j - 1) ? 0 : 1;
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      }
+      for (j = 0; j <= n; j++) prev[j] = cur[j];
+    }
+    return prev[n];
+  }
+
+  function tol(s) { return s.length <= 4 ? 1 : (s.length <= 8 ? 2 : 3); }
+  function tokTol(t) { return t.length <= 4 ? 1 : 2; }
+
+  // Is `user` an acceptable answer given the list of accepted answers?
+  // Correct when: it equals an accepted answer (after normalization), or an
+  // accepted answer's tokens are all present in the user's response (allowing
+  // per-token typos), or the whole strings are within an edit-distance budget.
+  function judge(user, accept) {
+    var nu = normStr(user);
+    if (!nu) return false;
+    var tu = tokens(user);
+    for (var k = 0; k < accept.length; k++) {
+      var na = normStr(accept[k]);
+      if (!na) continue;
+      if (nu === na) return true;
+      if (lev(nu, na) <= tol(na)) return true;
+      var ta = tokens(accept[k]);
+      if (ta.length && ta.every(function (t) {
+        return tu.indexOf(t) >= 0 || tu.some(function (x) { return lev(x, t) <= tokTol(t); });
+      })) return true;
+    }
+    return false;
+  }
+
   // ---- Chapter filter -------------------------------------------------------
 
-  // Unique chapters present in the bank, with question counts, ordered by number.
   function chapterList() {
     var map = {};
     BANK.forEach(function (q) {
@@ -51,31 +131,23 @@
       .sort(function (a, b) { return a.n - b.n; });
   }
 
-  // All chapter checkboxes except the "all" row.
   function chapterBoxes() {
     if (!ddPanel) return [];
     var boxes = ddPanel.querySelectorAll('input[type="checkbox"]');
     return Array.prototype.filter.call(boxes, function (b) { return b.value !== "all"; });
   }
+  function allBox() { return ddPanel ? ddPanel.querySelector('input[value="all"]') : null; }
 
-  function allBox() {
-    return ddPanel ? ddPanel.querySelector('input[value="all"]') : null;
-  }
-
-  // The chapter numbers the user checked, or null for "all chapters".
   function selectedChapters() {
     var vals = chapterBoxes().filter(function (b) { return b.checked; })
       .map(function (b) { return Number(b.value); });
     return vals.length ? vals : null;
   }
-
-  // The chapter titles the user checked (for the toggle summary).
   function selectedTitles() {
     return chapterBoxes().filter(function (b) { return b.checked; })
       .map(function (b) { return b.getAttribute("data-title"); });
   }
 
-  // The questions eligible for the next test, honoring the chapter filter.
   function pool() {
     var chs = selectedChapters();
     if (!chs) return BANK;
@@ -94,13 +166,10 @@
     ddPanel.innerHTML = rows.join("");
   }
 
-  // Keep "All Chapters" and specific chapters mutually exclusive. `changed` is
-  // the checkbox the user just toggled (so we know which side to defer to).
   function normalizeSelection(changed) {
     var all = allBox();
     if (!all) return;
     if (changed && changed.value === "all") {
-      // Toggling "all" on clears specifics; it can't be turned off directly.
       all.checked = true;
       chapterBoxes().forEach(function (b) { b.checked = false; });
     } else {
@@ -135,23 +204,33 @@
     startBtn.disabled = p.length === 0;
   }
 
+  // ---- Quiz flow ------------------------------------------------------------
+
+  function currentMode() {
+    var checked = document.querySelector('input[name="examMode"]:checked');
+    return checked ? checked.value : "mc";
+  }
+
   function buildQuiz() {
     var src = pool();
     var ask = Math.min(ASK, src.length);
     var chosen = shuffle(src).slice(0, ask);
     quiz = chosen.map(function (item) {
-      // shuffle options, track where the correct answer moved
       var order = shuffle(item.o.map(function (_, i) { return i; }));
       return {
         q: item.q,
         options: order.map(function (i) { return item.o[i]; }),
         answer: order.indexOf(item.a),
+        answerText: item.o[item.a],
+        accept: item.accept || [item.o[item.a]],
         chTitle: item.chTitle,
         chHref: item.chHref,
         chN: item.chN,
       };
     });
     picks = new Array(quiz.length).fill(-1);
+    given = new Array(quiz.length).fill("");
+    correctArr = new Array(quiz.length).fill(false);
     idx = 0;
   }
 
@@ -160,39 +239,81 @@
     progressEl.textContent = "Question " + (idx + 1) + " of " + quiz.length;
     questionEl.textContent = item.q;
     feedbackEl.textContent = "";
+    feedbackEl.style.color = "";
     nextBtn.hidden = true;
     nextBtn.textContent = idx === quiz.length - 1 ? "See results" : "Next";
-    optsEl.innerHTML = "";
-    item.options.forEach(function (opt, i) {
-      var li = document.createElement("li");
-      var b = document.createElement("button");
-      b.type = "button";
-      b.className = "exam-opt";
-      b.textContent = opt;
-      b.addEventListener("click", function () { choose(i, b); });
-      li.appendChild(b);
-      optsEl.appendChild(li);
-    });
+
+    if (mode === "text") {
+      optsEl.innerHTML = "";
+      optsEl.hidden = true;
+      textWrap.hidden = false;
+      textEl.value = "";
+      textEl.disabled = false;
+      submitBtn.disabled = false;
+      submitBtn.hidden = false;
+      textEl.focus();
+    } else {
+      textWrap.hidden = true;
+      optsEl.hidden = false;
+      optsEl.innerHTML = "";
+      item.options.forEach(function (opt, i) {
+        var li = document.createElement("li");
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "exam-opt";
+        b.textContent = opt;
+        b.addEventListener("click", function () { chooseMC(i, b); });
+        li.appendChild(b);
+        optsEl.appendChild(li);
+      });
+    }
   }
 
-  function choose(i, btn) {
-    if (picks[idx] !== -1) return; // already answered
+  function markCorrect(isRight) {
+    correctArr[idx] = isRight;
+    if (isRight) {
+      feedbackEl.textContent = "Correct.";
+      feedbackEl.style.color = "#2e8b57";
+    } else {
+      feedbackEl.style.color = "#b22234";
+    }
+    nextBtn.hidden = false;
+  }
+
+  function chooseMC(i, btn) {
+    if (picks[idx] !== -1) return;
     picks[idx] = i;
     var item = quiz[idx];
+    given[idx] = item.options[i];
     var buttons = optsEl.querySelectorAll(".exam-opt");
     buttons.forEach(function (b, bi) {
       b.disabled = true;
       if (bi === item.answer) b.classList.add("correct");
     });
-    if (i === item.answer) {
-      feedbackEl.textContent = "Correct.";
-      feedbackEl.style.color = "#2e8b57";
-    } else {
+    var right = i === item.answer;
+    if (!right) {
       btn.classList.add("wrong");
       feedbackEl.textContent = "Not quite — the highlighted answer is correct.";
-      feedbackEl.style.color = "#b22234";
     }
-    nextBtn.hidden = false;
+    markCorrect(right);
+  }
+
+  function submitText() {
+    if (textEl.disabled) return;
+    var val = textEl.value.trim();
+    if (!val) { feedbackEl.textContent = "Type an answer first."; feedbackEl.style.color = "#b22234"; return; }
+    var item = quiz[idx];
+    given[idx] = val;
+    textEl.disabled = true;
+    submitBtn.disabled = true;
+    submitBtn.hidden = true;
+    var right = judge(val, item.accept);
+    if (right) {
+      markCorrect(true);
+    } else {
+      feedbackEl.textContent = "Not quite. Accepted answer: " + item.answerText;
+      markCorrect(false);
+    }
   }
 
   function next() {
@@ -210,7 +331,7 @@
     var correct = 0;
     var missedByChapter = {};
     quiz.forEach(function (item, i) {
-      if (picks[i] === item.answer) {
+      if (correctArr[i]) {
         correct++;
       } else {
         var key = item.chHref;
@@ -229,7 +350,6 @@
                 "Below a passing pace (" + passMark + "+ of " + quiz.length +
                 " needed). Keep studying — you've got this.") + "</div>";
 
-    // chapter suggestions
     var keys = Object.keys(missedByChapter);
     if (keys.length) {
       keys.sort(function (a, b) { return missedByChapter[a].n - missedByChapter[b].n; });
@@ -244,14 +364,13 @@
       html += '<div class="suggest"><strong>Perfect score!</strong> You answered every question correctly.</div>';
     }
 
-    // full review
     html += "<h2>Review all questions</h2><ol class=\"exam-review\">";
     quiz.forEach(function (item, i) {
-      var right = picks[i] === item.answer;
-      var yours = picks[i] >= 0 ? item.options[picks[i]] : "(no answer)";
+      var right = correctArr[i];
+      var yours = given[i] || "(no answer)";
       html += "<li><span class=\"mark " + (right ? "ok" : "no") + "\">" + (right ? "✓" : "✗") +
         "</span>" + escapeHtml(item.q) +
-        '<span class="ans">Correct answer: ' + escapeHtml(item.options[item.answer]) + "</span>";
+        '<span class="ans">Correct answer: ' + escapeHtml(item.answerText) + "</span>";
       if (!right) html += '<span class="ans">Your answer: ' + escapeHtml(yours) + "</span>";
       html += '<span class="ans">Read more: <a href="' + item.chHref + '">Ch ' + item.chN + " — " + escapeHtml(item.chTitle) + "</a></span></li>";
     });
@@ -269,6 +388,7 @@
   }
 
   function start() {
+    mode = currentMode();
     startEl.hidden = true;
     resultsEl.hidden = true;
     buildQuiz();
@@ -278,11 +398,19 @@
 
   function restart() {
     resultsEl.hidden = true;
-    start();
+    startEl.hidden = false; // let the user change mode/chapters between tests
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  document.getElementById("examStartBtn").addEventListener("click", start);
+  startBtn.addEventListener("click", start);
   nextBtn.addEventListener("click", next);
+  if (submitBtn) submitBtn.addEventListener("click", submitText);
+  if (textEl) {
+    // Enter submits; Shift+Enter makes a newline.
+    textEl.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submitText(); }
+    });
+  }
 
   if (ddToggle && ddPanel) {
     populateChapters();
@@ -300,7 +428,6 @@
         updateAvail();
       }
     });
-    // Close when clicking outside the dropdown or pressing Escape.
     document.addEventListener("click", function (e) {
       if (!ddPanel.hidden && !document.getElementById("examDropdown").contains(e.target)) closePanel();
     });
