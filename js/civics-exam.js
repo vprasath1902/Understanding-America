@@ -16,6 +16,13 @@
   var optsEl = document.getElementById("examOpts");
   var feedbackEl = document.getElementById("examFeedback");
   var nextBtn = document.getElementById("examNext");
+  var chapterSel = document.getElementById("examChapters");
+  var availEl = document.getElementById("examAvail");
+  var startBtn = document.getElementById("examStartBtn");
+
+  // Passing pace kept proportional to the official standard (12 of 20 = 60%),
+  // so a focused 5-question drill still reports a sensible pass mark.
+  var PASS_RATIO = ASK ? PASS / ASK : 0.6;
 
   var quiz = [];   // the selected questions, with shuffled options
   var idx = 0;
@@ -30,8 +37,78 @@
     return a;
   }
 
+  // ---- Chapter filter -------------------------------------------------------
+
+  // Unique chapters present in the bank, with question counts, ordered by number.
+  function chapterList() {
+    var map = {};
+    BANK.forEach(function (q) {
+      if (!map[q.chN]) map[q.chN] = { n: q.chN, title: q.chTitle, count: 0 };
+      map[q.chN].count++;
+    });
+    return Object.keys(map).map(function (k) { return map[k]; })
+      .sort(function (a, b) { return a.n - b.n; });
+  }
+
+  // The chapter numbers the user selected, or null for "all chapters".
+  function selectedChapters() {
+    if (!chapterSel) return null;
+    var vals = [];
+    for (var i = 0; i < chapterSel.options.length; i++) {
+      var o = chapterSel.options[i];
+      if (o.selected && o.value !== "all") vals.push(Number(o.value));
+    }
+    return vals.length ? vals : null;
+  }
+
+  // The questions eligible for the next test, honoring the chapter filter.
+  function pool() {
+    var chs = selectedChapters();
+    if (!chs) return BANK;
+    return BANK.filter(function (q) { return chs.indexOf(q.chN) >= 0; });
+  }
+
+  function populateChapters() {
+    if (!chapterSel) return;
+    var opts = ['<option value="all" selected>Random — All Chapters</option>'];
+    chapterList().forEach(function (c) {
+      opts.push('<option value="' + c.n + '">Ch ' + c.n + " — " + escapeHtml(c.title) +
+        " (" + c.count + " question" + (c.count === 1 ? "" : "s") + ")</option>");
+    });
+    chapterSel.innerHTML = opts.join("");
+  }
+
+  // Keep the "All Chapters" row and specific chapters mutually exclusive:
+  // any specific pick turns "all" off; picking nothing specific turns it on.
+  function normalizeSelection() {
+    if (!chapterSel) return;
+    var opts = chapterSel.options, anyOther = false;
+    for (var i = 1; i < opts.length; i++) { if (opts[i].selected) { anyOther = true; break; } }
+    if (opts.length) opts[0].selected = !anyOther;
+  }
+
+  function updateAvail() {
+    if (!startBtn) return;
+    var p = pool();
+    var ask = Math.min(ASK, p.length);
+    var chs = selectedChapters();
+    if (!chs) {
+      if (availEl) availEl.textContent = "";
+      startBtn.textContent = "Start the " + ask + "-question test";
+    } else {
+      if (availEl) {
+        availEl.textContent = p.length + " question" + (p.length === 1 ? "" : "s") +
+          " available in your selection — this test will ask " + ask + ".";
+      }
+      startBtn.textContent = ask > 0 ? "Start " + ask + "-question test" : "No questions available";
+    }
+    startBtn.disabled = p.length === 0;
+  }
+
   function buildQuiz() {
-    var chosen = shuffle(BANK).slice(0, Math.min(ASK, BANK.length));
+    var src = pool();
+    var ask = Math.min(ASK, src.length);
+    var chosen = shuffle(src).slice(0, ask);
     quiz = chosen.map(function (item) {
       // shuffle options, track where the correct answer moved
       var order = shuffle(item.o.map(function (_, i) { return i; }));
@@ -111,12 +188,16 @@
         missedByChapter[key].count++;
       }
     });
-    var passed = correct >= PASS;
+    var passMark = Math.max(1, Math.round(PASS_RATIO * quiz.length));
+    var passed = correct >= passMark;
+    var pct = Math.round((100 * correct) / quiz.length);
 
-    var html = '<div class="exam-score">You scored ' + correct + " / " + quiz.length + "</div>";
+    var html = '<div class="exam-score">You scored ' + correct + " / " + quiz.length +
+      " (" + pct + "%)</div>";
     html += '<div class="exam-verdict ' + (passed ? "pass" : "fail") + '">' +
-      (passed ? "✓ Passing score — at or above " + PASS + " correct." :
-                "Below the passing mark of " + PASS + ". Keep studying — you've got this.") + "</div>";
+      (passed ? "✓ Passing pace — the real test needs " + PASS + " of " + ASK + " (60%)." :
+                "Below a passing pace (" + passMark + "+ of " + quiz.length +
+                " needed). Keep studying — you've got this.") + "</div>";
 
     // chapter suggestions
     var keys = Object.keys(missedByChapter);
@@ -172,4 +253,13 @@
 
   document.getElementById("examStartBtn").addEventListener("click", start);
   nextBtn.addEventListener("click", next);
+
+  if (chapterSel) {
+    populateChapters();
+    chapterSel.addEventListener("change", function () {
+      normalizeSelection();
+      updateAvail();
+    });
+    updateAvail();
+  }
 })();

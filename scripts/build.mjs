@@ -406,10 +406,24 @@ function renderExam(manifest) {
 body.dark .exam-opt:hover:not(:disabled){background:#374151}
 body.dark .exam-opt.correct{background:#14532d;color:#d1fae5}
 body.dark .exam-opt.wrong{background:#4c1d1d;color:#fecaca}
+.exam-filter{margin:16px 0 18px}
+.exam-filter label{display:block;font-weight:800;color:#0b3c6d;margin-bottom:6px}
+#examChapters{width:100%;max-width:560px;border:1px solid var(--line,#d8dee8);border-radius:12px;padding:8px;font:inherit;background:var(--paper,#f8f8f6);color:var(--ink,#1f2937)}
+#examChapters option{padding:6px 8px;border-radius:8px}
+.exam-filter-help{color:#667085;font-size:.9rem;margin:8px 0 0}
+.exam-filter-avail{font-weight:700;color:#0b3c6d;margin:8px 0 0;min-height:1.2em}
+body.dark .exam-filter label,body.dark .exam-filter-avail{color:#9cc7f5}
+body.dark #examChapters{background:#111827}
 </style>
 <div id="examRoot" class="exam-card">
   <div id="examStart">
     <p>This is a practice civics test. It asks <strong>${askCount} questions</strong> drawn at random from the official USCIS pool, one at a time, and tells you right away if each answer is correct. At the end you'll get a score, the correct answers, and suggestions for which chapters to review. On the official 2025 test you must answer <strong>${passMark} of ${askCount}</strong> correctly to pass.</p>
+    <div class="exam-filter">
+      <label for="examChapters">Chapters to test</label>
+      <select id="examChapters" multiple size="8" aria-describedby="examFilterHelp"></select>
+      <p id="examFilterHelp" class="exam-filter-help">Leave <strong>Random — All Chapters</strong> selected for a full mock test, or pick one or more chapters to focus your practice — great for drilling a chapter you find hard. Hold Ctrl (Cmd on Mac) to select several.</p>
+      <p id="examAvail" class="exam-filter-avail" aria-live="polite"></p>
+    </div>
     <div class="exam-actions"><button id="examStartBtn">Start the ${askCount}-question test</button></div>
     <p style="color:#667085;font-size:.9rem;margin-top:12px">The questions change every time. For the full list, see <a href="appendices/appendix-i-civics-questions.html">Appendix I</a>.</p>
   </div>
