@@ -406,10 +406,35 @@ function renderExam(manifest) {
 body.dark .exam-opt:hover:not(:disabled){background:#374151}
 body.dark .exam-opt.correct{background:#14532d;color:#d1fae5}
 body.dark .exam-opt.wrong{background:#4c1d1d;color:#fecaca}
+.exam-filter{margin:16px 0 18px}
+.exam-filter-label{display:block;font-weight:800;color:#0b3c6d;margin-bottom:6px}
+.exam-dropdown{position:relative;max-width:560px}
+.exam-dd-toggle{width:100%;text-align:left;background:var(--paper,#f8f8f6);color:var(--ink,#1f2937);border:1px solid var(--line,#d8dee8);border-radius:12px;padding:12px 40px 12px 14px;font:inherit;font-weight:700;cursor:pointer;position:relative}
+.exam-dd-toggle:after{content:"\\25be";position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#667085}
+.exam-dd-toggle[aria-expanded="true"]:after{content:"\\25b4"}
+.exam-dd-panel{position:absolute;z-index:40;left:0;right:0;margin-top:6px;max-height:300px;overflow:auto;background:var(--card,#fff);border:1px solid var(--line,#d8dee8);border-radius:12px;box-shadow:var(--shadow);padding:6px}
+.exam-dd-opt{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;cursor:pointer;color:var(--ink,#1f2937)}
+.exam-dd-opt:hover{background:#eef4fb}
+.exam-dd-opt input{width:17px;height:17px;flex:none;cursor:pointer}
+.exam-dd-opt.all{font-weight:800;color:#0b3c6d;border-bottom:1px solid var(--line,#d8dee8);border-radius:8px 8px 0 0;margin-bottom:4px}
+.exam-filter-help{color:#667085;font-size:.9rem;margin:8px 0 0}
+.exam-filter-avail{font-weight:700;color:#0b3c6d;margin:8px 0 0;min-height:1.2em}
+body.dark .exam-filter-label,body.dark .exam-filter-avail,body.dark .exam-dd-opt.all{color:#9cc7f5}
+body.dark .exam-dd-toggle,body.dark .exam-dd-panel{background:#111827}
+body.dark .exam-dd-opt:hover{background:#374151}
 </style>
 <div id="examRoot" class="exam-card">
   <div id="examStart">
     <p>This is a practice civics test. It asks <strong>${askCount} questions</strong> drawn at random from the official USCIS pool, one at a time, and tells you right away if each answer is correct. At the end you'll get a score, the correct answers, and suggestions for which chapters to review. On the official 2025 test you must answer <strong>${passMark} of ${askCount}</strong> correctly to pass.</p>
+    <div class="exam-filter">
+      <span class="exam-filter-label" id="examChaptersLabel">Chapters to test</span>
+      <div class="exam-dropdown" id="examDropdown">
+        <button type="button" id="examChaptersToggle" class="exam-dd-toggle" aria-expanded="false" aria-haspopup="true" aria-labelledby="examChaptersLabel examChaptersToggle">Random — All Chapters</button>
+        <div class="exam-dd-panel" id="examChaptersPanel" role="group" aria-labelledby="examChaptersLabel" hidden></div>
+      </div>
+      <p id="examFilterHelp" class="exam-filter-help">Leave <strong>Random — All Chapters</strong> checked for a full mock test, or check one or more chapters to focus your practice — great for drilling a chapter you find hard.</p>
+      <p id="examAvail" class="exam-filter-avail" aria-live="polite"></p>
+    </div>
     <div class="exam-actions"><button id="examStartBtn">Start the ${askCount}-question test</button></div>
     <p style="color:#667085;font-size:.9rem;margin-top:12px">The questions change every time. For the full list, see <a href="appendices/appendix-i-civics-questions.html">Appendix I</a>.</p>
   </div>
