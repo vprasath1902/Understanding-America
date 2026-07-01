@@ -16,7 +16,8 @@
   var optsEl = document.getElementById("examOpts");
   var feedbackEl = document.getElementById("examFeedback");
   var nextBtn = document.getElementById("examNext");
-  var chapterSel = document.getElementById("examChapters");
+  var ddToggle = document.getElementById("examChaptersToggle");
+  var ddPanel = document.getElementById("examChaptersPanel");
   var availEl = document.getElementById("examAvail");
   var startBtn = document.getElementById("examStartBtn");
 
@@ -50,15 +51,28 @@
       .sort(function (a, b) { return a.n - b.n; });
   }
 
-  // The chapter numbers the user selected, or null for "all chapters".
+  // All chapter checkboxes except the "all" row.
+  function chapterBoxes() {
+    if (!ddPanel) return [];
+    var boxes = ddPanel.querySelectorAll('input[type="checkbox"]');
+    return Array.prototype.filter.call(boxes, function (b) { return b.value !== "all"; });
+  }
+
+  function allBox() {
+    return ddPanel ? ddPanel.querySelector('input[value="all"]') : null;
+  }
+
+  // The chapter numbers the user checked, or null for "all chapters".
   function selectedChapters() {
-    if (!chapterSel) return null;
-    var vals = [];
-    for (var i = 0; i < chapterSel.options.length; i++) {
-      var o = chapterSel.options[i];
-      if (o.selected && o.value !== "all") vals.push(Number(o.value));
-    }
+    var vals = chapterBoxes().filter(function (b) { return b.checked; })
+      .map(function (b) { return Number(b.value); });
     return vals.length ? vals : null;
+  }
+
+  // The chapter titles the user checked (for the toggle summary).
+  function selectedTitles() {
+    return chapterBoxes().filter(function (b) { return b.checked; })
+      .map(function (b) { return b.getAttribute("data-title"); });
   }
 
   // The questions eligible for the next test, honoring the chapter filter.
@@ -69,22 +83,38 @@
   }
 
   function populateChapters() {
-    if (!chapterSel) return;
-    var opts = ['<option value="all" selected>Random — All Chapters</option>'];
+    if (!ddPanel) return;
+    var rows = ['<label class="exam-dd-opt all"><input type="checkbox" value="all" checked> Random — All Chapters</label>'];
     chapterList().forEach(function (c) {
-      opts.push('<option value="' + c.n + '">Ch ' + c.n + " — " + escapeHtml(c.title) +
-        " (" + c.count + " question" + (c.count === 1 ? "" : "s") + ")</option>");
+      var label = "Ch " + c.n + " — " + c.title;
+      rows.push('<label class="exam-dd-opt"><input type="checkbox" value="' + c.n +
+        '" data-title="' + escapeHtml(c.title) + '"> ' + escapeHtml(label) +
+        " (" + c.count + " question" + (c.count === 1 ? "" : "s") + ")</label>");
     });
-    chapterSel.innerHTML = opts.join("");
+    ddPanel.innerHTML = rows.join("");
   }
 
-  // Keep the "All Chapters" row and specific chapters mutually exclusive:
-  // any specific pick turns "all" off; picking nothing specific turns it on.
-  function normalizeSelection() {
-    if (!chapterSel) return;
-    var opts = chapterSel.options, anyOther = false;
-    for (var i = 1; i < opts.length; i++) { if (opts[i].selected) { anyOther = true; break; } }
-    if (opts.length) opts[0].selected = !anyOther;
+  // Keep "All Chapters" and specific chapters mutually exclusive. `changed` is
+  // the checkbox the user just toggled (so we know which side to defer to).
+  function normalizeSelection(changed) {
+    var all = allBox();
+    if (!all) return;
+    if (changed && changed.value === "all") {
+      // Toggling "all" on clears specifics; it can't be turned off directly.
+      all.checked = true;
+      chapterBoxes().forEach(function (b) { b.checked = false; });
+    } else {
+      var any = chapterBoxes().some(function (b) { return b.checked; });
+      all.checked = !any;
+    }
+  }
+
+  function updateSummary() {
+    if (!ddToggle) return;
+    var titles = selectedTitles();
+    if (!titles.length) ddToggle.textContent = "Random — All Chapters";
+    else if (titles.length === 1) ddToggle.textContent = titles[0];
+    else ddToggle.textContent = titles.length + " chapters selected";
   }
 
   function updateAvail() {
@@ -254,12 +284,31 @@
   document.getElementById("examStartBtn").addEventListener("click", start);
   nextBtn.addEventListener("click", next);
 
-  if (chapterSel) {
+  if (ddToggle && ddPanel) {
     populateChapters();
-    chapterSel.addEventListener("change", function () {
-      normalizeSelection();
-      updateAvail();
+
+    function openPanel() { ddPanel.hidden = false; ddToggle.setAttribute("aria-expanded", "true"); }
+    function closePanel() { ddPanel.hidden = true; ddToggle.setAttribute("aria-expanded", "false"); }
+
+    ddToggle.addEventListener("click", function () {
+      if (ddPanel.hidden) openPanel(); else closePanel();
     });
+    ddPanel.addEventListener("change", function (e) {
+      if (e.target && e.target.type === "checkbox") {
+        normalizeSelection(e.target);
+        updateSummary();
+        updateAvail();
+      }
+    });
+    // Close when clicking outside the dropdown or pressing Escape.
+    document.addEventListener("click", function (e) {
+      if (!ddPanel.hidden && !document.getElementById("examDropdown").contains(e.target)) closePanel();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !ddPanel.hidden) { closePanel(); ddToggle.focus(); }
+    });
+
+    updateSummary();
     updateAvail();
   }
 })();
