@@ -315,6 +315,13 @@ const BOOK_NAV = [
     "number": null
   },
   {
+    "section": "Appendices",
+    "title": "Appendix J: Notable People in the Civics Test",
+    "href": "appendices/appendix-j-notable-people.html",
+    "kind": "appendix",
+    "number": null
+  },
+  {
     "section": "Publication Tools",
     "title": "Print Preview and PDF Prep",
     "href": "print-preview.html",
